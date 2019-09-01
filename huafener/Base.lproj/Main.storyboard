@@ -13,7 +13,6 @@
         <!--发布-->
         <scene sceneID="ibQ-zi-j4o">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hv8-GI-0r5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="J9b-TW-A5H" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nZm-qO-FgZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -23,6 +22,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="发布" image="tabBarCenterBtn" selectedImage="tabBarCenterBtn" id="mKD-qN-n6B"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hv8-GI-0r5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774" y="-43"/>
         </scene>
@@ -75,16 +75,26 @@
         <!--首页-->
         <scene sceneID="geF-ox-4UP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5uF-Va-gpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="aQd-ss-oeQ" sceneMemberID="viewController">
+                <viewController id="aQd-ss-oeQ" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gKR-6U-mUd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="il3-Jc-cAP"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dVz-G0-cVN" appends="YES" id="QwL-VS-fVw"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="首页" image="home" badgeValue="9" selectedImage="home_high" id="010-nv-HaR"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5uF-Va-gpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dVz-G0-cVN">
+                    <connections>
+                        <action selector="handleTap:" destination="aQd-ss-oeQ" id="ogy-Nl-lcf"/>
+                        <outlet property="delegate" destination="gKR-6U-mUd" id="4E8-AO-d09"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="774" y="-691"/>
         </scene>

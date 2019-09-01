@@ -11,6 +11,9 @@
 @implementation UITabBar (CenterBtnBig)
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    
+    NSLog(@"%f,",point.x);
+
     //这块取3，不是2的原因，还不是很清晰，得持续分析分析
     UIView *tabbarBtn = self.subviews[3];
     //就是说什么呢，当前点point 在tabbarBtn  的相对位置

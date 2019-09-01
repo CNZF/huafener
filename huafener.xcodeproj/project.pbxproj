@@ -21,6 +21,8 @@
 		14409CAA231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */; };
 		14409CAF231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */; };
 		14409CB2231C07F0006E9FFA /* UITabBar+CenterBtnBig.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */; };
+		14409CB9231C3D2E006E9FFA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CB8231C3D2E006E9FFA /* BaseViewController.m */; };
+		14409CBD231C3D5A006E9FFA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CBC231C3D5A006E9FFA /* MainViewController.m */; };
 		3BA4E581479C6D1A12BDA020 /* libPods-huafener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320DE134131D95E6E6134089 /* libPods-huafener.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,10 @@
 		14409CB0231C07F0006E9FFA /* UITabBar+CenterBtnBig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CenterBtnBig.h"; sourceTree = "<group>"; };
 		14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CenterBtnBig.m"; sourceTree = "<group>"; };
 		14409CB4231C1E66006E9FFA /* LYEfficency_Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEfficency_Debug.h; sourceTree = "<group>"; };
+		14409CB7231C3D2E006E9FFA /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		14409CB8231C3D2E006E9FFA /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		14409CBB231C3D5A006E9FFA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		14409CBC231C3D5A006E9FFA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		320DE134131D95E6E6134089 /* libPods-huafener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.release.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.release.xcconfig"; sourceTree = "<group>"; };
 		A47881723EB8321168232E5D /* Pods-huafener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.debug.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 		14409C1C231BD170006E9FFA /* huafener */ = {
 			isa = PBXGroup;
 			children = (
+				14409CB5231C3D02006E9FFA /* projectCode */,
 				14409CAB231BF6F7006E9FFA /* Categorys */,
 				14409CA4231BF007006E9FFA /* LYPch */,
 				14409C9D231BEEEA006E9FFA /* LYPreference */,
@@ -213,6 +220,33 @@
 				14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */,
 			);
 			path = LYViewCategory;
+			sourceTree = "<group>";
+		};
+		14409CB5231C3D02006E9FFA /* projectCode */ = {
+			isa = PBXGroup;
+			children = (
+				14409CBA231C3D4A006E9FFA /* tabsController */,
+				14409CB6231C3D15006E9FFA /* base */,
+			);
+			path = projectCode;
+			sourceTree = "<group>";
+		};
+		14409CB6231C3D15006E9FFA /* base */ = {
+			isa = PBXGroup;
+			children = (
+				14409CB7231C3D2E006E9FFA /* BaseViewController.h */,
+				14409CB8231C3D2E006E9FFA /* BaseViewController.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		14409CBA231C3D4A006E9FFA /* tabsController */ = {
+			isa = PBXGroup;
+			children = (
+				14409CBB231C3D5A006E9FFA /* MainViewController.h */,
+				14409CBC231C3D5A006E9FFA /* MainViewController.m */,
+			);
+			path = tabsController;
 			sourceTree = "<group>";
 		};
 		57A12B61F052AFA56C8A7150 /* Pods */ = {
@@ -390,7 +424,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				14409CAA231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m in Sources */,
+				14409CB9231C3D2E006E9FFA /* BaseViewController.m in Sources */,
 				14409CB2231C07F0006E9FFA /* UITabBar+CenterBtnBig.m in Sources */,
+				14409CBD231C3D5A006E9FFA /* MainViewController.m in Sources */,
 				14409CAF231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m in Sources */,
 				14409C22231BD170006E9FFA /* ViewController.m in Sources */,
 				14409C9C231BED4F006E9FFA /* LYTabbarViewController.m in Sources */,
@@ -571,7 +607,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGH7S67FXX;
 				EXECUTABLE_PREFIX = "";
-				GCC_PREFIX_HEADER = /Users/yangjunjie/Desktop/huafenerc/huafener/LYPch/LYHeader.pch;
+				GCC_PREFIX_HEADER = /Users/yangjunjie/Documents/huafenerc/huafener/LYPch/LYHeader.pch;
 				INFOPLIST_FILE = huafener/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -592,7 +628,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGH7S67FXX;
 				EXECUTABLE_PREFIX = "";
-				GCC_PREFIX_HEADER = /Users/yangjunjie/Desktop/huafenerc/huafener/LYPch/LYHeader.pch;
+				GCC_PREFIX_HEADER = /Users/yangjunjie/Documents/huafenerc/huafener/LYPch/LYHeader.pch;
 				INFOPLIST_FILE = huafener/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
