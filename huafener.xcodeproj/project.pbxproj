@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14409C1F231BD170006E9FFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C1E231BD170006E9FFA /* AppDelegate.m */; };
+		14409C22231BD170006E9FFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C21231BD170006E9FFA /* ViewController.m */; };
+		14409C25231BD170006E9FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14409C23231BD170006E9FFA /* Main.storyboard */; };
+		14409C2A231BD171006E9FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14409C28231BD171006E9FFA /* LaunchScreen.storyboard */; };
+		14409C2D231BD171006E9FFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C2C231BD171006E9FFA /* main.m */; };
+		14409C37231BD172006E9FFA /* LocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C36231BD172006E9FFA /* LocationTests.m */; };
+		14409C42231BD172006E9FFA /* LocationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C41231BD172006E9FFA /* LocationUITests.m */; };
+		14409C58231BDCD0006E9FFA /* Location 18-56-19-196.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 14409C57231BDCD0006E9FFA /* Location 18-56-19-196.gpx */; };
+		14409C98231BEA3D006E9FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14409C97231BEA3C006E9FFA /* Assets.xcassets */; };
+		14409C9C231BED4F006E9FFA /* LYTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C9B231BED4F006E9FFA /* LYTabbarViewController.m */; };
+		14409CA7231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */; };
+		14409CAA231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */; };
+		14409CAF231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */; };
+		14409CB2231C07F0006E9FFA /* UITabBar+CenterBtnBig.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */; };
+		3BA4E581479C6D1A12BDA020 /* libPods-huafener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320DE134131D95E6E6134089 /* libPods-huafener.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14409C33231BD172006E9FFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14409C12231BD170006E9FFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14409C19231BD170006E9FFA;
+			remoteInfo = Location;
+		};
+		14409C3E231BD172006E9FFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14409C12231BD170006E9FFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14409C19231BD170006E9FFA;
+			remoteInfo = Location;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14409C1A231BD170006E9FFA /* huafener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huafener.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14409C1D231BD170006E9FFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14409C1E231BD170006E9FFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14409C20231BD170006E9FFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14409C21231BD170006E9FFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14409C24231BD170006E9FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14409C29231BD171006E9FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14409C2B231BD171006E9FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14409C2C231BD171006E9FFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14409C32231BD172006E9FFA /* huafenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = huafenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14409C36231BD172006E9FFA /* LocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationTests.m; sourceTree = "<group>"; };
+		14409C38231BD172006E9FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14409C3D231BD172006E9FFA /* huafenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = huafenerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14409C41231BD172006E9FFA /* LocationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationUITests.m; sourceTree = "<group>"; };
+		14409C43231BD172006E9FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14409C56231BDCA9006E9FFA /* Location 18-56-19-196.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Location 18-56-19-196.gpx"; path = "Location/Location 18-56-19-196.gpx"; sourceTree = "<group>"; };
+		14409C57231BDCD0006E9FFA /* Location 18-56-19-196.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Location 18-56-19-196.gpx"; sourceTree = "<group>"; };
+		14409C97231BEA3C006E9FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14409C9A231BED4F006E9FFA /* LYTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTabbarViewController.h; sourceTree = "<group>"; };
+		14409C9B231BED4F006E9FFA /* LYTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTabbarViewController.m; sourceTree = "<group>"; };
+		14409CA2231BEFA3006E9FFA /* LYColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYColors.h; sourceTree = "<group>"; };
+		14409CA3231BEFF4006E9FFA /* LYHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHeader.pch; sourceTree = "<group>"; };
+		14409CA5231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+LYTabbarSetting.h"; sourceTree = "<group>"; };
+		14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+LYTabbarSetting.m"; sourceTree = "<group>"; };
+		14409CA8231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LYViewBehavior_UI.h"; sourceTree = "<group>"; };
+		14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_UI.m"; sourceTree = "<group>"; };
+		14409CAD231C00BD006E9FFA /* UIView+LYViewBehavior_hit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LYViewBehavior_hit.h"; sourceTree = "<group>"; };
+		14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_hit.m"; sourceTree = "<group>"; };
+		14409CB0231C07F0006E9FFA /* UITabBar+CenterBtnBig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CenterBtnBig.h"; sourceTree = "<group>"; };
+		14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CenterBtnBig.m"; sourceTree = "<group>"; };
+		14409CB4231C1E66006E9FFA /* LYEfficency_Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEfficency_Debug.h; sourceTree = "<group>"; };
+		320DE134131D95E6E6134089 /* libPods-huafener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.release.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.release.xcconfig"; sourceTree = "<group>"; };
+		A47881723EB8321168232E5D /* Pods-huafener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.debug.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14409C17231BD170006E9FFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA4E581479C6D1A12BDA020 /* libPods-huafener.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14409C2F231BD172006E9FFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14409C3A231BD172006E9FFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14409C11231BD170006E9FFA = {
+			isa = PBXGroup;
+			children = (
+				14409C56231BDCA9006E9FFA /* Location 18-56-19-196.gpx */,
+				14409C1C231BD170006E9FFA /* huafener */,
+				14409C35231BD172006E9FFA /* huafenerTests */,
+				14409C40231BD172006E9FFA /* huafenerUITests */,
+				14409C1B231BD170006E9FFA /* Products */,
+				57A12B61F052AFA56C8A7150 /* Pods */,
+				9A2242DF72A2D662D66FE88F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14409C1B231BD170006E9FFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14409C1A231BD170006E9FFA /* huafener.app */,
+				14409C32231BD172006E9FFA /* huafenerTests.xctest */,
+				14409C3D231BD172006E9FFA /* huafenerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14409C1C231BD170006E9FFA /* huafener */ = {
+			isa = PBXGroup;
+			children = (
+				14409CAB231BF6F7006E9FFA /* Categorys */,
+				14409CA4231BF007006E9FFA /* LYPch */,
+				14409C9D231BEEEA006E9FFA /* LYPreference */,
+				14409C99231BED26006E9FFA /* TabbarVC */,
+				14409C1D231BD170006E9FFA /* AppDelegate.h */,
+				14409C1E231BD170006E9FFA /* AppDelegate.m */,
+				14409C57231BDCD0006E9FFA /* Location 18-56-19-196.gpx */,
+				14409C20231BD170006E9FFA /* ViewController.h */,
+				14409C21231BD170006E9FFA /* ViewController.m */,
+				14409C23231BD170006E9FFA /* Main.storyboard */,
+				14409C28231BD171006E9FFA /* LaunchScreen.storyboard */,
+				14409C2B231BD171006E9FFA /* Info.plist */,
+				14409C2C231BD171006E9FFA /* main.m */,
+				14409C97231BEA3C006E9FFA /* Assets.xcassets */,
+			);
+			path = huafener;
+			sourceTree = "<group>";
+		};
+		14409C35231BD172006E9FFA /* huafenerTests */ = {
+			isa = PBXGroup;
+			children = (
+				14409C36231BD172006E9FFA /* LocationTests.m */,
+				14409C38231BD172006E9FFA /* Info.plist */,
+			);
+			path = huafenerTests;
+			sourceTree = "<group>";
+		};
+		14409C40231BD172006E9FFA /* huafenerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14409C41231BD172006E9FFA /* LocationUITests.m */,
+				14409C43231BD172006E9FFA /* Info.plist */,
+			);
+			path = huafenerUITests;
+			sourceTree = "<group>";
+		};
+		14409C99231BED26006E9FFA /* TabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				14409C9A231BED4F006E9FFA /* LYTabbarViewController.h */,
+				14409C9B231BED4F006E9FFA /* LYTabbarViewController.m */,
+				14409CA5231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.h */,
+				14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */,
+			);
+			path = TabbarVC;
+			sourceTree = "<group>";
+		};
+		14409C9D231BEEEA006E9FFA /* LYPreference */ = {
+			isa = PBXGroup;
+			children = (
+				14409CA2231BEFA3006E9FFA /* LYColors.h */,
+				14409CB4231C1E66006E9FFA /* LYEfficency_Debug.h */,
+			);
+			path = LYPreference;
+			sourceTree = "<group>";
+		};
+		14409CA4231BF007006E9FFA /* LYPch */ = {
+			isa = PBXGroup;
+			children = (
+				14409CA3231BEFF4006E9FFA /* LYHeader.pch */,
+			);
+			path = LYPch;
+			sourceTree = "<group>";
+		};
+		14409CAB231BF6F7006E9FFA /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				14409CAC231BF71E006E9FFA /* LYViewCategory */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		14409CAC231BF71E006E9FFA /* LYViewCategory */ = {
+			isa = PBXGroup;
+			children = (
+				14409CA8231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.h */,
+				14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */,
+				14409CAD231C00BD006E9FFA /* UIView+LYViewBehavior_hit.h */,
+				14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */,
+				14409CB0231C07F0006E9FFA /* UITabBar+CenterBtnBig.h */,
+				14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */,
+			);
+			path = LYViewCategory;
+			sourceTree = "<group>";
+		};
+		57A12B61F052AFA56C8A7150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A47881723EB8321168232E5D /* Pods-huafener.debug.xcconfig */,
+				724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A2242DF72A2D662D66FE88F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				320DE134131D95E6E6134089 /* libPods-huafener.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14409C19231BD170006E9FFA /* huafener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14409C46231BD172006E9FFA /* Build configuration list for PBXNativeTarget "huafener" */;
+			buildPhases = (
+				B09E49A68FCF7EF7343D00B6 /* [CP] Check Pods Manifest.lock */,
+				14409C16231BD170006E9FFA /* Sources */,
+				14409C17231BD170006E9FFA /* Frameworks */,
+				14409C18231BD170006E9FFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = huafener;
+			productName = Location;
+			productReference = 14409C1A231BD170006E9FFA /* huafener.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14409C31231BD172006E9FFA /* huafenerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14409C49231BD172006E9FFA /* Build configuration list for PBXNativeTarget "huafenerTests" */;
+			buildPhases = (
+				14409C2E231BD172006E9FFA /* Sources */,
+				14409C2F231BD172006E9FFA /* Frameworks */,
+				14409C30231BD172006E9FFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14409C34231BD172006E9FFA /* PBXTargetDependency */,
+			);
+			name = huafenerTests;
+			productName = LocationTests;
+			productReference = 14409C32231BD172006E9FFA /* huafenerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14409C3C231BD172006E9FFA /* huafenerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14409C4C231BD172006E9FFA /* Build configuration list for PBXNativeTarget "huafenerUITests" */;
+			buildPhases = (
+				14409C39231BD172006E9FFA /* Sources */,
+				14409C3A231BD172006E9FFA /* Frameworks */,
+				14409C3B231BD172006E9FFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14409C3F231BD172006E9FFA /* PBXTargetDependency */,
+			);
+			name = huafenerUITests;
+			productName = LocationUITests;
+			productReference = 14409C3D231BD172006E9FFA /* huafenerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14409C12231BD170006E9FFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "杨俊杰";
+				TargetAttributes = {
+					14409C19231BD170006E9FFA = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					14409C31231BD172006E9FFA = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 14409C19231BD170006E9FFA;
+					};
+					14409C3C231BD172006E9FFA = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 14409C19231BD170006E9FFA;
+					};
+				};
+			};
+			buildConfigurationList = 14409C15231BD170006E9FFA /* Build configuration list for PBXProject "huafener" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14409C11231BD170006E9FFA;
+			productRefGroup = 14409C1B231BD170006E9FFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14409C19231BD170006E9FFA /* huafener */,
+				14409C31231BD172006E9FFA /* huafenerTests */,
+				14409C3C231BD172006E9FFA /* huafenerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14409C18231BD170006E9FFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14409C58231BDCD0006E9FFA /* Location 18-56-19-196.gpx in Resources */,
+				14409C2A231BD171006E9FFA /* LaunchScreen.storyboard in Resources */,
+				14409C98231BEA3D006E9FFA /* Assets.xcassets in Resources */,
+				14409C25231BD170006E9FFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14409C30231BD172006E9FFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14409C3B231BD172006E9FFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B09E49A68FCF7EF7343D00B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-huafener-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14409C16231BD170006E9FFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14409CAA231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m in Sources */,
+				14409CB2231C07F0006E9FFA /* UITabBar+CenterBtnBig.m in Sources */,
+				14409CAF231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m in Sources */,
+				14409C22231BD170006E9FFA /* ViewController.m in Sources */,
+				14409C9C231BED4F006E9FFA /* LYTabbarViewController.m in Sources */,
+				14409C2D231BD171006E9FFA /* main.m in Sources */,
+				14409CA7231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m in Sources */,
+				14409C1F231BD170006E9FFA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14409C2E231BD172006E9FFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14409C37231BD172006E9FFA /* LocationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14409C39231BD172006E9FFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14409C42231BD172006E9FFA /* LocationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14409C34231BD172006E9FFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14409C19231BD170006E9FFA /* huafener */;
+			targetProxy = 14409C33231BD172006E9FFA /* PBXContainerItemProxy */;
+		};
+		14409C3F231BD172006E9FFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14409C19231BD170006E9FFA /* huafener */;
+			targetProxy = 14409C3E231BD172006E9FFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14409C23231BD170006E9FFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14409C24231BD170006E9FFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14409C28231BD171006E9FFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14409C29231BD171006E9FFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14409C44231BD172006E9FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14409C45231BD172006E9FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14409C47231BD172006E9FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47881723EB8321168232E5D /* Pods-huafener.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BGH7S67FXX;
+				EXECUTABLE_PREFIX = "";
+				GCC_PREFIX_HEADER = /Users/yangjunjie/Desktop/huafenerc/huafener/LYPch/LYHeader.pch;
+				INFOPLIST_FILE = huafener/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapu.Location;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14409C48231BD172006E9FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BGH7S67FXX;
+				EXECUTABLE_PREFIX = "";
+				GCC_PREFIX_HEADER = /Users/yangjunjie/Desktop/huafenerc/huafener/LYPch/LYHeader.pch;
+				INFOPLIST_FILE = huafener/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapu.Location;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14409C4A231BD172006E9FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BGH7S67FXX;
+				INFOPLIST_FILE = LocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapu.LocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/huafener.app/huafener";
+			};
+			name = Debug;
+		};
+		14409C4B231BD172006E9FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BGH7S67FXX;
+				INFOPLIST_FILE = LocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapu.LocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/huafener.app/huafener";
+			};
+			name = Release;
+		};
+		14409C4D231BD172006E9FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BGH7S67FXX;
+				INFOPLIST_FILE = LocationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapu.LocationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Location;
+			};
+			name = Debug;
+		};
+		14409C4E231BD172006E9FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BGH7S67FXX;
+				INFOPLIST_FILE = LocationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huapu.LocationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Location;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14409C15231BD170006E9FFA /* Build configuration list for PBXProject "huafener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14409C44231BD172006E9FFA /* Debug */,
+				14409C45231BD172006E9FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14409C46231BD172006E9FFA /* Build configuration list for PBXNativeTarget "huafener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14409C47231BD172006E9FFA /* Debug */,
+				14409C48231BD172006E9FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14409C49231BD172006E9FFA /* Build configuration list for PBXNativeTarget "huafenerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14409C4A231BD172006E9FFA /* Debug */,
+				14409C4B231BD172006E9FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14409C4C231BD172006E9FFA /* Build configuration list for PBXNativeTarget "huafenerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14409C4D231BD172006E9FFA /* Debug */,
+				14409C4E231BD172006E9FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14409C12231BD170006E9FFA /* Project object */;
+}

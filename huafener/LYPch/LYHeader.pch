@@ -1,0 +1,21 @@
+//
+//  LYHeader.pch
+//  GPX_Location
+//
+//  Created by 杨俊杰 on 2019/9/1.
+//  Copyright © 2019 杨俊杰. All rights reserved.
+//
+
+#ifndef LYHeader_pch
+#define LYHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LYHeader_pch */
+
+#import "LYColors.h"
+#import "LYEfficency_Debug.h"
+
+#import "UIView+LYViewBehavior_UI.h"
+#import "UIView+LYViewBehavior_hit.h"
