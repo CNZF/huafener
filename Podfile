@@ -3,5 +3,5 @@
 
 target 'huafener' do
  pod 'CocoaLumberjack'
-
+ pod 'MJExtension', '~> 3.0.15'
 end

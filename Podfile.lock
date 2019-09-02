@@ -2,17 +2,21 @@ PODS:
   - CocoaLumberjack (3.5.3):
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
+  - MJExtension (3.0.17)
 
 DEPENDENCIES:
   - CocoaLumberjack
+  - MJExtension (~> 3.0.15)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CocoaLumberjack
+    - MJExtension
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
 
-PODFILE CHECKSUM: b00b82dd619d7616c69beb9eec72ede4b323845a
+PODFILE CHECKSUM: 89456fc9661d3c05c2f5225b134ceea9e20a2b19
 
 COCOAPODS: 1.6.1
