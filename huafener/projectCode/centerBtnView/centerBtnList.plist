@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>title</key>
+		<string>一元店  </string>
+		<key>subTitle</key>
+		<string>1元商品，爱分享</string>
+		<key>urlStr</key>
+		<string>one_publish</string>
+		<key>target</key>
+		<string></string>
+		<key>action</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>花粉币专区  </string>
+		<key>subTitle</key>
+		<string>赚花粉币，兑好礼</string>
+		<key>urlStr</key>
+		<string>public_top_point_copy</string>
+		<key>target</key>
+		<string></string>
+		<key>action</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>花语  </string>
+		<key>subTitle</key>
+		<string>参与话题，分享生活</string>
+		<key>urlStr</key>
+		<string>public_top_article_copy</string>
+		<key>target</key>
+		<string></string>
+		<key>action</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>短视频  </string>
+		<key>subTitle</key>
+		<string>记录美好生活</string>
+		<key>urlStr</key>
+		<string>public_top_articlevideo_copy</string>
+		<key>target</key>
+		<string></string>
+		<key>action</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
