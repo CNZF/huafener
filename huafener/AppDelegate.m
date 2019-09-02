@@ -16,8 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //控制台
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
     return YES;
 }
 
