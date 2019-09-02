@@ -81,6 +81,7 @@
 		14B172E8231D1AD500463A7A /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172D6231D1AD500463A7A /* TZPhotoPreviewCell.m */; };
 		14B172E9231D1AD500463A7A /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172DB231D1AD500463A7A /* TZImagePickerController.m */; };
 		14B172EA231D1AD500463A7A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14B172DD231D1AD500463A7A /* README.md */; };
+		2C5C91CD6558CDB0404808DC /* libPods-huafenerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8635BA6400471AE8320BAE83 /* libPods-huafenerTests.a */; };
 		3BA4E581479C6D1A12BDA020 /* libPods-huafener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320DE134131D95E6E6134089 /* libPods-huafener.a */; };
 /* End PBXBuildFile section */
 
@@ -245,7 +246,10 @@
 		14B172DD231D1AD500463A7A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		320DE134131D95E6E6134089 /* libPods-huafener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.release.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.release.xcconfig"; sourceTree = "<group>"; };
+		8635BA6400471AE8320BAE83 /* libPods-huafenerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafenerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47881723EB8321168232E5D /* Pods-huafener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.debug.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.debug.xcconfig"; sourceTree = "<group>"; };
+		C38FAD5006602099340F4799 /* Pods-huafenerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafenerTests.debug.xcconfig"; path = "Target Support Files/Pods-huafenerTests/Pods-huafenerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F17CF4CD34B0E7961CB8F6F3 /* Pods-huafenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafenerTests.release.xcconfig"; path = "Target Support Files/Pods-huafenerTests/Pods-huafenerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +265,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5C91CD6558CDB0404808DC /* libPods-huafenerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +714,8 @@
 			children = (
 				A47881723EB8321168232E5D /* Pods-huafener.debug.xcconfig */,
 				724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */,
+				C38FAD5006602099340F4799 /* Pods-huafenerTests.debug.xcconfig */,
+				F17CF4CD34B0E7961CB8F6F3 /* Pods-huafenerTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -717,6 +724,7 @@
 			isa = PBXGroup;
 			children = (
 				320DE134131D95E6E6134089 /* libPods-huafener.a */,
+				8635BA6400471AE8320BAE83 /* libPods-huafenerTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -732,6 +740,7 @@
 				14409C16231BD170006E9FFA /* Sources */,
 				14409C17231BD170006E9FFA /* Frameworks */,
 				14409C18231BD170006E9FFA /* Resources */,
+				5E32016FD6CF65FC8CA1ECDD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -746,9 +755,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14409C49231BD172006E9FFA /* Build configuration list for PBXNativeTarget "huafenerTests" */;
 			buildPhases = (
+				C495855B0AC8479E603926C1 /* [CP] Check Pods Manifest.lock */,
 				14409C2E231BD172006E9FFA /* Sources */,
 				14409C2F231BD172006E9FFA /* Frameworks */,
 				14409C30231BD172006E9FFA /* Resources */,
+				27127D83753F5BBF7AF7D9F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -860,6 +871,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		27127D83753F5BBF7AF7D9F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-huafenerTests/Pods-huafenerTests-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+				"${PODS_CONFIGURATION_BUILD_DIR}/STAlertView/STAlertView.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/STAlertView.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-huafenerTests/Pods-huafenerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E32016FD6CF65FC8CA1ECDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-huafener/Pods-huafener-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-huafener/Pods-huafener-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B09E49A68FCF7EF7343D00B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -876,6 +957,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-huafener-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C495855B0AC8479E603926C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-huafenerTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1156,6 +1259,7 @@
 		};
 		14409C4A231BD172006E9FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C38FAD5006602099340F4799 /* Pods-huafenerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1175,6 +1279,7 @@
 		};
 		14409C4B231BD172006E9FFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17CF4CD34B0E7961CB8F6F3 /* Pods-huafenerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
