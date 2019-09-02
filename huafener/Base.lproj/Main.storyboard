@@ -13,69 +13,106 @@
         <!--发布-->
         <scene sceneID="ibQ-zi-j4o">
             <objects>
-                <viewController id="J9b-TW-A5H" sceneMemberID="viewController">
+                <viewController title="发布" id="J9b-TW-A5H" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nZm-qO-FgZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="opY-Lo-I6Q"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="QVM-X2-pU3" appends="YES" id="VEW-ni-20k"/>
+                        </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="发布" image="tabBarCenterBtn" selectedImage="tabBarCenterBtn" id="mKD-qN-n6B"/>
+                    <navigationItem key="navigationItem" title="发布" id="Rom-e2-0sX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hv8-GI-0r5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QVM-X2-pU3">
+                    <connections>
+                        <segue destination="rPl-it-LWC" kind="push" id="2xp-LS-2gl"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="774" y="-43"/>
+            <point key="canvasLocation" x="1707" y="-366"/>
         </scene>
-        <!--iBooks-->
-        <scene sceneID="tg1-Cl-xe6">
+        <!--View Controller-->
+        <scene sceneID="UqP-O0-Tul">
             <objects>
-                <tableViewController id="Qzd-g6-kYE" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pwz-x4-gwb">
+                <viewController hidesBottomBarWhenPushed="YES" id="rPl-it-LWC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tWz-4s-SWw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wEU-77-rmf">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wEU-77-rmf" id="zLJ-X8-C5N">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Qzd-g6-kYE" id="wi3-bK-ZUh"/>
-                            <outlet property="delegate" destination="Qzd-g6-kYE" id="Dcf-zd-Orx"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="iBooks" id="Fd1-3m-hiP"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q8j-bW-kVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.55744332461476676" green="0.86339188751124152" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="Gnn-Ox-NYx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SfW-NI-yb5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZm-am-ZJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1693" y="694"/>
+            <point key="canvasLocation" x="2511" y="-361"/>
         </scene>
-        <!--个人中心-->
+        <!--发布Navi-->
+        <scene sceneID="n4i-Dl-Exz">
+            <objects>
+                <navigationController title="发布Navi" id="Rzt-VC-S4i" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发布" image="tabBarCenterBtn" selectedImage="tabBarCenterBtn" id="Vem-bD-ltd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AoR-5v-Kur">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J9b-TW-A5H" kind="relationship" relationship="rootViewController" id="frt-dm-GT6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFd-f1-Qlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="-366"/>
+        </scene>
+        <!--个人Navi-->
         <scene sceneID="X33-qZ-2ts">
             <objects>
-                <navigationController id="8aQ-ZD-fOS" sceneMemberID="viewController">
+                <navigationController title="个人Navi" id="8aQ-ZD-fOS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="个人中心" image="mine" selectedImage="mine_high" id="nIy-lI-gnt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fK7-h7-At4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Qzd-g6-kYE" kind="relationship" relationship="rootViewController" id="jca-dQ-f9a"/>
+                        <segue destination="A1t-2X-KlM" kind="relationship" relationship="rootViewController" id="Ya6-D0-CtY"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="He8-nr-pXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="694"/>
+            <point key="canvasLocation" x="829" y="457"/>
         </scene>
-        <!--首页-->
+        <!--个人VC-->
+        <scene sceneID="JAz-Ex-zP8">
+            <objects>
+                <viewController title="个人VC" id="A1t-2X-KlM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pad-P2-7wg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.24705334306055626" blue="0.17105905735434612" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="xXM-yE-5rN"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lKl-q8-UUE" appends="YES" id="gtV-cg-3Bs"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="个人中心" id="0fA-Ux-vS4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6m-vA-z95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lKl-q8-UUE">
+                    <connections>
+                        <segue destination="GCW-BS-p5K" kind="push" id="WEd-j3-Mcg"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1706" y="457"/>
+        </scene>
+        <!--HomeVC-->
         <scene sceneID="geF-ox-4UP">
             <objects>
-                <viewController id="aQd-ss-oeQ" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController title="HomeVC" id="aQd-ss-oeQ" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gKR-6U-mUd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,17 +128,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uF-Va-gpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="dVz-G0-cVN">
                     <connections>
-                        <action selector="handleTap:" destination="aQd-ss-oeQ" id="ogy-Nl-lcf"/>
                         <outlet property="delegate" destination="gKR-6U-mUd" id="4E8-AO-d09"/>
+                        <segue destination="rPl-it-LWC" kind="push" id="jG2-Fn-MWU"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="774" y="-691"/>
+            <point key="canvasLocation" x="774" y="-1055"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--TabbarNavi-->
         <scene sceneID="C0b-Jh-IRr">
             <objects>
-                <navigationController id="lW5-2u-l2v" sceneMemberID="viewController">
+                <navigationController title="TabbarNavi" id="lW5-2u-l2v" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e0J-pY-0D8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -114,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="-1126" y="-366"/>
         </scene>
-        <!--Tabbar View Controller-->
+        <!--TabbarVC-->
         <scene sceneID="ElN-tz-sPz">
             <objects>
-                <tabBarController id="dnj-7H-akY" customClass="LYTabbarViewController" sceneMemberID="viewController">
+                <tabBarController title="TabbarVC" id="dnj-7H-akY" customClass="LYTabbarViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="0Lm-bz-lNa"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="u4y-YG-gwB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -126,13 +163,29 @@
                     </tabBar>
                     <connections>
                         <segue destination="aQd-ss-oeQ" kind="relationship" relationship="viewControllers" id="0NO-UD-MNy"/>
-                        <segue destination="J9b-TW-A5H" kind="relationship" relationship="viewControllers" id="YZh-H0-770"/>
+                        <segue destination="Rzt-VC-S4i" kind="relationship" relationship="viewControllers" id="mQL-79-q2K"/>
                         <segue destination="8aQ-ZD-fOS" kind="relationship" relationship="viewControllers" id="pIw-S1-lwh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T29-SN-HUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-145" y="-366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hby-Ne-t7T">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="GCW-BS-p5K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ct1-4h-mKe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.46765297188069099" green="1" blue="0.47554072629801258" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="EUa-U9-oY9"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="Rgm-hh-uV3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06L-1M-JYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2701" y="457"/>
         </scene>
     </scenes>
     <resources>
@@ -142,4 +195,7 @@
         <image name="mine_high" width="21.5" height="22"/>
         <image name="tabBarCenterBtn" width="59" height="58"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2xp-LS-2gl"/>
+    </inferredMetricsTieBreakers>
 </document>

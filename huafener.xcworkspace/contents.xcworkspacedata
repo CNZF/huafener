@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:huafener/Location 18-56-19-196.gpx">
+   </FileRef>
+   <FileRef
       location = "group:huafener.xcodeproj">
    </FileRef>
    <FileRef
