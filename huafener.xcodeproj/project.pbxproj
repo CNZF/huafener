@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141EC1BC231CA0A300E613F0 /* HPPublishTopButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1BB231CA0A300E613F0 /* HPPublishTopButtonView.m */; };
+		141EC1BF231CA19200E613F0 /* HPDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1BE231CA19200E613F0 /* HPDevice.m */; };
+		141EC1C2231CA32E00E613F0 /* UIView+GHLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1C1231CA32E00E613F0 /* UIView+GHLayout.m */; };
+		141EC1C5231CA63D00E613F0 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1C3231CA63C00E613F0 /* UIViewExt.m */; };
+		141EC1C9231CB4FD00E613F0 /* RFRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1C8231CB4FD00E613F0 /* RFRotate.m */; };
+		141EC1CC231CB62D00E613F0 /* CenterBtnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1CB231CB62D00E613F0 /* CenterBtnModel.m */; };
+		141EC1CE231CB7E500E613F0 /* centerBtnList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 141EC1CD231CB7E500E613F0 /* centerBtnList.plist */; };
+		141EC1D6231CC4AE00E613F0 /* LYEnums.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1D5231CC4AE00E613F0 /* LYEnums.m */; };
 		14409C1F231BD170006E9FFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C1E231BD170006E9FFA /* AppDelegate.m */; };
 		14409C22231BD170006E9FFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C21231BD170006E9FFA /* ViewController.m */; };
 		14409C25231BD170006E9FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14409C23231BD170006E9FFA /* Main.storyboard */; };
@@ -23,6 +31,9 @@
 		14409CB2231C07F0006E9FFA /* UITabBar+CenterBtnBig.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */; };
 		14409CB9231C3D2E006E9FFA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CB8231C3D2E006E9FFA /* BaseViewController.m */; };
 		14409CBD231C3D5A006E9FFA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CBC231C3D5A006E9FFA /* MainViewController.m */; };
+		14409CC0231C437D006E9FFA /* homeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CBF231C437D006E9FFA /* homeView.m */; };
+		14409CC4231C67C9006E9FFA /* ZZCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */; };
+		14409CC7231C6903006E9FFA /* HPCenterBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC6231C6903006E9FFA /* HPCenterBtnView.m */; };
 		3BA4E581479C6D1A12BDA020 /* libPods-huafener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320DE134131D95E6E6134089 /* libPods-huafener.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +55,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141EC1BA231CA0A200E613F0 /* HPPublishTopButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPublishTopButtonView.h; sourceTree = "<group>"; };
+		141EC1BB231CA0A300E613F0 /* HPPublishTopButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPublishTopButtonView.m; sourceTree = "<group>"; };
+		141EC1BD231CA19200E613F0 /* HPDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDevice.h; sourceTree = "<group>"; };
+		141EC1BE231CA19200E613F0 /* HPDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDevice.m; sourceTree = "<group>"; };
+		141EC1C0231CA32E00E613F0 /* UIView+GHLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GHLayout.h"; sourceTree = "<group>"; };
+		141EC1C1231CA32E00E613F0 /* UIView+GHLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GHLayout.m"; sourceTree = "<group>"; };
+		141EC1C3231CA63C00E613F0 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		141EC1C4231CA63C00E613F0 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		141EC1C7231CB4FD00E613F0 /* RFRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRotate.h; sourceTree = "<group>"; };
+		141EC1C8231CB4FD00E613F0 /* RFRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRotate.m; sourceTree = "<group>"; };
+		141EC1CA231CB62D00E613F0 /* CenterBtnModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterBtnModel.h; sourceTree = "<group>"; };
+		141EC1CB231CB62D00E613F0 /* CenterBtnModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterBtnModel.m; sourceTree = "<group>"; };
+		141EC1CD231CB7E500E613F0 /* centerBtnList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = centerBtnList.plist; sourceTree = "<group>"; };
+		141EC1D4231CC4AE00E613F0 /* LYEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEnums.h; sourceTree = "<group>"; };
+		141EC1D5231CC4AE00E613F0 /* LYEnums.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEnums.m; sourceTree = "<group>"; };
 		14409C1A231BD170006E9FFA /* huafener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huafener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14409C1D231BD170006E9FFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14409C1E231BD170006E9FFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,7 +85,6 @@
 		14409C3D231BD172006E9FFA /* huafenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = huafenerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14409C41231BD172006E9FFA /* LocationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationUITests.m; sourceTree = "<group>"; };
 		14409C43231BD172006E9FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14409C56231BDCA9006E9FFA /* Location 18-56-19-196.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Location 18-56-19-196.gpx"; path = "Location/Location 18-56-19-196.gpx"; sourceTree = "<group>"; };
 		14409C57231BDCD0006E9FFA /* Location 18-56-19-196.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Location 18-56-19-196.gpx"; sourceTree = "<group>"; };
 		14409C97231BEA3C006E9FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14409C9A231BED4F006E9FFA /* LYTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTabbarViewController.h; sourceTree = "<group>"; };
@@ -72,13 +97,19 @@
 		14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_UI.m"; sourceTree = "<group>"; };
 		14409CAD231C00BD006E9FFA /* UIView+LYViewBehavior_hit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LYViewBehavior_hit.h"; sourceTree = "<group>"; };
 		14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_hit.m"; sourceTree = "<group>"; };
-		14409CB0231C07F0006E9FFA /* UITabBar+CenterBtnBig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CenterBtnBig.h"; sourceTree = "<group>"; };
-		14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CenterBtnBig.m"; sourceTree = "<group>"; };
+		14409CB0231C07F0006E9FFA /* UITabBar+CenterBtnBig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UITabBar+CenterBtnBig.h"; path = "../Categorys/LYViewCategory/UITabBar+CenterBtnBig.h"; sourceTree = "<group>"; };
+		14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UITabBar+CenterBtnBig.m"; path = "../Categorys/LYViewCategory/UITabBar+CenterBtnBig.m"; sourceTree = "<group>"; };
 		14409CB4231C1E66006E9FFA /* LYEfficency_Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEfficency_Debug.h; sourceTree = "<group>"; };
 		14409CB7231C3D2E006E9FFA /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		14409CB8231C3D2E006E9FFA /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		14409CBB231C3D5A006E9FFA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		14409CBC231C3D5A006E9FFA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		14409CBE231C437D006E9FFA /* homeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeView.h; sourceTree = "<group>"; };
+		14409CBF231C437D006E9FFA /* homeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homeView.m; sourceTree = "<group>"; };
+		14409CC2231C67C9006E9FFA /* ZZCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCustomAlertView.h; sourceTree = "<group>"; };
+		14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCustomAlertView.m; sourceTree = "<group>"; };
+		14409CC5231C6903006E9FFA /* HPCenterBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCenterBtnView.h; sourceTree = "<group>"; };
+		14409CC6231C6903006E9FFA /* HPCenterBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCenterBtnView.m; sourceTree = "<group>"; };
 		320DE134131D95E6E6134089 /* libPods-huafener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.release.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.release.xcconfig"; sourceTree = "<group>"; };
 		A47881723EB8321168232E5D /* Pods-huafener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.debug.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,10 +141,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141EC1C6231CB4FD00E613F0 /* RFRotate */ = {
+			isa = PBXGroup;
+			children = (
+				141EC1C7231CB4FD00E613F0 /* RFRotate.h */,
+				141EC1C8231CB4FD00E613F0 /* RFRotate.m */,
+			);
+			path = RFRotate;
+			sourceTree = "<group>";
+		};
+		141EC1CF231CC33100E613F0 /* LYColors */ = {
+			isa = PBXGroup;
+			children = (
+				14409CA2231BEFA3006E9FFA /* LYColors.h */,
+			);
+			path = LYColors;
+			sourceTree = "<group>";
+		};
+		141EC1D0231CC34500E613F0 /* LYDefines */ = {
+			isa = PBXGroup;
+			children = (
+				14409CB4231C1E66006E9FFA /* LYEfficency_Debug.h */,
+			);
+			path = LYDefines;
+			sourceTree = "<group>";
+		};
+		141EC1D1231CC36200E613F0 /* LYLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				141EC1BD231CA19200E613F0 /* HPDevice.h */,
+				141EC1BE231CA19200E613F0 /* HPDevice.m */,
+				141EC1C0231CA32E00E613F0 /* UIView+GHLayout.h */,
+				141EC1C1231CA32E00E613F0 /* UIView+GHLayout.m */,
+				141EC1C4231CA63C00E613F0 /* UIViewExt.h */,
+				141EC1C3231CA63C00E613F0 /* UIViewExt.m */,
+			);
+			path = LYLayouts;
+			sourceTree = "<group>";
+		};
+		141EC1D2231CC39500E613F0 /* LYEnums */ = {
+			isa = PBXGroup;
+			children = (
+				141EC1D4231CC4AE00E613F0 /* LYEnums.h */,
+				141EC1D5231CC4AE00E613F0 /* LYEnums.m */,
+			);
+			path = LYEnums;
+			sourceTree = "<group>";
+		};
 		14409C11231BD170006E9FFA = {
 			isa = PBXGroup;
 			children = (
-				14409C56231BDCA9006E9FFA /* Location 18-56-19-196.gpx */,
 				14409C1C231BD170006E9FFA /* huafener */,
 				14409C35231BD172006E9FFA /* huafenerTests */,
 				14409C40231BD172006E9FFA /* huafenerUITests */,
@@ -140,7 +217,6 @@
 				14409CAB231BF6F7006E9FFA /* Categorys */,
 				14409CA4231BF007006E9FFA /* LYPch */,
 				14409C9D231BEEEA006E9FFA /* LYPreference */,
-				14409C99231BED26006E9FFA /* TabbarVC */,
 				14409C1D231BD170006E9FFA /* AppDelegate.h */,
 				14409C1E231BD170006E9FFA /* AppDelegate.m */,
 				14409C57231BDCD0006E9FFA /* Location 18-56-19-196.gpx */,
@@ -176,19 +252,24 @@
 		14409C99231BED26006E9FFA /* TabbarVC */ = {
 			isa = PBXGroup;
 			children = (
+				14409CB0231C07F0006E9FFA /* UITabBar+CenterBtnBig.h */,
+				14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */,
 				14409C9A231BED4F006E9FFA /* LYTabbarViewController.h */,
 				14409C9B231BED4F006E9FFA /* LYTabbarViewController.m */,
 				14409CA5231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.h */,
 				14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */,
 			);
-			path = TabbarVC;
+			name = TabbarVC;
+			path = ../TabbarVC;
 			sourceTree = "<group>";
 		};
 		14409C9D231BEEEA006E9FFA /* LYPreference */ = {
 			isa = PBXGroup;
 			children = (
-				14409CA2231BEFA3006E9FFA /* LYColors.h */,
-				14409CB4231C1E66006E9FFA /* LYEfficency_Debug.h */,
+				141EC1D1231CC36200E613F0 /* LYLayouts */,
+				141EC1D0231CC34500E613F0 /* LYDefines */,
+				141EC1CF231CC33100E613F0 /* LYColors */,
+				141EC1C6231CB4FD00E613F0 /* RFRotate */,
 			);
 			path = LYPreference;
 			sourceTree = "<group>";
@@ -216,8 +297,6 @@
 				14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */,
 				14409CAD231C00BD006E9FFA /* UIView+LYViewBehavior_hit.h */,
 				14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */,
-				14409CB0231C07F0006E9FFA /* UITabBar+CenterBtnBig.h */,
-				14409CB1231C07F0006E9FFA /* UITabBar+CenterBtnBig.m */,
 			);
 			path = LYViewCategory;
 			sourceTree = "<group>";
@@ -225,8 +304,11 @@
 		14409CB5231C3D02006E9FFA /* projectCode */ = {
 			isa = PBXGroup;
 			children = (
-				14409CBA231C3D4A006E9FFA /* tabsController */,
+				141EC1D2231CC39500E613F0 /* LYEnums */,
 				14409CB6231C3D15006E9FFA /* base */,
+				14409C99231BED26006E9FFA /* TabbarVC */,
+				14409CBA231C3D4A006E9FFA /* tabsController */,
+				14409CC1231C67AC006E9FFA /* centerBtnView */,
 			);
 			path = projectCode;
 			sourceTree = "<group>";
@@ -245,8 +327,26 @@
 			children = (
 				14409CBB231C3D5A006E9FFA /* MainViewController.h */,
 				14409CBC231C3D5A006E9FFA /* MainViewController.m */,
+				14409CBE231C437D006E9FFA /* homeView.h */,
+				14409CBF231C437D006E9FFA /* homeView.m */,
 			);
 			path = tabsController;
+			sourceTree = "<group>";
+		};
+		14409CC1231C67AC006E9FFA /* centerBtnView */ = {
+			isa = PBXGroup;
+			children = (
+				14409CC2231C67C9006E9FFA /* ZZCustomAlertView.h */,
+				14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */,
+				14409CC5231C6903006E9FFA /* HPCenterBtnView.h */,
+				14409CC6231C6903006E9FFA /* HPCenterBtnView.m */,
+				141EC1BA231CA0A200E613F0 /* HPPublishTopButtonView.h */,
+				141EC1BB231CA0A300E613F0 /* HPPublishTopButtonView.m */,
+				141EC1CA231CB62D00E613F0 /* CenterBtnModel.h */,
+				141EC1CB231CB62D00E613F0 /* CenterBtnModel.m */,
+				141EC1CD231CB7E500E613F0 /* centerBtnList.plist */,
+			);
+			path = centerBtnView;
 			sourceTree = "<group>";
 		};
 		57A12B61F052AFA56C8A7150 /* Pods */ = {
@@ -374,6 +474,7 @@
 				14409C2A231BD171006E9FFA /* LaunchScreen.storyboard in Resources */,
 				14409C98231BEA3D006E9FFA /* Assets.xcassets in Resources */,
 				14409C25231BD170006E9FFA /* Main.storyboard in Resources */,
+				141EC1CE231CB7E500E613F0 /* centerBtnList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,14 +526,24 @@
 			files = (
 				14409CAA231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m in Sources */,
 				14409CB9231C3D2E006E9FFA /* BaseViewController.m in Sources */,
+				14409CC7231C6903006E9FFA /* HPCenterBtnView.m in Sources */,
 				14409CB2231C07F0006E9FFA /* UITabBar+CenterBtnBig.m in Sources */,
 				14409CBD231C3D5A006E9FFA /* MainViewController.m in Sources */,
 				14409CAF231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m in Sources */,
+				141EC1BC231CA0A300E613F0 /* HPPublishTopButtonView.m in Sources */,
 				14409C22231BD170006E9FFA /* ViewController.m in Sources */,
 				14409C9C231BED4F006E9FFA /* LYTabbarViewController.m in Sources */,
+				141EC1CC231CB62D00E613F0 /* CenterBtnModel.m in Sources */,
 				14409C2D231BD171006E9FFA /* main.m in Sources */,
+				141EC1C9231CB4FD00E613F0 /* RFRotate.m in Sources */,
+				14409CC4231C67C9006E9FFA /* ZZCustomAlertView.m in Sources */,
 				14409CA7231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m in Sources */,
+				141EC1BF231CA19200E613F0 /* HPDevice.m in Sources */,
+				141EC1C2231CA32E00E613F0 /* UIView+GHLayout.m in Sources */,
+				14409CC0231C437D006E9FFA /* homeView.m in Sources */,
+				141EC1D6231CC4AE00E613F0 /* LYEnums.m in Sources */,
 				14409C1F231BD170006E9FFA /* AppDelegate.m in Sources */,
+				141EC1C5231CA63D00E613F0 /* UIViewExt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
