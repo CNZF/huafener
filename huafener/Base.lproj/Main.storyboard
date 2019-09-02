@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lW5-2u-l2v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lW5-2u-l2v">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,11 +13,14 @@
         <scene sceneID="ibQ-zi-j4o">
             <objects>
                 <viewController title="发布" id="J9b-TW-A5H" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Cb-at-P9Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="ic1-UE-nZS"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nZm-qO-FgZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="opY-Lo-I6Q"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="QVM-X2-pU3" appends="YES" id="VEW-ni-20k"/>
                         </connections>
@@ -38,12 +40,15 @@
         <scene sceneID="UqP-O0-Tul">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="rPl-it-LWC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gre-an-Xtt"/>
+                        <viewControllerLayoutGuide type="bottom" id="w2Z-Cu-ZT3"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tWz-4s-SWw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.55744332461476676" green="0.86339188751124152" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="Gnn-Ox-NYx"/>
                     </view>
                     <navigationItem key="navigationItem" id="SfW-NI-yb5"/>
                 </viewController>
@@ -89,11 +94,14 @@
         <scene sceneID="JAz-Ex-zP8">
             <objects>
                 <viewController title="个人VC" id="A1t-2X-KlM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MgX-rh-Xee"/>
+                        <viewControllerLayoutGuide type="bottom" id="tgw-Hl-Ujk"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pad-P2-7wg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.24705334306055626" blue="0.17105905735434612" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="xXM-yE-5rN"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="lKl-q8-UUE" appends="YES" id="gtV-cg-3Bs"/>
                         </connections>
@@ -113,12 +121,15 @@
         <scene sceneID="geF-ox-4UP">
             <objects>
                 <viewController title="HomeVC" id="aQd-ss-oeQ" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h2h-5x-w66"/>
+                        <viewControllerLayoutGuide type="bottom" id="BxA-kt-SNP"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gKR-6U-mUd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="il3-Jc-cAP"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="dVz-G0-cVN" appends="YES" id="QwL-VS-fVw"/>
                         </connections>
@@ -175,11 +186,14 @@
         <scene sceneID="Hby-Ne-t7T">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="GCW-BS-p5K" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UiQ-jh-7I3"/>
+                        <viewControllerLayoutGuide type="bottom" id="ctH-gs-pEE"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ct1-4h-mKe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.46765297188069099" green="1" blue="0.47554072629801258" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="EUa-U9-oY9"/>
                     </view>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="Rgm-hh-uV3"/>
                 </viewController>

@@ -33,9 +33,7 @@
 		14409CC0231C437D006E9FFA /* homeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CBF231C437D006E9FFA /* homeView.m */; };
 		14409CC4231C67C9006E9FFA /* ZZCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */; };
 		14409CC7231C6903006E9FFA /* HPCenterBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC6231C6903006E9FFA /* HPCenterBtnView.m */; };
-		14B1725C231D1A3700463A7A /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 14B17257231D1A3700463A7A /* LICENSE.md */; };
 		14B1725D231D1A3700463A7A /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B1725A231D1A3700463A7A /* HMSegmentedControl.m */; };
-		14B1725E231D1A3700463A7A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14B1725B231D1A3700463A7A /* README.md */; };
 		14B17297231D1A9F00463A7A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 14B17260231D1A9F00463A7A /* LICENSE */; };
 		14B17298231D1A9F00463A7A /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B17262231D1A9F00463A7A /* UIScrollView+MJRefresh.m */; };
 		14B17299231D1A9F00463A7A /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B17263231D1A9F00463A7A /* MJRefreshConst.m */; };
@@ -66,9 +64,6 @@
 		14B172BF231D1AC800463A7A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172B7231D1AC800463A7A /* SVProgressHUD.m */; };
 		14B172C0231D1AC800463A7A /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172B8231D1AC800463A7A /* SVIndefiniteAnimatedView.m */; };
 		14B172C1231D1AC800463A7A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14B172B9231D1AC800463A7A /* SVProgressHUD.bundle */; };
-		14B172C2231D1AC800463A7A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14B172BB231D1AC800463A7A /* README.md */; };
-		14B172C3231D1AC800463A7A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14B172BC231D1AC800463A7A /* LICENSE.txt */; };
-		14B172DE231D1AD500463A7A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 14B172C5231D1AD500463A7A /* LICENSE */; };
 		14B172DF231D1AD500463A7A /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172CB231D1AD500463A7A /* TZAssetCell.m */; };
 		14B172E0231D1AD500463A7A /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172CC231D1AD500463A7A /* TZVideoPlayerController.m */; };
 		14B172E1231D1AD500463A7A /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172CD231D1AD500463A7A /* TZAssetModel.m */; };
@@ -80,7 +75,6 @@
 		14B172E7231D1AD500463A7A /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172D5231D1AD500463A7A /* TZPhotoPickerController.m */; };
 		14B172E8231D1AD500463A7A /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172D6231D1AD500463A7A /* TZPhotoPreviewCell.m */; };
 		14B172E9231D1AD500463A7A /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B172DB231D1AD500463A7A /* TZImagePickerController.m */; };
-		14B172EA231D1AD500463A7A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14B172DD231D1AD500463A7A /* README.md */; };
 		2C5C91CD6558CDB0404808DC /* libPods-huafenerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8635BA6400471AE8320BAE83 /* libPods-huafenerTests.a */; };
 		3BA4E581479C6D1A12BDA020 /* libPods-huafener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320DE134131D95E6E6134089 /* libPods-huafener.a */; };
 /* End PBXBuildFile section */
@@ -158,10 +152,8 @@
 		14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCustomAlertView.m; sourceTree = "<group>"; };
 		14409CC5231C6903006E9FFA /* HPCenterBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCenterBtnView.h; sourceTree = "<group>"; };
 		14409CC6231C6903006E9FFA /* HPCenterBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCenterBtnView.m; sourceTree = "<group>"; };
-		14B17257231D1A3700463A7A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		14B17259231D1A3700463A7A /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		14B1725A231D1A3700463A7A /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
-		14B1725B231D1A3700463A7A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14B17260231D1A9F00463A7A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		14B17262231D1A9F00463A7A /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		14B17263231D1A9F00463A7A /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
@@ -219,9 +211,6 @@
 		14B172B8231D1AC800463A7A /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		14B172B9231D1AC800463A7A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		14B172BA231D1AC800463A7A /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		14B172BB231D1AC800463A7A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		14B172BC231D1AC800463A7A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		14B172C5231D1AD500463A7A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		14B172C8231D1AD500463A7A /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
 		14B172C9231D1AD500463A7A /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
 		14B172CA231D1AD500463A7A /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
@@ -243,7 +232,6 @@
 		14B172DA231D1AD500463A7A /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		14B172DB231D1AD500463A7A /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
 		14B172DC231D1AD500463A7A /* TZAssetGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetGroupCell.h; sourceTree = "<group>"; };
-		14B172DD231D1AD500463A7A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		320DE134131D95E6E6134089 /* libPods-huafener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.release.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.release.xcconfig"; sourceTree = "<group>"; };
 		8635BA6400471AE8320BAE83 /* libPods-huafenerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafenerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -510,9 +498,7 @@
 		14B17256231D1A3700463A7A /* HPKJHMSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
-				14B17257231D1A3700463A7A /* LICENSE.md */,
 				14B17258231D1A3700463A7A /* HMSegmentedControl */,
-				14B1725B231D1A3700463A7A /* README.md */,
 			);
 			path = HPKJHMSegmentedControl;
 			sourceTree = "<group>";
@@ -641,8 +627,6 @@
 			isa = PBXGroup;
 			children = (
 				14B172B1231D1AC800463A7A /* SVProgressHUD */,
-				14B172BB231D1AC800463A7A /* README.md */,
-				14B172BC231D1AC800463A7A /* LICENSE.txt */,
 			);
 			path = HPKJSVProgressHUD;
 			sourceTree = "<group>";
@@ -666,9 +650,7 @@
 		14B172C4231D1AD500463A7A /* HPKJTZImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				14B172C5231D1AD500463A7A /* LICENSE */,
 				14B172C6231D1AD500463A7A /* TZImagePickerController */,
-				14B172DD231D1AD500463A7A /* README.md */,
 			);
 			path = HPKJTZImagePickerController;
 			sourceTree = "<group>";
@@ -836,10 +818,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B172C3231D1AC800463A7A /* LICENSE.txt in Resources */,
-				14B1725E231D1A3700463A7A /* README.md in Resources */,
-				14B172DE231D1AD500463A7A /* LICENSE in Resources */,
-				14B1725C231D1A3700463A7A /* LICENSE.md in Resources */,
 				14409C2A231BD171006E9FFA /* LaunchScreen.storyboard in Resources */,
 				14B17297231D1A9F00463A7A /* LICENSE in Resources */,
 				14409C98231BEA3D006E9FFA /* Assets.xcassets in Resources */,
@@ -848,8 +826,6 @@
 				14B172AF231D1A9F00463A7A /* README.md in Resources */,
 				14B1729A231D1A9F00463A7A /* MJRefresh.bundle in Resources */,
 				14B172E5231D1AD500463A7A /* TZImagePickerController.bundle in Resources */,
-				14B172EA231D1AD500463A7A /* README.md in Resources */,
-				14B172C2231D1AC800463A7A /* README.md in Resources */,
 				141EC1CE231CB7E500E613F0 /* centerBtnList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1220,19 +1196,20 @@
 			baseConfigurationReference = A47881723EB8321168232E5D /* Pods-huafener.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGH7S67FXX;
 				EXECUTABLE_PREFIX = "";
 				GCC_PREFIX_HEADER = /Users/yangjunjie/Documents/huafenerc/huafener/LYPch/LYHeader.pch;
 				INFOPLIST_FILE = huafener/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huapu.Location;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1241,19 +1218,20 @@
 			baseConfigurationReference = 724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGH7S67FXX;
 				EXECUTABLE_PREFIX = "";
 				GCC_PREFIX_HEADER = /Users/yangjunjie/Documents/huafenerc/huafener/LYPch/LYHeader.pch;
 				INFOPLIST_FILE = huafener/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huapu.Location;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
