@@ -22,7 +22,6 @@
 		14409C2D231BD171006E9FFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C2C231BD171006E9FFA /* main.m */; };
 		14409C37231BD172006E9FFA /* LocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C36231BD172006E9FFA /* LocationTests.m */; };
 		14409C42231BD172006E9FFA /* LocationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C41231BD172006E9FFA /* LocationUITests.m */; };
-		14409C58231BDCD0006E9FFA /* Location 18-56-19-196.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 14409C57231BDCD0006E9FFA /* Location 18-56-19-196.gpx */; };
 		14409C98231BEA3D006E9FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14409C97231BEA3C006E9FFA /* Assets.xcassets */; };
 		14409C9C231BED4F006E9FFA /* LYTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C9B231BED4F006E9FFA /* LYTabbarViewController.m */; };
 		14409CA7231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */; };
@@ -70,6 +69,7 @@
 		141EC1CD231CB7E500E613F0 /* centerBtnList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = centerBtnList.plist; sourceTree = "<group>"; };
 		141EC1D4231CC4AE00E613F0 /* LYEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEnums.h; sourceTree = "<group>"; };
 		141EC1D5231CC4AE00E613F0 /* LYEnums.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEnums.m; sourceTree = "<group>"; };
+		141EC1DA231D0F8100E613F0 /* JapanGPX.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = JapanGPX.gpx; path = /Users/yangjunjie/Documents/huafenerc/huafener/projectCode/tabsController/JapanGPX.gpx; sourceTree = "<absolute>"; };
 		14409C1A231BD170006E9FFA /* huafener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huafener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14409C1D231BD170006E9FFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14409C1E231BD170006E9FFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,7 +85,6 @@
 		14409C3D231BD172006E9FFA /* huafenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = huafenerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14409C41231BD172006E9FFA /* LocationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationUITests.m; sourceTree = "<group>"; };
 		14409C43231BD172006E9FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14409C57231BDCD0006E9FFA /* Location 18-56-19-196.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Location 18-56-19-196.gpx"; sourceTree = "<group>"; };
 		14409C97231BEA3C006E9FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14409C9A231BED4F006E9FFA /* LYTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTabbarViewController.h; sourceTree = "<group>"; };
 		14409C9B231BED4F006E9FFA /* LYTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTabbarViewController.m; sourceTree = "<group>"; };
@@ -188,6 +187,14 @@
 			path = LYEnums;
 			sourceTree = "<group>";
 		};
+		141EC1D7231D0F3300E613F0 /* LYGPX */ = {
+			isa = PBXGroup;
+			children = (
+				141EC1DA231D0F8100E613F0 /* JapanGPX.gpx */,
+			);
+			path = LYGPX;
+			sourceTree = "<group>";
+		};
 		14409C11231BD170006E9FFA = {
 			isa = PBXGroup;
 			children = (
@@ -213,13 +220,13 @@
 		14409C1C231BD170006E9FFA /* huafener */ = {
 			isa = PBXGroup;
 			children = (
+				14B17255231D16A100463A7A /* Lib */,
 				14409CB5231C3D02006E9FFA /* projectCode */,
 				14409CAB231BF6F7006E9FFA /* Categorys */,
 				14409CA4231BF007006E9FFA /* LYPch */,
 				14409C9D231BEEEA006E9FFA /* LYPreference */,
 				14409C1D231BD170006E9FFA /* AppDelegate.h */,
 				14409C1E231BD170006E9FFA /* AppDelegate.m */,
-				14409C57231BDCD0006E9FFA /* Location 18-56-19-196.gpx */,
 				14409C20231BD170006E9FFA /* ViewController.h */,
 				14409C21231BD170006E9FFA /* ViewController.m */,
 				14409C23231BD170006E9FFA /* Main.storyboard */,
@@ -266,6 +273,7 @@
 		14409C9D231BEEEA006E9FFA /* LYPreference */ = {
 			isa = PBXGroup;
 			children = (
+				141EC1D7231D0F3300E613F0 /* LYGPX */,
 				141EC1D1231CC36200E613F0 /* LYLayouts */,
 				141EC1D0231CC34500E613F0 /* LYDefines */,
 				141EC1CF231CC33100E613F0 /* LYColors */,
@@ -347,6 +355,13 @@
 				141EC1CD231CB7E500E613F0 /* centerBtnList.plist */,
 			);
 			path = centerBtnView;
+			sourceTree = "<group>";
+		};
+		14B17255231D16A100463A7A /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		57A12B61F052AFA56C8A7150 /* Pods */ = {
@@ -470,7 +485,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14409C58231BDCD0006E9FFA /* Location 18-56-19-196.gpx in Resources */,
 				14409C2A231BD171006E9FFA /* LaunchScreen.storyboard in Resources */,
 				14409C98231BEA3D006E9FFA /* Assets.xcassets in Resources */,
 				14409C25231BD170006E9FFA /* Main.storyboard in Resources */,

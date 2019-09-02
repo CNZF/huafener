@@ -84,7 +84,7 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "../huafener/Location 18-56-19-196.gpx"
+         identifier = "../huafener/projectCode/tabsController/JapanGPX.gpx"
          referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>
