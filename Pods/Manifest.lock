@@ -29,6 +29,7 @@ PODS:
     - LBXScan/Types (~> 2.2)
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.17)
+  - ReactiveObjC (3.1.1)
   - SAMKeychain (1.5.3)
   - SDWebImage (4.4.7):
     - SDWebImage/Core (= 4.4.7)
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - LBXScan/UI (~> 2.3)
   - MBProgressHUD (~> 1.1.0)
   - MJExtension (~> 3.0.15)
+  - ReactiveObjC (~> 3.1.1)
   - SAMKeychain (~> 1.5.3)
   - SDWebImage (~> 4.4.1)
   - STAlertView (~> 1.0.0)
@@ -60,6 +62,7 @@ SPEC REPOS:
     - LBXScan
     - MBProgressHUD
     - MJExtension
+    - ReactiveObjC
     - SAMKeychain
     - SDWebImage
     - STAlertView
@@ -74,11 +77,12 @@ SPEC CHECKSUMS:
   LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   STAlertView: bfcbdfed87dc7bfb35c04acd5d96aecebb923d48
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: 78e787bc6f5f48066ef1102d7c99da553442d3ab
+PODFILE CHECKSUM: a85002de50982364d62cca41ea5f88fc810649d2
 
 COCOAPODS: 1.6.1

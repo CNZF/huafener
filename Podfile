@@ -17,6 +17,7 @@ pod 'LBXScan/LBXZBar','~> 2.3'
 pod 'Fabric', '~> 1.7.2'
 pod 'Crashlytics', '~> 3.9.3'
 
+pod 'ReactiveObjC', '~>3.1.1'
 
 target 'huafener' do
  
