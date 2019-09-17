@@ -28,13 +28,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7d-7m-Wtj">
+                                <rect key="frame" x="20" y="630" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.37093685409999999" green="1" blue="0.74058782619999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hZq-Sh-Kr8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="viH-X1-P8b" firstAttribute="top" secondItem="4Cb-at-P9Y" secondAttribute="bottom" constant="97" id="9Q9-PJ-tri"/>
+                            <constraint firstItem="U7d-7m-Wtj" firstAttribute="leading" secondItem="nZm-qO-FgZ" secondAttribute="leadingMargin" id="CqL-Ox-yHi"/>
                             <constraint firstAttribute="trailing" secondItem="viH-X1-P8b" secondAttribute="trailing" id="KXR-DP-KeB"/>
+                            <constraint firstItem="U7d-7m-Wtj" firstAttribute="top" secondItem="viH-X1-P8b" secondAttribute="bottom" constant="77" id="ZLz-Ih-pSY"/>
                             <constraint firstItem="viH-X1-P8b" firstAttribute="leading" secondItem="nZm-qO-FgZ" secondAttribute="leading" id="dvt-ty-icc"/>
                             <constraint firstItem="ic1-UE-nZS" firstAttribute="top" secondItem="viH-X1-P8b" secondAttribute="bottom" constant="260" id="j0c-we-vg4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U7d-7m-Wtj" secondAttribute="trailing" id="rwa-ap-Lxd"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="QVM-X2-pU3" appends="YES" id="VEW-ni-20k"/>
@@ -162,14 +173,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cy0-HH-TrS">
+                                <rect key="frame" x="16" y="623" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.37093685409999999" green="1" blue="0.74058782619999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="v7D-oc-vdM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cy0-HH-TrS" firstAttribute="leading" secondItem="gKR-6U-mUd" secondAttribute="leadingMargin" constant="-4" id="3mY-9J-Acu"/>
+                            <constraint firstItem="BxA-kt-SNP" firstAttribute="top" secondItem="cy0-HH-TrS" secondAttribute="bottom" constant="140" id="8XE-sM-gPd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cy0-HH-TrS" secondAttribute="trailing" constant="4" id="Dw9-zP-R8h"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="dVz-G0-cVN" appends="YES" id="QwL-VS-fVw"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="首页" image="home" badgeValue="9" selectedImage="home_high" id="010-nv-HaR"/>
+                    <connections>
+                        <outlet property="racTest" destination="cy0-HH-TrS" id="iO5-sR-GXg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uF-Va-gpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="dVz-G0-cVN">
@@ -245,6 +272,6 @@
         <image name="tabBarCenterBtn" width="59" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2xp-LS-2gl"/>
+        <segue reference="jG2-Fn-MWU"/>
     </inferredMetricsTieBreakers>
 </document>

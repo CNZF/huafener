@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/yangjunjie/Documents/huafenerc/huafener/projectCode/tabsController/JapanGPX.gpx">
+      location = "group:huafener/HPDefaultPreference/LYGPX/huafener.gpx">
    </FileRef>
    <FileRef
       location = "group:huafener.xcodeproj">

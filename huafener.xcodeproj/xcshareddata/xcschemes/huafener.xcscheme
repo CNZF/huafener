@@ -84,7 +84,7 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "../huafener/projectCode/tabsController/JapanGPX.gpx"
+         identifier = "../huafener/HPDefaultPreference/LYGPX/huafener.gpx"
          referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>

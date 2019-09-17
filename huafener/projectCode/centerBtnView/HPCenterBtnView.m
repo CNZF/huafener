@@ -96,7 +96,7 @@
     
     CGFloat width = GHSCREEN_WIDTH/2;
     for (int i = 0; i < centerDatas.count; i++) {
-        CGRect frame = CGRectMake((i%2)*width, (i/2+1)*60 + (i/2)*20 +hpStatusHeight, width, 55);
+        CGRect frame = CGRectMake((i%2)*width, (i/2+1)*60 + (i/2)*20 +kStatusH, width, 55);
 //        HPPublishTopButtonView *topView = [[HPPublishTopButtonView alloc] initWithFrame:frame title:titleArray[i] image:imageArray[i] detail:detailArray[i]];
         HPPublishTopButtonView *topView = [[HPPublishTopButtonView alloc] initWithFrame:frame Model:centerDatas[i]];
         topView.userInteractionEnabled = YES;
@@ -162,7 +162,7 @@
 //        if (![HPUserBaseInformation kvsModel].canCreateLiveRoom) {
 //            //两个
             margin_x = (GHSCREEN_WIDTH-140)/235*70.0f;
-            origin_y = hpBottomOffset+235;
+            origin_y = kBottomBarH+235;
 //        } else {
 //            //三个
 //            margin_x = (GHSCREEN_WIDTH-210)/165*45.0f;
