@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88A2675A6DCD3138496190854CC58ED2"
+               BlueprintIdentifier = "AF76BCB3A05704FCEBA8BEDA712067FE"
                BuildableName = "STAlertView.bundle"
                BlueprintName = "STAlertView-STAlertView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88A2675A6DCD3138496190854CC58ED2"
+            BlueprintIdentifier = "AF76BCB3A05704FCEBA8BEDA712067FE"
             BuildableName = "STAlertView.bundle"
             BlueprintName = "STAlertView-STAlertView"
             ReferencedContainer = "container:Pods.xcodeproj">

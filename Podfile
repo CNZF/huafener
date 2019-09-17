@@ -18,10 +18,9 @@ pod 'LBXScan/LBXZBar','~> 2.3'
 pod 'Fabric', '~> 1.7.2'
 pod 'Crashlytics', '~> 3.9.3'
 # Firebase 的用户行为收集
-pod 'Firebase/Analytics', '~> 6.0.2'
-pod 'Firebase/Messaging', '~> 4.1.0'
-pod 'Firebase/AdMob', '~> 7.46.0'
-pod 'Firebase/Performance', '~> 3.1.0'
+pod 'Firebase/Analytics'
+pod 'Firebase/Messaging'
+pod 'Firebase/Performance'
 
 # Log相关
 pod 'CocoaLumberjack'
