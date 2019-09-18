@@ -14,8 +14,9 @@
 
 #import "HPDefineColors.h"
 
-#import "HPDevice.h"
 #import "HPDefineEfficency.h"
+
+#import "HPDevice.h"
 #import "UIView+GHLayout.h"
 #import "UIViewExt.h"
 #import "RFRotate.h"

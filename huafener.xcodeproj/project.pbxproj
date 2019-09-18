@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141966662330EC9D008035DD /* My-Huafener.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 141966652330EC9D008035DD /* My-Huafener.gpx */; };
 		141EC1BC231CA0A300E613F0 /* HPPublishTopButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1BB231CA0A300E613F0 /* HPPublishTopButtonView.m */; };
 		141EC1BF231CA19200E613F0 /* HPDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1BE231CA19200E613F0 /* HPDevice.m */; };
 		141EC1C2231CA32E00E613F0 /* UIView+GHLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1C1231CA32E00E613F0 /* UIView+GHLayout.m */; };
@@ -268,6 +269,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141966652330EC9D008035DD /* My-Huafener.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "My-Huafener.gpx"; sourceTree = "<group>"; };
 		141EC1BA231CA0A200E613F0 /* HPPublishTopButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPublishTopButtonView.h; sourceTree = "<group>"; };
 		141EC1BB231CA0A300E613F0 /* HPPublishTopButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPublishTopButtonView.m; sourceTree = "<group>"; };
 		141EC1BD231CA19200E613F0 /* HPDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDevice.h; sourceTree = "<group>"; };
@@ -856,6 +858,7 @@
 		14409C1C231BD170006E9FFA /* huafener */ = {
 			isa = PBXGroup;
 			children = (
+				141966652330EC9D008035DD /* My-Huafener.gpx */,
 				14B17255231D16A100463A7A /* Lib */,
 				14409CB5231C3D02006E9FFA /* projectCode */,
 				14409CAB231BF6F7006E9FFA /* HPCategorys */,
@@ -1748,6 +1751,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				148E786F23235FCB00233434 /* lookup_amatorka.png in Resources */,
+				141966662330EC9D008035DD /* My-Huafener.gpx in Resources */,
 				14409C2A231BD171006E9FFA /* LaunchScreen.storyboard in Resources */,
 				14B17297231D1A9F00463A7A /* LICENSE in Resources */,
 				148E786C23235FCB00233434 /* lookup_soft_elegance_2.png in Resources */,
