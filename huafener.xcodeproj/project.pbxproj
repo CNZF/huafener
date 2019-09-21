@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		141966662330EC9D008035DD /* My-Huafener.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 141966652330EC9D008035DD /* My-Huafener.gpx */; };
+		1419666A233241FF008035DD /* HPCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14196669233241FF008035DD /* HPCustomTabbar.m */; };
+		1419666D23336AFD008035DD /* HomeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419666C23336AFD008035DD /* HomeTabViewController.m */; };
+		1419667023336B26008035DD /* MineTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419666F23336B26008035DD /* MineTabViewController.m */; };
 		141EC1BC231CA0A300E613F0 /* HPPublishTopButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1BB231CA0A300E613F0 /* HPPublishTopButtonView.m */; };
 		141EC1BF231CA19200E613F0 /* HPDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1BE231CA19200E613F0 /* HPDevice.m */; };
 		141EC1C2231CA32E00E613F0 /* UIView+GHLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1C1231CA32E00E613F0 /* UIView+GHLayout.m */; };
@@ -24,7 +27,7 @@
 		14409C37231BD172006E9FFA /* LocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C36231BD172006E9FFA /* LocationTests.m */; };
 		14409C42231BD172006E9FFA /* LocationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C41231BD172006E9FFA /* LocationUITests.m */; };
 		14409C98231BEA3D006E9FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14409C97231BEA3C006E9FFA /* Assets.xcassets */; };
-		14409C9C231BED4F006E9FFA /* LYTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C9B231BED4F006E9FFA /* LYTabbarViewController.m */; };
+		14409C9C231BED4F006E9FFA /* HPTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C9B231BED4F006E9FFA /* HPTabbarViewController.m */; };
 		14409CA7231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */; };
 		14409CAA231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */; };
 		14409CAF231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */; };
@@ -270,6 +273,12 @@
 
 /* Begin PBXFileReference section */
 		141966652330EC9D008035DD /* My-Huafener.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "My-Huafener.gpx"; sourceTree = "<group>"; };
+		14196668233241FF008035DD /* HPCustomTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPCustomTabbar.h; sourceTree = "<group>"; };
+		14196669233241FF008035DD /* HPCustomTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPCustomTabbar.m; sourceTree = "<group>"; };
+		1419666B23336AFD008035DD /* HomeTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTabViewController.h; sourceTree = "<group>"; };
+		1419666C23336AFD008035DD /* HomeTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTabViewController.m; sourceTree = "<group>"; };
+		1419666E23336B26008035DD /* MineTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTabViewController.h; sourceTree = "<group>"; };
+		1419666F23336B26008035DD /* MineTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTabViewController.m; sourceTree = "<group>"; };
 		141EC1BA231CA0A200E613F0 /* HPPublishTopButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPublishTopButtonView.h; sourceTree = "<group>"; };
 		141EC1BB231CA0A300E613F0 /* HPPublishTopButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPublishTopButtonView.m; sourceTree = "<group>"; };
 		141EC1BD231CA19200E613F0 /* HPDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDevice.h; sourceTree = "<group>"; };
@@ -301,8 +310,8 @@
 		14409C41231BD172006E9FFA /* LocationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationUITests.m; sourceTree = "<group>"; };
 		14409C43231BD172006E9FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14409C97231BEA3C006E9FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14409C9A231BED4F006E9FFA /* LYTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTabbarViewController.h; sourceTree = "<group>"; };
-		14409C9B231BED4F006E9FFA /* LYTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTabbarViewController.m; sourceTree = "<group>"; };
+		14409C9A231BED4F006E9FFA /* HPTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPTabbarViewController.h; sourceTree = "<group>"; };
+		14409C9B231BED4F006E9FFA /* HPTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPTabbarViewController.m; sourceTree = "<group>"; };
 		14409CA2231BEFA3006E9FFA /* HPDefineColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineColors.h; sourceTree = "<group>"; };
 		14409CA3231BEFF4006E9FFA /* HPDefineHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineHeader.pch; sourceTree = "<group>"; };
 		14409CA5231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+LYTabbarSetting.h"; sourceTree = "<group>"; };
@@ -899,10 +908,12 @@
 		14409C99231BED26006E9FFA /* TabbarVC */ = {
 			isa = PBXGroup;
 			children = (
-				14409C9A231BED4F006E9FFA /* LYTabbarViewController.h */,
-				14409C9B231BED4F006E9FFA /* LYTabbarViewController.m */,
+				14409C9A231BED4F006E9FFA /* HPTabbarViewController.h */,
+				14409C9B231BED4F006E9FFA /* HPTabbarViewController.m */,
 				14409CA5231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.h */,
 				14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */,
+				14196668233241FF008035DD /* HPCustomTabbar.h */,
+				14196669233241FF008035DD /* HPCustomTabbar.m */,
 			);
 			name = TabbarVC;
 			path = ../TabbarVC;
@@ -975,6 +986,10 @@
 				14409CBC231C3D5A006E9FFA /* MainViewController.m */,
 				14409CBE231C437D006E9FFA /* homeView.h */,
 				14409CBF231C437D006E9FFA /* homeView.m */,
+				1419666B23336AFD008035DD /* HomeTabViewController.h */,
+				1419666C23336AFD008035DD /* HomeTabViewController.m */,
+				1419666E23336B26008035DD /* MineTabViewController.h */,
+				1419666F23336B26008035DD /* MineTabViewController.m */,
 			);
 			path = tabsController;
 			sourceTree = "<group>";
@@ -1655,6 +1670,7 @@
 				14409C17231BD170006E9FFA /* Frameworks */,
 				14409C18231BD170006E9FFA /* Resources */,
 				5E32016FD6CF65FC8CA1ECDD /* [CP] Copy Pods Resources */,
+				141966672331D617008035DD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1785,7 +1801,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27127D83753F5BBF7AF7D9F6 /* [CP] Copy Pods Resources */ = {
+		141966672331D617008035DD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1793,28 +1809,27 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-huafenerTests/Pods-huafenerTests-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
-				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
-				"${PODS_CONFIGURATION_BUILD_DIR}/STAlertView/STAlertView.bundle",
 			);
-			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/STAlertView.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		27127D83753F5BBF7AF7D9F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-huafenerTests/Pods-huafenerTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-huafenerTests/Pods-huafenerTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1827,28 +1842,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-huafener/Pods-huafener-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
-				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
-				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+				"${PODS_ROOT}/Target Support Files/Pods-huafener/Pods-huafener-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
+				"${PODS_ROOT}/Target Support Files/Pods-huafener/Pods-huafener-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1959,7 +1957,7 @@
 				148E78FB23235FCB00233434 /* GPUImageTextureOutput.m in Sources */,
 				14B172E9231D1AD500463A7A /* TZImagePickerController.m in Sources */,
 				148E787B23235FCB00233434 /* GPUImageSoftEleganceFilter.m in Sources */,
-				14409C9C231BED4F006E9FFA /* LYTabbarViewController.m in Sources */,
+				14409C9C231BED4F006E9FFA /* HPTabbarViewController.m in Sources */,
 				148E788623235FCB00233434 /* GPUImageMovie.m in Sources */,
 				148E788223235FCB00233434 /* GPUImageTwoInputFilter.m in Sources */,
 				148E78BE23235FCB00233434 /* GPUImageXYDerivativeFilter.m in Sources */,
@@ -1980,6 +1978,7 @@
 				148E78FF23235FCB00233434 /* GPUImageNormalBlendFilter.m in Sources */,
 				148E78C323235FCB00233434 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				148E78B123235FCB00233434 /* GPUImageSepiaFilter.m in Sources */,
+				1419666A233241FF008035DD /* HPCustomTabbar.m in Sources */,
 				148E788E23235FCB00233434 /* GPUImageHistogramEqualizationFilter.m in Sources */,
 				148E790523235FCB00233434 /* GPUImageKuwaharaFilter.m in Sources */,
 				14B172A8231D1A9F00463A7A /* MJRefreshGifHeader.m in Sources */,
@@ -2012,6 +2011,7 @@
 				148E787623235FCB00233434 /* GPUImageLuminanceThresholdFilter.m in Sources */,
 				14B172AE231D1A9F00463A7A /* MJRefreshComponent.m in Sources */,
 				14B172C0231D1AC800463A7A /* SVIndefiniteAnimatedView.m in Sources */,
+				1419666D23336AFD008035DD /* HomeTabViewController.m in Sources */,
 				148E78F223235FCB00233434 /* GPUImageLocalBinaryPatternFilter.m in Sources */,
 				148E787C23235FCB00233434 /* GPUImageTwoPassFilter.m in Sources */,
 				148E789D23235FCB00233434 /* GPUImageOverlayBlendFilter.m in Sources */,
@@ -2089,6 +2089,7 @@
 				14B172AC231D1A9F00463A7A /* MJRefreshBackFooter.m in Sources */,
 				148E78C923235FCB00233434 /* GPUImagePicture.m in Sources */,
 				14B172E3231D1AD500463A7A /* UIView+Layout.m in Sources */,
+				1419667023336B26008035DD /* MineTabViewController.m in Sources */,
 				148E78A523235FCB00233434 /* GPUImageOpeningFilter.m in Sources */,
 				148E78CC23235FCB00233434 /* GPUImageSaturationBlendFilter.m in Sources */,
 				148E78C423235FCB00233434 /* GPUImageRGBFilter.m in Sources */,
@@ -2303,6 +2304,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGH7S67FXX;
+				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
 				GCC_PREFIX_HEADER = "/Users/yangjunjie/Documents/huafenerc/huafener/HP-PCH/HPDefineHeader.pch";
 				INFOPLIST_FILE = huafener/Info.plist;
@@ -2325,6 +2327,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGH7S67FXX;
+				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
 				GCC_PREFIX_HEADER = "/Users/yangjunjie/Documents/huafenerc/huafener/HP-PCH/HPDefineHeader.pch";
 				INFOPLIST_FILE = huafener/Info.plist;

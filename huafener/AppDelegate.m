@@ -18,6 +18,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //控制台
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    
+//    FlutterViewController* flutterViewController = [[FlutterViewController alloc] initWithProject:nil nibName:nil bundle:nil];
+//
+//    self.window.rootViewController = flutterViewController;
+    
     return YES;
 }
 

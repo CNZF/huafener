@@ -153,7 +153,7 @@ DEPENDENCIES:
   - STAlertView (~> 1.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CocoaLumberjack
     - Crashlytics
@@ -213,6 +213,6 @@ SPEC CHECKSUMS:
   STAlertView: bfcbdfed87dc7bfb35c04acd5d96aecebb923d48
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: b3d6a7d94f77c21307fcb208a05740eacf66cbef
+PODFILE CHECKSUM: d61f8aa646a6dc424b3401732b24623c16d8624c
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.0.beta.2

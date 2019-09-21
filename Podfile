@@ -36,3 +36,7 @@ end
 target 'huafenerTests' do
   pod 'STAlertView', '~> 1.0.0'
 end
+
+# 集成flutter ../  是当前路径下的跟路径也就是document 下的flutter路径
+#flutter_application_path = '../huafenerc_flutter'
+#eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
