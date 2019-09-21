@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface UIView (LYViewBehavior_UI)
 
 
@@ -19,6 +20,17 @@ NS_ASSUME_NONNULL_BEGIN
                     radius:(CGFloat)radius
                      color:(UIColor *)color
                    opacity:(CGFloat)opacity;
+
+
+#pragma mark -- 设置圆角
+- (void)setBorderWithCornerRadius:(CGFloat)cornerRadius
+                             type:(UIRectCorner)corners;
+
+#pragma mark -- 设置圆角及边框
+- (void)setBorderWithCornerRadius:(CGFloat)cornerRadius
+                      borderWidth:(CGFloat)borderWidth
+                      borderColor:(UIColor *)borderColor
+                             type:(UIRectCorner)corners;
 
 @end
 
