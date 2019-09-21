@@ -8,44 +8,54 @@
 
 #import "UITabBarController+LYTabbarSetting.h"
 
+static NSString *const imageArrayKey = @"TabImageKey";
+
+static NSString *const selectImageArrayKey = @"selectTabImageKey";
+
+static NSString *const titleArrayKey = @"titleArrayKey";
+
 @implementation UITabBarController (LYTabbarSetting)
 
-- (void)setUIBeheaves{
-    //单纯的去掉之后视图会穿透
-    [self.tabBar setBackgroundImage:[UIImage new]];
-    [self.tabBar setShadowImage:[UIImage new]];
-    //给其设置颜色之后，视图穿透消失
-    [self.tabBar setBackgroundColor:GH_COLOR_FROM_RGB(0xffffff)];
+- (void)setImageArrays:(NSArray *)imageArrays{
+    objc_setAssociatedObject(self, &imageArrayKey, imageArrays, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSArray *)imageArrays{
+    return objc_getAssociatedObject(self, &imageArrayKey);
+}
+
+- (void)setSelectImageArrays:(NSArray *)selectImageArrays{
+    objc_setAssociatedObject(self, &selectImageArrayKey, selectImageArrays, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSArray *)selectImageArrays{
+    return objc_getAssociatedObject(self, &selectImageArrayKey);
+}
+
+- (void)setTitleArrays:(NSArray *)titleArrays{
+    objc_setAssociatedObject(self, &titleArrayKey, titleArrays, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSArray *)titleArrays{
+    return objc_getAssociatedObject(self, &titleArrayKey);
+}
+
+//添加子控制器
+- (void)setChildViewControllers:(NSArray *)tabVcArrays{
     
-    self.tabBar.translucent = NO;
-    
-    [[UITabBarItem appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:GH_COLOR_FROM_RGB(0x333333),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateNormal];
-    
-    [[UITabBarItem appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:GH_COLOR_FROM_RGB(0xff6677),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateSelected];
-    
-    //设置阴影
-    [self.tabBar dropShadowWithView:self.tabBar
-                      Offset:CGSizeMake(0, -1)
-                      radius:1
-                       color:[UIColor blackColor]
-                     opacity:0.05];
-    //中间按钮设置
-    NSInteger tabItems = self.tabBar.items.count;
-    UITabBarItem *item = self.tabBar.items[self.tabBar.items.count/2];
-    if  (tabItems/2 == 0) return;
-    for (NSInteger i = 0; i<tabItems; i++) {
-        if (i == tabItems/2) {
-            item.imageInsets =UIEdgeInsetsMake(-20,0, 20,0);
-            
-            NSLog(@"%@",[self.tabBar.subviews[i] subviews]);
-            
-            
-        }
+    for (NSInteger i = 0; i<tabVcArrays.count; i++) {
+        [self addChildrenViewController:tabVcArrays[i]
+                               andTitle:self.titleArrays[i] andImageName:self.imageArrays[i] selectImage:self.selectImageArrays[i]];
     }
-    
-    
-    
-    
+}
+
+- (void)addChildrenViewController:(UIViewController *)childVC andTitle:(NSString *)title andImageName:(NSString *)imageName selectImage:(NSString *)seleImageName{
+    childVC.tabBarItem.image = [UIImage imageNamed:imageName];
+    childVC.tabBarItem.selectedImage = [UIImage imageNamed:seleImageName];
+    childVC.title = title;
+    childVC.view.backgroundColor = GH_Color_Random;
+    UINavigationController *baseNav = [[UINavigationController alloc] initWithRootViewController:childVC];
+    [self addChildViewController:baseNav];
 }
 
 

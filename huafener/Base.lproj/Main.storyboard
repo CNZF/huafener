@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lW5-2u-l2v">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4YI-gU-Khs">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,14 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我多想再见你一面,哪怕只是最后一眼" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viH-X1-P8b">
-                                <rect key="frame" x="0.0" y="185" width="414" height="368"/>
+                                <rect key="frame" x="0.0" y="185" width="414" height="417"/>
                                 <color key="backgroundColor" red="0.96431293149999997" green="1" blue="0.17158791949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7d-7m-Wtj">
-                                <rect key="frame" x="20" y="630" width="374" height="50"/>
+                                <rect key="frame" x="20" y="679" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.37093685409999999" green="1" blue="0.74058782619999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hZq-Sh-Kr8"/>
@@ -86,7 +86,7 @@
         <scene sceneID="n4i-Dl-Exz">
             <objects>
                 <navigationController title="发布Navi" id="Rzt-VC-S4i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发布" image="tabBarCenterBtn" selectedImage="tabBarCenterBtn" id="Vem-bD-ltd"/>
+                    <tabBarItem key="tabBarItem" title="" id="Vem-bD-ltd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AoR-5v-Kur">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -98,6 +98,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFd-f1-Qlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774" y="-366"/>
+        </scene>
+        <!--Tabbar View Controller-->
+        <scene sceneID="5on-Fg-hFq">
+            <objects>
+                <tabBarController id="4YI-gU-Khs" customClass="HPTabbarViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QFW-mO-u89">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7TH-RD-EC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671" y="1483"/>
         </scene>
         <!--个人Navi-->
         <scene sceneID="X33-qZ-2ts">
@@ -128,8 +142,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="但我的心每分每刻,仍然被她占有,她似这月儿,仍然是不开口" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXe-U6-2u5">
-                                <rect key="frame" x="0.0" y="172" width="414" height="368"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXe-U6-2u5">
+                                <rect key="frame" x="131" y="307" width="109" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96431293149999997" green="1" blue="0.17158791949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
@@ -165,7 +179,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="想你的夜，多希望你能在我身边" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRC-By-9OV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRC-By-9OV">
                                 <rect key="frame" x="0.0" y="113" width="414" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96431293149999997" green="1" blue="0.17158791949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -227,7 +241,7 @@
         <!--TabbarVC-->
         <scene sceneID="ElN-tz-sPz">
             <objects>
-                <tabBarController title="TabbarVC" id="dnj-7H-akY" customClass="LYTabbarViewController" sceneMemberID="viewController">
+                <tabBarController title="TabbarVC" id="dnj-7H-akY" customClass="HPTabbarViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="0Lm-bz-lNa"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="u4y-YG-gwB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -236,7 +250,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="aQd-ss-oeQ" kind="relationship" relationship="viewControllers" id="0NO-UD-MNy"/>
-                        <segue destination="Rzt-VC-S4i" kind="relationship" relationship="viewControllers" id="mQL-79-q2K"/>
                         <segue destination="8aQ-ZD-fOS" kind="relationship" relationship="viewControllers" id="pIw-S1-lwh"/>
                     </connections>
                 </tabBarController>
@@ -269,7 +282,6 @@
         <image name="home_high" width="30.5" height="30.5"/>
         <image name="mine" width="21.5" height="22"/>
         <image name="mine_high" width="21.5" height="22"/>
-        <image name="tabBarCenterBtn" width="59" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jG2-Fn-MWU"/>

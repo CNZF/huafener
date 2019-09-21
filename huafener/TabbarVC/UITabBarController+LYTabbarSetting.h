@@ -12,7 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITabBarController (LYTabbarSetting)
 
-- (void)setUIBeheaves;
+@property (nonatomic, strong) NSArray *imageArrays;
+
+@property (nonatomic, strong) NSArray *selectImageArrays;
+
+@property (nonatomic, strong) NSArray *titleArrays;
+
+- (void)setChildViewControllers:(NSArray *)tabVcArrays;
 
 @end
 
