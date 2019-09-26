@@ -37,9 +37,13 @@
     
     [[UITabBarItem appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:GH_COLOR_FROM_RGB(0xff6677),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateSelected];
     
+    UIView * hideLineView =[[UIView alloc]initWithFrame:CGRectMake(0, -1, kScreenWidth, 1)];
+    hideLineView.backgroundColor = [UIColor whiteColor];
+    [self insertSubview:hideLineView atIndex:0];
+    
     //设置阴影
     [self dropShadowWithView:self
-                      Offset:CGSizeMake(0, -1)
+                      Offset:CGSizeMake(0, -2)
                       radius:1
                        color:[UIColor blackColor]
                      opacity:0.05];

@@ -37,12 +37,12 @@
                              type:(UIRectCorner)corners{
     CGRect rect = CGRectMake(0, 0,
                                 CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
-       CGSize radii = CGSizeMake(cornerRadius, 0);
-       //create path
-       UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:radii];
-       CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-       shapeLayer.path = path.CGPath;
-       self.layer.mask = shapeLayer;
+    CGSize radii = CGSizeMake(cornerRadius, 0);
+    //create path
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:radii];
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.path = path.CGPath;
+    self.layer.mask = shapeLayer;
     
 }
 
