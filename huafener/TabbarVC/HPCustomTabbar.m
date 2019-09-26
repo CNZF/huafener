@@ -8,6 +8,9 @@
 
 #import "HPCustomTabbar.h"
 #import "UITabBarController+LYTabbarSetting.h"
+
+#define tabbarNumbers 3
+
 @implementation HPCustomTabbar
 
 # pragma mark - 添加按钮
@@ -52,19 +55,22 @@
     self.plusButton.center = CGPointMake(CGRectGetWidth(self.frame) * 0.5, 10);
     
     // 设置其他的按钮的位置
-    CGFloat w = CGRectGetWidth(self.frame) / 3;
+    CGFloat w = CGRectGetWidth(self.frame) / tabbarNumbers;
     CGFloat index = 0;
     for (UIView *childView in self.subviews) {
         Class class = NSClassFromString(@"UITabBarButton");
         if ([childView isKindOfClass:class]) {
             childView.frame = CGRectMake(w * index, CGRectGetMinY(childView.frame), w, CGRectGetHeight(childView.frame));
-            // 增加索引 要和中间的控件隔开
             index ++;
-            if (index == 1) {
+            if (index == getCenterNumber()) {
                 index ++;
             }
         }
     }
+}
+
+static inline NSInteger getCenterNumber(){
+    return tabbarNumbers/2;
 }
 
 # pragma mark - CustomTabBarDelegate
