@@ -21,16 +21,15 @@
 
 @interface HPTabbarViewController ()<CustomTabBarDelegate>
 
-@property (nonatomic, strong) ZZCustomAlertView *alertView;
-
-@property (nonatomic, strong) HPCustomTabbar *hp_tabbar;
-
 @property (nonatomic, strong) NSArray *tabVCs;
 
+@property (nonatomic, strong) HPCustomTabbar *hp_tabbar;
 
 @property (nonatomic, strong) HomeTabViewController *homeTabController;
 
 @property (nonatomic, strong) MineTabViewController *mineTabController;
+
+@property (nonatomic, strong) ZZCustomAlertView *alertView;
 
 @end
 
@@ -38,13 +37,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setConfig_UI];
+    [self setConfig_Datas];
+}
+
+- (void)setConfig_Datas{
+    
+}
+
+- (void)setConfig_UI{
     self.titleArrays = @[@"首页",@"我的"];
     self.imageArrays = @[@"home",@"mine"];
     self.selectImageArrays = @[@"home_high",@"mine_high"];
     [self setChildViewControllers:self.tabVCs];
     [self setValue:self.hp_tabbar forKey:@"tabBar"];
-
 }
+
 #pragma mark -- Action
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
     

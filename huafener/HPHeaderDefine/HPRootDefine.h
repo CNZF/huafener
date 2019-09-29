@@ -16,6 +16,8 @@
 
 #import "HPDefineEfficency.h"
 
+#import "SVProgressHUD.h"
+
 #import "HPDevice.h"
 #import "UIView+GHLayout.h"
 #import "UIViewExt.h"

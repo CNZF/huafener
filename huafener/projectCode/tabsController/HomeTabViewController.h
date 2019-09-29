@@ -6,11 +6,11 @@
 //  Copyright © 2019 杨俊杰. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "GHBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeTabViewController : BaseViewController
+@interface HomeTabViewController : GHBaseViewController
 
 @end
 

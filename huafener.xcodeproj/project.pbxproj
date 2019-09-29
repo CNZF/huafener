@@ -31,7 +31,7 @@
 		14409CA7231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */; };
 		14409CAA231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */; };
 		14409CAF231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */; };
-		14409CB9231C3D2E006E9FFA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CB8231C3D2E006E9FFA /* BaseViewController.m */; };
+		14409CB9231C3D2E006E9FFA /* GHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CB8231C3D2E006E9FFA /* GHBaseViewController.m */; };
 		14409CBD231C3D5A006E9FFA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CBC231C3D5A006E9FFA /* MainViewController.m */; };
 		14409CC0231C437D006E9FFA /* homeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CBF231C437D006E9FFA /* homeView.m */; };
 		14409CC4231C67C9006E9FFA /* ZZCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */; };
@@ -321,8 +321,8 @@
 		14409CAD231C00BD006E9FFA /* UIView+LYViewBehavior_hit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LYViewBehavior_hit.h"; sourceTree = "<group>"; };
 		14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_hit.m"; sourceTree = "<group>"; };
 		14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineEfficency.h; sourceTree = "<group>"; };
-		14409CB7231C3D2E006E9FFA /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		14409CB8231C3D2E006E9FFA /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		14409CB7231C3D2E006E9FFA /* GHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHBaseViewController.h; sourceTree = "<group>"; };
+		14409CB8231C3D2E006E9FFA /* GHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBaseViewController.m; sourceTree = "<group>"; };
 		14409CBB231C3D5A006E9FFA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		14409CBC231C3D5A006E9FFA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		14409CBE231C437D006E9FFA /* homeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeView.h; sourceTree = "<group>"; };
@@ -908,12 +908,12 @@
 		14409C99231BED26006E9FFA /* TabbarVC */ = {
 			isa = PBXGroup;
 			children = (
+				14196668233241FF008035DD /* HPCustomTabbar.h */,
+				14196669233241FF008035DD /* HPCustomTabbar.m */,
 				14409C9A231BED4F006E9FFA /* HPTabbarViewController.h */,
 				14409C9B231BED4F006E9FFA /* HPTabbarViewController.m */,
 				14409CA5231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.h */,
 				14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */,
-				14196668233241FF008035DD /* HPCustomTabbar.h */,
-				14196669233241FF008035DD /* HPCustomTabbar.m */,
 			);
 			name = TabbarVC;
 			path = ../TabbarVC;
@@ -973,8 +973,8 @@
 		14409CB6231C3D15006E9FFA /* base */ = {
 			isa = PBXGroup;
 			children = (
-				14409CB7231C3D2E006E9FFA /* BaseViewController.h */,
-				14409CB8231C3D2E006E9FFA /* BaseViewController.m */,
+				14409CB7231C3D2E006E9FFA /* GHBaseViewController.h */,
+				14409CB8231C3D2E006E9FFA /* GHBaseViewController.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -1908,7 +1908,7 @@
 				148E78D523235FCB00233434 /* GPUImageSoftLightBlendFilter.m in Sources */,
 				148E789E23235FCB00233434 /* GPUImageColorMatrixFilter.m in Sources */,
 				148E790E23235FCB00233434 /* GPUImageBulgeDistortionFilter.m in Sources */,
-				14409CB9231C3D2E006E9FFA /* BaseViewController.m in Sources */,
+				14409CB9231C3D2E006E9FFA /* GHBaseViewController.m in Sources */,
 				14B172A1231D1A9F00463A7A /* MJRefreshAutoStateFooter.m in Sources */,
 				148E78CF23235FCB00233434 /* GPUImagePoissonBlendFilter.m in Sources */,
 				14409CC7231C6903006E9FFA /* HPCenterBtnView.m in Sources */,

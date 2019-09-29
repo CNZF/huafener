@@ -63,6 +63,10 @@
     
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 //- (FlutterViewController *)flutterVC{
 //    if (!_flutterVC) {
 //        _flutterVC = [[FlutterViewController alloc] initWithProject:nil nibName:nil bundle:nil];

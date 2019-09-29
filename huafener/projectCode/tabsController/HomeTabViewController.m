@@ -7,6 +7,7 @@
 //
 
 #import "HomeTabViewController.h"
+#import "MainViewController.h"
 
 @interface HomeTabViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    MainViewController *main = [[MainViewController alloc] init];
+    [self presentViewController:main animated:YES completion:nil];
 }
 
 /*
