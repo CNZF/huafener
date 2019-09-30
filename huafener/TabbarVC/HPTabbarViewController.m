@@ -82,6 +82,7 @@
     if (!_hp_tabbar) {
         _hp_tabbar = [[HPCustomTabbar alloc] init];
         _hp_tabbar.customTabbarCenterBtnDelegate = self;
+        _hp_tabbar.centerBtnPosition = HPTabbarCenterButtonPositionBulge;
     }
     return _hp_tabbar;
 }

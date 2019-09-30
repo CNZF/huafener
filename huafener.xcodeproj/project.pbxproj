@@ -36,6 +36,8 @@
 		14409CC0231C437D006E9FFA /* homeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CBF231C437D006E9FFA /* homeView.m */; };
 		14409CC4231C67C9006E9FFA /* ZZCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */; };
 		14409CC7231C6903006E9FFA /* HPCenterBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC6231C6903006E9FFA /* HPCenterBtnView.m */; };
+		14805C5F23419D83003EF272 /* UIViewController+PresentModalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */; };
+		14805C642341AB74003EF272 /* HPSignInWithAppleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14805C632341AB74003EF272 /* HPSignInWithAppleController.m */; };
 		148E786C23235FCB00233434 /* lookup_soft_elegance_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 148E770F23235FCA00233434 /* lookup_soft_elegance_2.png */; };
 		148E786D23235FCB00233434 /* lookup_soft_elegance_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 148E771023235FCA00233434 /* lookup_soft_elegance_1.png */; };
 		148E786E23235FCB00233434 /* lookup.png in Resources */ = {isa = PBXBuildFile; fileRef = 148E771123235FCA00233434 /* lookup.png */; };
@@ -331,6 +333,11 @@
 		14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCustomAlertView.m; sourceTree = "<group>"; };
 		14409CC5231C6903006E9FFA /* HPCenterBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCenterBtnView.h; sourceTree = "<group>"; };
 		14409CC6231C6903006E9FFA /* HPCenterBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCenterBtnView.m; sourceTree = "<group>"; };
+		14805C5D23419D83003EF272 /* UIViewController+PresentModalStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PresentModalStyle.h"; sourceTree = "<group>"; };
+		14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PresentModalStyle.m"; sourceTree = "<group>"; };
+		14805C602341A88C003EF272 /* huafener.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = huafener.entitlements; sourceTree = "<group>"; };
+		14805C622341AB74003EF272 /* HPSignInWithAppleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPSignInWithAppleController.h; sourceTree = "<group>"; };
+		14805C632341AB74003EF272 /* HPSignInWithAppleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPSignInWithAppleController.m; sourceTree = "<group>"; };
 		148E770F23235FCA00233434 /* lookup_soft_elegance_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_soft_elegance_2.png; sourceTree = "<group>"; };
 		148E771023235FCA00233434 /* lookup_soft_elegance_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_soft_elegance_1.png; sourceTree = "<group>"; };
 		148E771123235FCA00233434 /* lookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup.png; sourceTree = "<group>"; };
@@ -867,6 +874,7 @@
 		14409C1C231BD170006E9FFA /* huafener */ = {
 			isa = PBXGroup;
 			children = (
+				14805C602341A88C003EF272 /* huafener.entitlements */,
 				141966652330EC9D008035DD /* My-Huafener.gpx */,
 				14B17255231D16A100463A7A /* Lib */,
 				14409CB5231C3D02006E9FFA /* projectCode */,
@@ -954,6 +962,8 @@
 				14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */,
 				14409CAD231C00BD006E9FFA /* UIView+LYViewBehavior_hit.h */,
 				14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */,
+				14805C5D23419D83003EF272 /* UIViewController+PresentModalStyle.h */,
+				14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */,
 			);
 			path = LYViewCategory;
 			sourceTree = "<group>";
@@ -961,6 +971,7 @@
 		14409CB5231C3D02006E9FFA /* projectCode */ = {
 			isa = PBXGroup;
 			children = (
+				14805C612341AB31003EF272 /* Modules */,
 				141EC1D2231CC39500E613F0 /* LYEnums */,
 				14409CB6231C3D15006E9FFA /* base */,
 				14409C99231BED26006E9FFA /* TabbarVC */,
@@ -1008,6 +1019,15 @@
 				141EC1CD231CB7E500E613F0 /* centerBtnList.plist */,
 			);
 			path = centerBtnView;
+			sourceTree = "<group>";
+		};
+		14805C612341AB31003EF272 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				14805C622341AB74003EF272 /* HPSignInWithAppleController.h */,
+				14805C632341AB74003EF272 /* HPSignInWithAppleController.m */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		148E770C23235FCA00233434 /* GPUImage */ = {
@@ -1827,9 +1847,30 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-huafenerTests/Pods-huafenerTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-huafenerTests/Pods-huafenerTests-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+				"${PODS_CONFIGURATION_BUILD_DIR}/STAlertView/STAlertView.bundle",
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-huafenerTests/Pods-huafenerTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/STAlertView.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1844,9 +1885,28 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-huafener/Pods-huafener-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-huafener/Pods-huafener-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-huafener/Pods-huafener-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2036,6 +2096,7 @@
 				148E78C123235FCB00233434 /* GPUImageLaplacianFilter.m in Sources */,
 				148E78A023235FCB00233434 /* GPUImageMultiplyBlendFilter.m in Sources */,
 				148E791823235FCB00233434 /* GPUImageBeautifyFilter.m in Sources */,
+				14805C5F23419D83003EF272 /* UIViewController+PresentModalStyle.m in Sources */,
 				148E78D823235FCB00233434 /* GPUImageColorBlendFilter.m in Sources */,
 				148E787E23235FCB00233434 /* GPUImageColorPackingFilter.m in Sources */,
 				148E78DF23235FCB00233434 /* GPUImageSmoothToonFilter.m in Sources */,
@@ -2057,6 +2118,7 @@
 				148E78AC23235FCB00233434 /* GPUImagePixellateFilter.m in Sources */,
 				148E788023235FCB00233434 /* GPUImageUIElement.m in Sources */,
 				148E788A23235FCB00233434 /* GPUImageHistogramFilter.m in Sources */,
+				14805C642341AB74003EF272 /* HPSignInWithAppleController.m in Sources */,
 				148E78B823235FCB00233434 /* GPUImageOutput.m in Sources */,
 				141EC1BF231CA19200E613F0 /* HPDevice.m in Sources */,
 				148E78A123235FCB00233434 /* GPUImageZoomBlurFilter.m in Sources */,
@@ -2302,6 +2364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = huafener/huafener.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGH7S67FXX;
 				ENABLE_BITCODE = NO;
@@ -2325,6 +2388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = huafener/huafener.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BGH7S67FXX;
 				ENABLE_BITCODE = NO;

@@ -28,6 +28,8 @@ pod 'CocoaLumberjack'
 # RAC
 pod 'ReactiveObjC', '~>3.1.1'
 
+#UI
+pod 'Masonry', '~> 1.0.2'
 
 target 'huafener' do
  

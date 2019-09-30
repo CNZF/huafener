@@ -10,13 +10,19 @@
 
 @interface MineTabViewController ()
 
+
+
 @end
 
 @implementation MineTabViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+}
+
+- (void)handleSignWitnApple:(UIButton *)sender{
+    
 }
 
 

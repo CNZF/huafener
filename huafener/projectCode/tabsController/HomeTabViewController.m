@@ -8,7 +8,7 @@
 
 #import "HomeTabViewController.h"
 #import "MainViewController.h"
-
+#import "HPSignInWithAppleController.h"
 @interface HomeTabViewController ()
 
 @end
@@ -21,8 +21,8 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    MainViewController *main = [[MainViewController alloc] init];
-    [self presentViewController:main animated:YES completion:nil];
+    HPSignInWithAppleController *signWithApple = [[HPSignInWithAppleController alloc] init];
+    [self presentViewController:signWithApple animated:YES completion:nil];
 }
 
 /*

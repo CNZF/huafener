@@ -30,6 +30,8 @@ typedef NS_ENUM(NSInteger, HPTabbarCenterButtonPosition){
 
 @property (nonatomic, strong) UIButton *plusButton;
 
+@property (nonatomic, assign) HPTabbarCenterButtonPosition centerBtnPosition;
+
 @property (nonatomic, weak) id<CustomTabBarDelegate> customTabbarCenterBtnDelegate;
 
 @end

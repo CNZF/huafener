@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor yellowColor];
+    
     UILabel * label = [UILabel new];
     label.font = kFontWithSize(20);
     NSLog(@"kPaddingWithSize%f",kPaddingWithSize(900));
