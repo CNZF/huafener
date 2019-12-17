@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D468BED5970F1F4595E7725A04EC871"
-               BuildableName = "libSAMKeychain.a"
-               BlueprintName = "SAMKeychain"
+               BlueprintIdentifier = "A0FE24AA8BA99A35D2A901DF418C360D"
+               BuildableName = "libRTRootNavigationController.a"
+               BlueprintName = "RTRootNavigationController"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

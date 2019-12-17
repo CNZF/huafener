@@ -128,6 +128,9 @@ PODS:
   - nanopb/encode (0.3.901)
   - Protobuf (3.8.0)
   - ReactiveObjC (3.1.1)
+  - RTRootNavigationController (0.7.2):
+    - RTRootNavigationController/Core (= 0.7.2)
+  - RTRootNavigationController/Core (0.7.2)
   - SAMKeychain (1.5.3)
   - SDWebImage (4.4.7):
     - SDWebImage/Core (= 4.4.7)
@@ -150,6 +153,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.1.0)
   - MJExtension (~> 3.0.15)
   - ReactiveObjC (~> 3.1.1)
+  - RTRootNavigationController (= 0.7.2)
   - SAMKeychain (~> 1.5.3)
   - SDWebImage (~> 4.4.1)
   - STAlertView (~> 1.0.0)
@@ -181,6 +185,7 @@ SPEC REPOS:
     - nanopb
     - Protobuf
     - ReactiveObjC
+    - RTRootNavigationController
     - SAMKeychain
     - SDWebImage
     - STAlertView
@@ -212,11 +217,12 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   STAlertView: bfcbdfed87dc7bfb35c04acd5d96aecebb923d48
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: ce376d40fd92da84a8dcab5cfbd10bc855143530
+PODFILE CHECKSUM: cd3cb150b9a4b14d1d1547a693e764c88ca42102
 
 COCOAPODS: 1.6.1

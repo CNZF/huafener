@@ -42,20 +42,21 @@ static NSString *const titleArrayKey = @"titleArrayKey";
 
 //添加子控制器
 - (void)setChildViewControllers:(NSArray *)tabVcArrays{
-    
+    NSMutableArray * childTabbarVc = [NSMutableArray arrayWithCapacity:0];
     for (NSInteger i = 0; i<tabVcArrays.count; i++) {
-        [self addChildrenViewController:tabVcArrays[i]
+        UIViewController *vc = [self addChildrenViewController:tabVcArrays[i]
                                andTitle:self.titleArrays[i] andImageName:self.imageArrays[i] selectImage:self.selectImageArrays[i]];
+        [childTabbarVc addObject:vc];
     }
+    self.viewControllers = childTabbarVc;
 }
 
-- (void)addChildrenViewController:(UIViewController *)childVC andTitle:(NSString *)title andImageName:(NSString *)imageName selectImage:(NSString *)seleImageName{
-    childVC.tabBarItem.image = [UIImage imageNamed:imageName];
-    childVC.tabBarItem.selectedImage = [UIImage imageNamed:seleImageName];
+- (UINavigationController *)addChildrenViewController:(UINavigationController *)childVC andTitle:(NSString *)title andImageName:(NSString *)imageName selectImage:(NSString *)seleImageName{
+    childVC.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+    childVC.tabBarItem.selectedImage = [[UIImage imageNamed:seleImageName] imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
     childVC.title = title;
     childVC.view.backgroundColor = GH_Color_Random;
-    UINavigationController *baseNav = [[UINavigationController alloc] initWithRootViewController:childVC];
-    [self addChildViewController:baseNav];
+    return childVC;
 }
 
 

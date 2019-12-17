@@ -31,11 +31,13 @@
 		14409CA7231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */; };
 		14409CAA231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */; };
 		14409CAF231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */; };
-		14409CB9231C3D2E006E9FFA /* GHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CB8231C3D2E006E9FFA /* GHBaseViewController.m */; };
+		14409CB9231C3D2E006E9FFA /* HPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CB8231C3D2E006E9FFA /* HPBaseViewController.m */; };
 		14409CBD231C3D5A006E9FFA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CBC231C3D5A006E9FFA /* MainViewController.m */; };
 		14409CC0231C437D006E9FFA /* homeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CBF231C437D006E9FFA /* homeView.m */; };
 		14409CC4231C67C9006E9FFA /* ZZCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */; };
 		14409CC7231C6903006E9FFA /* HPCenterBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC6231C6903006E9FFA /* HPCenterBtnView.m */; };
+		1446013923A8814300B9E44B /* HPConsigmentMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446013823A8814300B9E44B /* HPConsigmentMainController.m */; };
+		1446013C23A8815E00B9E44B /* HPMessageMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446013B23A8815E00B9E44B /* HPMessageMainController.m */; };
 		14805C5F23419D83003EF272 /* UIViewController+PresentModalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */; };
 		14805C642341AB74003EF272 /* HPSignInWithAppleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14805C632341AB74003EF272 /* HPSignInWithAppleController.m */; };
 		148E786C23235FCB00233434 /* lookup_soft_elegance_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 148E770F23235FCA00233434 /* lookup_soft_elegance_2.png */; };
@@ -323,8 +325,8 @@
 		14409CAD231C00BD006E9FFA /* UIView+LYViewBehavior_hit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LYViewBehavior_hit.h"; sourceTree = "<group>"; };
 		14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_hit.m"; sourceTree = "<group>"; };
 		14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineEfficency.h; sourceTree = "<group>"; };
-		14409CB7231C3D2E006E9FFA /* GHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHBaseViewController.h; sourceTree = "<group>"; };
-		14409CB8231C3D2E006E9FFA /* GHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBaseViewController.m; sourceTree = "<group>"; };
+		14409CB7231C3D2E006E9FFA /* HPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPBaseViewController.h; sourceTree = "<group>"; };
+		14409CB8231C3D2E006E9FFA /* HPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPBaseViewController.m; sourceTree = "<group>"; };
 		14409CBB231C3D5A006E9FFA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		14409CBC231C3D5A006E9FFA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		14409CBE231C437D006E9FFA /* homeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeView.h; sourceTree = "<group>"; };
@@ -333,6 +335,10 @@
 		14409CC3231C67C9006E9FFA /* ZZCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCustomAlertView.m; sourceTree = "<group>"; };
 		14409CC5231C6903006E9FFA /* HPCenterBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCenterBtnView.h; sourceTree = "<group>"; };
 		14409CC6231C6903006E9FFA /* HPCenterBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCenterBtnView.m; sourceTree = "<group>"; };
+		1446013723A8814300B9E44B /* HPConsigmentMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPConsigmentMainController.h; sourceTree = "<group>"; };
+		1446013823A8814300B9E44B /* HPConsigmentMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPConsigmentMainController.m; sourceTree = "<group>"; };
+		1446013A23A8815E00B9E44B /* HPMessageMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPMessageMainController.h; sourceTree = "<group>"; };
+		1446013B23A8815E00B9E44B /* HPMessageMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPMessageMainController.m; sourceTree = "<group>"; };
 		14805C5D23419D83003EF272 /* UIViewController+PresentModalStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PresentModalStyle.h"; sourceTree = "<group>"; };
 		14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PresentModalStyle.m"; sourceTree = "<group>"; };
 		14805C602341A88C003EF272 /* huafener.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = huafener.entitlements; sourceTree = "<group>"; };
@@ -984,8 +990,8 @@
 		14409CB6231C3D15006E9FFA /* base */ = {
 			isa = PBXGroup;
 			children = (
-				14409CB7231C3D2E006E9FFA /* GHBaseViewController.h */,
-				14409CB8231C3D2E006E9FFA /* GHBaseViewController.m */,
+				14409CB7231C3D2E006E9FFA /* HPBaseViewController.h */,
+				14409CB8231C3D2E006E9FFA /* HPBaseViewController.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -999,6 +1005,10 @@
 				14409CBF231C437D006E9FFA /* homeView.m */,
 				1419666B23336AFD008035DD /* HomeTabViewController.h */,
 				1419666C23336AFD008035DD /* HomeTabViewController.m */,
+				1446013723A8814300B9E44B /* HPConsigmentMainController.h */,
+				1446013823A8814300B9E44B /* HPConsigmentMainController.m */,
+				1446013A23A8815E00B9E44B /* HPMessageMainController.h */,
+				1446013B23A8815E00B9E44B /* HPMessageMainController.m */,
 				1419666E23336B26008035DD /* MineTabViewController.h */,
 				1419666F23336B26008035DD /* MineTabViewController.m */,
 			);
@@ -1968,7 +1978,7 @@
 				148E78D523235FCB00233434 /* GPUImageSoftLightBlendFilter.m in Sources */,
 				148E789E23235FCB00233434 /* GPUImageColorMatrixFilter.m in Sources */,
 				148E790E23235FCB00233434 /* GPUImageBulgeDistortionFilter.m in Sources */,
-				14409CB9231C3D2E006E9FFA /* GHBaseViewController.m in Sources */,
+				14409CB9231C3D2E006E9FFA /* HPBaseViewController.m in Sources */,
 				14B172A1231D1A9F00463A7A /* MJRefreshAutoStateFooter.m in Sources */,
 				148E78CF23235FCB00233434 /* GPUImagePoissonBlendFilter.m in Sources */,
 				14409CC7231C6903006E9FFA /* HPCenterBtnView.m in Sources */,
@@ -2040,6 +2050,7 @@
 				148E78B123235FCB00233434 /* GPUImageSepiaFilter.m in Sources */,
 				1419666A233241FF008035DD /* HPCustomTabbar.m in Sources */,
 				148E788E23235FCB00233434 /* GPUImageHistogramEqualizationFilter.m in Sources */,
+				1446013C23A8815E00B9E44B /* HPMessageMainController.m in Sources */,
 				148E790523235FCB00233434 /* GPUImageKuwaharaFilter.m in Sources */,
 				14B172A8231D1A9F00463A7A /* MJRefreshGifHeader.m in Sources */,
 				148E790A23235FCB00233434 /* GPUImageLuminanceRangeFilter.m in Sources */,
@@ -2141,6 +2152,7 @@
 				148E787723235FCB00233434 /* GPUImageFilterGroup.m in Sources */,
 				148E790923235FCB00233434 /* GPUImageLuminosityBlendFilter.m in Sources */,
 				14B172DF231D1AD500463A7A /* TZAssetCell.m in Sources */,
+				1446013923A8814300B9E44B /* HPConsigmentMainController.m in Sources */,
 				14B172E4231D1AD500463A7A /* TZPhotoPreviewController.m in Sources */,
 				148E78EA23235FCB00233434 /* GPUImageLowPassFilter.m in Sources */,
 				148E788723235FCB00233434 /* GPUImageLevelsFilter.m in Sources */,

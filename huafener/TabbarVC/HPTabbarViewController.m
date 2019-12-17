@@ -10,8 +10,11 @@
 #import "UITabBarController+LYTabbarSetting.h"
 #import "HPCustomTabbar.h"
 
+#import <RTRootNavigationController.h>
 #import "HomeTabViewController.h"
 #import "MineTabViewController.h"
+#import "HPMessageMainController.h"
+#import "HPConsigmentMainController.h"
 
 #import "ZZCustomAlertView.h"
 #import "HPCenterBtnView.h"
@@ -29,31 +32,48 @@
 
 @property (nonatomic, strong) MineTabViewController *mineTabController;
 
+@property (nonatomic, strong) HPConsigmentMainController *consigmentTabController;
+
+@property (nonatomic, strong) HPMessageMainController *messageTabController;
+
 @property (nonatomic, strong) ZZCustomAlertView *alertView;
 
 @end
 
 @implementation HPTabbarViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setConfig_UI];
     [self setConfig_Datas];
+    
 }
+
 
 - (void)setConfig_Datas{
     
 }
 
+
 - (void)setConfig_UI{
-    self.titleArrays = @[@"首页",@"我的"];
-    self.imageArrays = @[@"home",@"mine"];
-    self.selectImageArrays = @[@"home_high",@"mine_high"];
-    [self setChildViewControllers:self.tabVCs];
+    
     [self setValue:self.hp_tabbar forKey:@"tabBar"];
+    self.titleArrays = @[@"首页",@"寄卖",@"消息",@"我的"];
+    self.imageArrays = @[@"home",@"classN",@"message",@"mine"];
+    self.selectImageArrays =
+    @[@"home_high",@"classN_high",@"message_high",@"mine_high"];
+    [self setChildViewControllers:self.tabVCs];
+    
+    self.selectedIndex = 0;
 }
 
-#pragma mark -- Action
+#pragma mark
+#pragma mark -- TabbarAction
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
     
 }
@@ -76,6 +96,8 @@
     };
 
 }
+#pragma mark
+#pragma mark -- setter && getter
 
 //自定义tabbar
 - (HPCustomTabbar *)hp_tabbar{
@@ -101,9 +123,29 @@
     return _mineTabController;
 }
 
+- (HPConsigmentMainController *)consigmentTabController{
+    if (!_consigmentTabController) {
+        _consigmentTabController = [[HPConsigmentMainController alloc] init];
+    }
+    return _consigmentTabController;
+}
+
+- (HPMessageMainController *)messageTabController{
+    if (!_messageTabController) {
+        _messageTabController = [[HPMessageMainController alloc] init];
+    }
+    return _messageTabController;
+}
+
 - (NSArray *)tabVCs{
     if (!_tabVCs) {
-        _tabVCs = @[self.homeTabController,self.mineTabController];
+        
+        RTContainerNavigationController *rtc_home = [[RTContainerNavigationController alloc] initWithRootViewController:self.homeTabController];
+        RTContainerNavigationController *rtc_consigment = [[RTContainerNavigationController alloc] initWithRootViewController:self.consigmentTabController];
+        RTContainerNavigationController *rtc_message = [[RTContainerNavigationController alloc] initWithRootViewController:self.messageTabController];
+        RTContainerNavigationController *rtc_mine = [[RTContainerNavigationController alloc] initWithRootViewController:self.mineTabController];
+        
+        _tabVCs = @[rtc_home,rtc_consigment,rtc_message,rtc_mine];
     }
     return _tabVCs;
 }

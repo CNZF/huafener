@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define TabbarCenterBtnTitleStr @"发布"
+#define TabbarCenterBtnImageStr @"tabBarCenterBtn"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UITabBarController (LYTabbarSetting)

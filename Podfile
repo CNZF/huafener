@@ -10,6 +10,8 @@ pod 'SDWebImage', '~> 4.4.1'
 pod 'IQKeyboardManager', '~> 6.1.1'
 pod 'SAMKeychain', '~> 1.5.3'
 
+pod 'RTRootNavigationController','0.7.2'
+
 #二维码
 pod 'LBXScan/UI','~> 2.3'
 pod 'LBXScan/LBXZBar','~> 2.3'

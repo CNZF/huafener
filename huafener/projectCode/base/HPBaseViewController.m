@@ -6,13 +6,13 @@
 //  Copyright © 2019 杨俊杰. All rights reserved.
 //
 
-#import "GHBaseViewController.h"
+#import "HPBaseViewController.h"
 
-@interface GHBaseViewController ()
+@interface HPBaseViewController ()
 
 @end
 
-@implementation GHBaseViewController
+@implementation HPBaseViewController
 
 #ifdef DEBUG
     static NSMutableDictionary *s_allocInfo;

@@ -9,7 +9,7 @@
 #import "HPCustomTabbar.h"
 #import "UITabBarController+LYTabbarSetting.h"
 
-#define tabbarNumbers 3
+#define tabbarNumbers 5
 
 @implementation HPCustomTabbar
 
@@ -108,10 +108,10 @@ static inline NSInteger getCenterNumber(){
         _plusButton.adjustsImageWhenHighlighted = NO;
         
         //图片大小最好为60*60
-        [_plusButton setImage:[UIImage imageNamed:@"tabBarCenterBtn"] forState:UIControlStateNormal];
-        [_plusButton setImage:[UIImage imageNamed:@"tabBarCenterBtn"] forState:UIControlStateHighlighted];
-        [_plusButton setTitle:@"发布" forState:UIControlStateNormal];
-        [_plusButton setTitle:@"发布" forState:UIControlStateHighlighted];
+        [_plusButton setImage:[UIImage imageNamed:TabbarCenterBtnImageStr] forState:UIControlStateNormal];
+        [_plusButton setImage:[UIImage imageNamed:TabbarCenterBtnImageStr] forState:UIControlStateHighlighted];
+        [_plusButton setTitle:TabbarCenterBtnTitleStr forState:UIControlStateNormal];
+        [_plusButton setTitle:TabbarCenterBtnTitleStr forState:UIControlStateHighlighted];
         
         _plusButton.titleLabel.font = [UIFont systemFontOfSize:13];
         

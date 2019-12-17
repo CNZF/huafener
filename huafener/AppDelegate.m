@@ -7,13 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "HPTabbarViewController.h"
+#import <RTRootNavigationController.h>
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
@@ -28,7 +29,12 @@
 
 //设置初始页面
 - (void)setRootController{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.tabbarController = [[HPTabbarViewController alloc] init];
+    RTRootNavigationController *rt = [[RTRootNavigationController alloc] initWithRootViewController:self.tabbarController];
     
+    self.window.rootViewController = rt;
+    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
