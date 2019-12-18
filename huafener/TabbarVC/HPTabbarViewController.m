@@ -45,6 +45,8 @@
 
 @property (nonatomic, strong) UITabBarItem *preTabBarItem;
 
+@property (nonatomic,assign) NSInteger  indexFlag;
+
 @end
 
 @implementation HPTabbarViewController
@@ -83,39 +85,37 @@
 #pragma mark
 #pragma mark -- TabbarAction
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
-//
-//    if ([item.title isEqualToString:@"消息"]) {
-//        self.homeTabController.navigationController.tabBarItem.image = [UIImage imageNamed:@"home_good_like_h"];
-//    }else if([item.title isEqualToString:@"我的"]){
-//        self.homeTabController.tabBarItem.image = [UIImage imageNamed:@"like_selected"];
-//    }else{
-//        self.homeTabController.tabBarItem.image = [UIImage imageNamed:@"home"];
-//    }
-//
-    
-//    NSLog(@"%@",self.preTabBarItem.title);
-//    UIImage * image = self.preTabBarItem.image;
-//    image = [UIImage imageNamed:@"homeSearch"];
-//    self.hp_tabbar.items[0].image = image;
-    
-    
-    
-//    [self.hp_tabbar reLayoutOutSubViews];
-    
-    
-//    CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-//    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];
-//    rotationAnimation.duration = 1.5;
-//    rotationAnimation.cumulative = YES;
-//    rotationAnimation.repeatCount = MAXFLOAT;
-//    [preTabbarItem.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
-//
-//    rotationAnimation0 = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-//    rotationAnimation0.toValue = [NSNumber numberWithFloat: -M_PI * 2.0 ];
-//    rotationAnimation0.duration = 3;
-//    rotationAnimation0.cumulative = YES;
-//    rotationAnimation0.repeatCount = MAXFLOAT;
-//    [self.circleImageView.layer addAnimation:rotationAnimation0 forKey:@"rotationAnimation0"];
+    [self tabBarImageAnimation:item];
+}
+
+#pragma make -- 底Bar 控件获取，动画x执行
+- (void)tabBarImageAnimation:(UITabBarItem *)item {
+    for (UIControl *tabBarButton in self.tabBar.subviews) {
+        Class class = NSClassFromString(@"UITabBarButton");
+        //获取TabbarButton
+        if ([tabBarButton isKindOfClass:class]) {
+            //倒序遍历数组，Label是在结尾处
+            NSEnumerator *enumerator = [tabBarButton.subviews reverseObjectEnumerator];
+            NSArray *tabbarBtnSubsArray = [enumerator allObjects];
+            for (UIView *view in tabbarBtnSubsArray) {
+                //取得Label, 判断条件
+                if ([view isKindOfClass:NSClassFromString(@"UITabBarButtonLabel")]) {
+                    UILabel *label = (UILabel *)view;
+                    if ([label.text isEqualToString:item.title]) {
+                        //获取Btn里边的ImageView
+                        Class barButtonImageClass = NSClassFromString(@"UITabBarSwappableImageView");
+                        for (UIView *imageView in tabBarButton.subviews) {
+                            if ([imageView isKindOfClass:barButtonImageClass]) {
+                                //相应动画执行
+                                [HPAnimalManager hpCABasicAnimationWithAnimalType:CABasicAnimation_Transform_Rotation_z AndView:imageView];
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
@@ -126,6 +126,7 @@
     return YES;
 }
 
+#pragma mark -- 图片替换
 - (void)firstMethod {
     static NSInteger index = 0;
     UITabBarItem *item = self.homeTabController.navigationController.tabBarItem;

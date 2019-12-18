@@ -16,6 +16,8 @@
 
 #import "HPDefineEfficency.h"
 
+#import "HPAnimalManager.h"
+
 #import "SVProgressHUD.h"
 
 #import "HPDevice.h"

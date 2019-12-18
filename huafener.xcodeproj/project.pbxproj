@@ -39,6 +39,7 @@
 		1446013923A8814300B9E44B /* HPConsigmentMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446013823A8814300B9E44B /* HPConsigmentMainController.m */; };
 		1446013C23A8815E00B9E44B /* HPMessageMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446013B23A8815E00B9E44B /* HPMessageMainController.m */; };
 		1446013F23A9CDC300B9E44B /* HPVoidTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446013E23A9CDC300B9E44B /* HPVoidTabViewController.m */; };
+		1446014323AA00A500B9E44B /* HPAnimalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446014223AA00A500B9E44B /* HPAnimalManager.m */; };
 		14805C5F23419D83003EF272 /* UIViewController+PresentModalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */; };
 		14805C642341AB74003EF272 /* HPSignInWithAppleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14805C632341AB74003EF272 /* HPSignInWithAppleController.m */; };
 		148E786C23235FCB00233434 /* lookup_soft_elegance_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 148E770F23235FCA00233434 /* lookup_soft_elegance_2.png */; };
@@ -342,6 +343,8 @@
 		1446013B23A8815E00B9E44B /* HPMessageMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPMessageMainController.m; sourceTree = "<group>"; };
 		1446013D23A9CDC300B9E44B /* HPVoidTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPVoidTabViewController.h; sourceTree = "<group>"; };
 		1446013E23A9CDC300B9E44B /* HPVoidTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPVoidTabViewController.m; sourceTree = "<group>"; };
+		1446014123AA00A500B9E44B /* HPAnimalManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPAnimalManager.h; sourceTree = "<group>"; };
+		1446014223AA00A500B9E44B /* HPAnimalManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPAnimalManager.m; sourceTree = "<group>"; };
 		14805C5D23419D83003EF272 /* UIViewController+PresentModalStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PresentModalStyle.h"; sourceTree = "<group>"; };
 		14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PresentModalStyle.m"; sourceTree = "<group>"; };
 		14805C602341A88C003EF272 /* huafener.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = huafener.entitlements; sourceTree = "<group>"; };
@@ -887,6 +890,7 @@
 				141966652330EC9D008035DD /* My-Huafener.gpx */,
 				14B17255231D16A100463A7A /* Lib */,
 				14409CB5231C3D02006E9FFA /* projectCode */,
+				1446014023AA007C00B9E44B /* Manager */,
 				14409CAB231BF6F7006E9FFA /* HPCategorys */,
 				14409CA4231BF007006E9FFA /* HP-PCH */,
 				148E791C2327939B00233434 /* HPHeaderDefine */,
@@ -1034,6 +1038,15 @@
 				141EC1CD231CB7E500E613F0 /* centerBtnList.plist */,
 			);
 			path = centerBtnView;
+			sourceTree = "<group>";
+		};
+		1446014023AA007C00B9E44B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1446014123AA00A500B9E44B /* HPAnimalManager.h */,
+				1446014223AA00A500B9E44B /* HPAnimalManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		14805C612341AB31003EF272 /* Modules */ = {
@@ -2010,6 +2023,7 @@
 				148E787423235FCB00233434 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
 				148E78F423235FCB00233434 /* GPUImageScreenBlendFilter.m in Sources */,
 				141EC1BC231CA0A300E613F0 /* HPPublishTopButtonView.m in Sources */,
+				1446014323AA00A500B9E44B /* HPAnimalManager.m in Sources */,
 				148E78B223235FCB00233434 /* GPUImageLineGenerator.m in Sources */,
 				14B1729D231D1A9F00463A7A /* UIView+MJExtension.m in Sources */,
 				148E788923235FCB00233434 /* GPUImageFASTCornerDetectionFilter.m in Sources */,
