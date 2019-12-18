@@ -6,15 +6,15 @@
 //  Copyright © 2019 杨俊杰. All rights reserved.
 //
 
-#import "MineTabViewController.h"
+#import "HPMineTabViewController.h"
 
-@interface MineTabViewController ()
+@interface HPMineTabViewController ()
 
 
 
 @end
 
-@implementation MineTabViewController
+@implementation HPMineTabViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -6,15 +6,15 @@
 //  Copyright © 2019 杨俊杰. All rights reserved.
 //
 
-#import "HomeTabViewController.h"
+#import "HPHomeTabViewController.h"
 #import "MainViewController.h"
 #import "HPSignInWithAppleController.h"
 
-@interface HomeTabViewController ()
+@interface HPHomeTabViewController ()
 
 @end
 
-@implementation HomeTabViewController
+@implementation HPHomeTabViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,27 +1,22 @@
 //
-//  HPConsigmentMainController.m
+//  HPVoidTabViewController.m
 //  huafener
 //
-//  Created by 杨俊杰 on 2019/12/17.
+//  Created by 杨俊杰 on 2019/12/18.
 //  Copyright © 2019 杨俊杰. All rights reserved.
 //
 
-#import "HPConsigmentMainController.h"
+#import "HPVoidTabViewController.h"
 
-@interface HPConsigmentMainController ()
+@interface HPVoidTabViewController ()
 
 @end
 
-@implementation HPConsigmentMainController
+@implementation HPVoidTabViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationItem setTitle:@"j寄卖"];
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    // Do any additional setup after loading the view.
 }
 
 /*

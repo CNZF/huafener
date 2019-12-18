@@ -6,6 +6,7 @@
 //  Copyright © 2019 赵发. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "HPCustomTabbar.h"
 #import "UITabBarController+LYTabbarSetting.h"
 
@@ -29,9 +30,11 @@
     [self setBackgroundImage:[UIImage new]];
     [self setShadowImage:[UIImage new]];
     //给其设置颜色之后，视图穿透消失
+    self.barTintColor = GH_COLOR_FROM_RGB(0xffffff);
     [self setBackgroundColor:GH_COLOR_FROM_RGB(0xffffff)];
     
     self.translucent = NO;
+    
     
     [[UITabBarItem appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:GH_COLOR_FROM_RGB(0x333333),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateNormal];
     
@@ -49,7 +52,9 @@
                      opacity:0.05];
 }
 
-# pragma mark - 重新布局
+# pragma mark - 如果底Bar 图标不需要更改的话，设置4个重新计算布局，
+//注意：重新计算完布局之后tabbar 的按钮位置会发生变化
+
 - (void)layoutSubviews{
     [super layoutSubviews];
     
@@ -57,20 +62,20 @@
     [_plusButton setBorderWithCornerRadius:30 type:corner];
     // 设置中间按钮的位置
     self.plusButton.center = CGPointMake(CGRectGetWidth(self.frame) * 0.5, 10);
-    
-    // 设置其他的按钮的位置
-    CGFloat w = CGRectGetWidth(self.frame) / tabbarNumbers;
-    CGFloat index = 0;
-    for (UIView *childView in self.subviews) {
-        Class class = NSClassFromString(@"UITabBarButton");
-        if ([childView isKindOfClass:class]) {
-            childView.frame = CGRectMake(w * index, CGRectGetMinY(childView.frame), w, CGRectGetHeight(childView.frame));
-            index ++;
-            if (index == getCenterNumber()) {
-                index ++;
-            }
-        }
-    }
+//
+//    // 设置其他的按钮的位置
+//    CGFloat w = CGRectGetWidth(self.frame) / tabbarNumbers;
+//    CGFloat index = 0;
+//    for (UIView *childView in self.subviews) {
+//        Class class = NSClassFromString(@"UITabBarButton");
+//        if ([childView isKindOfClass:class]) {
+//            childView.frame = CGRectMake(w * index, CGRectGetMinY(childView.frame), w, CGRectGetHeight(childView.frame));
+//            index ++;
+//            if (index == getCenterNumber()) {
+//                index ++;
+//            }
+//        }
+//    }
 }
 
 static inline NSInteger getCenterNumber(){
@@ -113,13 +118,13 @@ static inline NSInteger getCenterNumber(){
         [_plusButton setTitle:TabbarCenterBtnTitleStr forState:UIControlStateNormal];
         [_plusButton setTitle:TabbarCenterBtnTitleStr forState:UIControlStateHighlighted];
         
-        _plusButton.titleLabel.font = [UIFont systemFontOfSize:13];
+        _plusButton.titleLabel.font = [UIFont systemFontOfSize:12];
         
-        [_plusButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [_plusButton setTitleColor:GH_COLOR_FROM_RGB(0x333333) forState:UIControlStateNormal];
         [_plusButton setTitleColor:GH_Color_Random forState:UIControlStateSelected];
         
         UIImage *buttonImg = [_plusButton imageForState:UIControlStateNormal];
-        CGFloat titleWidth = [_plusButton.titleLabel.text sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:13],NSFontAttributeName, nil]].width;
+        CGFloat titleWidth = [_plusButton.titleLabel.text sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:12],NSFontAttributeName, nil]].width;
         [_plusButton setTitleEdgeInsets:UIEdgeInsetsMake(buttonImg.size.height, -buttonImg.size.width, 0, 0)];
         [_plusButton setImageEdgeInsets:UIEdgeInsetsMake(-20, 0, 0, -titleWidth)];
         _plusButton.frame = CGRectMake(0, 0, _plusButton.imageView.image.size.width, 80);

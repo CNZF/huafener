@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		141966662330EC9D008035DD /* My-Huafener.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 141966652330EC9D008035DD /* My-Huafener.gpx */; };
 		1419666A233241FF008035DD /* HPCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14196669233241FF008035DD /* HPCustomTabbar.m */; };
-		1419666D23336AFD008035DD /* HomeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419666C23336AFD008035DD /* HomeTabViewController.m */; };
-		1419667023336B26008035DD /* MineTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419666F23336B26008035DD /* MineTabViewController.m */; };
+		1419666D23336AFD008035DD /* HPHomeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419666C23336AFD008035DD /* HPHomeTabViewController.m */; };
+		1419667023336B26008035DD /* HPMineTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1419666F23336B26008035DD /* HPMineTabViewController.m */; };
 		141EC1BC231CA0A300E613F0 /* HPPublishTopButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1BB231CA0A300E613F0 /* HPPublishTopButtonView.m */; };
 		141EC1BF231CA19200E613F0 /* HPDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1BE231CA19200E613F0 /* HPDevice.m */; };
 		141EC1C2231CA32E00E613F0 /* UIView+GHLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1C1231CA32E00E613F0 /* UIView+GHLayout.m */; };
@@ -38,6 +38,7 @@
 		14409CC7231C6903006E9FFA /* HPCenterBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409CC6231C6903006E9FFA /* HPCenterBtnView.m */; };
 		1446013923A8814300B9E44B /* HPConsigmentMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446013823A8814300B9E44B /* HPConsigmentMainController.m */; };
 		1446013C23A8815E00B9E44B /* HPMessageMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446013B23A8815E00B9E44B /* HPMessageMainController.m */; };
+		1446013F23A9CDC300B9E44B /* HPVoidTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446013E23A9CDC300B9E44B /* HPVoidTabViewController.m */; };
 		14805C5F23419D83003EF272 /* UIViewController+PresentModalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */; };
 		14805C642341AB74003EF272 /* HPSignInWithAppleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14805C632341AB74003EF272 /* HPSignInWithAppleController.m */; };
 		148E786C23235FCB00233434 /* lookup_soft_elegance_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 148E770F23235FCA00233434 /* lookup_soft_elegance_2.png */; };
@@ -279,10 +280,10 @@
 		141966652330EC9D008035DD /* My-Huafener.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "My-Huafener.gpx"; sourceTree = "<group>"; };
 		14196668233241FF008035DD /* HPCustomTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPCustomTabbar.h; sourceTree = "<group>"; };
 		14196669233241FF008035DD /* HPCustomTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPCustomTabbar.m; sourceTree = "<group>"; };
-		1419666B23336AFD008035DD /* HomeTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTabViewController.h; sourceTree = "<group>"; };
-		1419666C23336AFD008035DD /* HomeTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTabViewController.m; sourceTree = "<group>"; };
-		1419666E23336B26008035DD /* MineTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTabViewController.h; sourceTree = "<group>"; };
-		1419666F23336B26008035DD /* MineTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTabViewController.m; sourceTree = "<group>"; };
+		1419666B23336AFD008035DD /* HPHomeTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPHomeTabViewController.h; sourceTree = "<group>"; };
+		1419666C23336AFD008035DD /* HPHomeTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPHomeTabViewController.m; sourceTree = "<group>"; };
+		1419666E23336B26008035DD /* HPMineTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPMineTabViewController.h; sourceTree = "<group>"; };
+		1419666F23336B26008035DD /* HPMineTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPMineTabViewController.m; sourceTree = "<group>"; };
 		141EC1BA231CA0A200E613F0 /* HPPublishTopButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPublishTopButtonView.h; sourceTree = "<group>"; };
 		141EC1BB231CA0A300E613F0 /* HPPublishTopButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPublishTopButtonView.m; sourceTree = "<group>"; };
 		141EC1BD231CA19200E613F0 /* HPDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDevice.h; sourceTree = "<group>"; };
@@ -339,6 +340,8 @@
 		1446013823A8814300B9E44B /* HPConsigmentMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPConsigmentMainController.m; sourceTree = "<group>"; };
 		1446013A23A8815E00B9E44B /* HPMessageMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPMessageMainController.h; sourceTree = "<group>"; };
 		1446013B23A8815E00B9E44B /* HPMessageMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPMessageMainController.m; sourceTree = "<group>"; };
+		1446013D23A9CDC300B9E44B /* HPVoidTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPVoidTabViewController.h; sourceTree = "<group>"; };
+		1446013E23A9CDC300B9E44B /* HPVoidTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPVoidTabViewController.m; sourceTree = "<group>"; };
 		14805C5D23419D83003EF272 /* UIViewController+PresentModalStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PresentModalStyle.h"; sourceTree = "<group>"; };
 		14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PresentModalStyle.m"; sourceTree = "<group>"; };
 		14805C602341A88C003EF272 /* huafener.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = huafener.entitlements; sourceTree = "<group>"; };
@@ -1003,14 +1006,16 @@
 				14409CBC231C3D5A006E9FFA /* MainViewController.m */,
 				14409CBE231C437D006E9FFA /* homeView.h */,
 				14409CBF231C437D006E9FFA /* homeView.m */,
-				1419666B23336AFD008035DD /* HomeTabViewController.h */,
-				1419666C23336AFD008035DD /* HomeTabViewController.m */,
+				1419666B23336AFD008035DD /* HPHomeTabViewController.h */,
+				1419666C23336AFD008035DD /* HPHomeTabViewController.m */,
 				1446013723A8814300B9E44B /* HPConsigmentMainController.h */,
 				1446013823A8814300B9E44B /* HPConsigmentMainController.m */,
 				1446013A23A8815E00B9E44B /* HPMessageMainController.h */,
 				1446013B23A8815E00B9E44B /* HPMessageMainController.m */,
-				1419666E23336B26008035DD /* MineTabViewController.h */,
-				1419666F23336B26008035DD /* MineTabViewController.m */,
+				1419666E23336B26008035DD /* HPMineTabViewController.h */,
+				1419666F23336B26008035DD /* HPMineTabViewController.m */,
+				1446013D23A9CDC300B9E44B /* HPVoidTabViewController.h */,
+				1446013E23A9CDC300B9E44B /* HPVoidTabViewController.m */,
 			);
 			path = tabsController;
 			sourceTree = "<group>";
@@ -2082,7 +2087,7 @@
 				148E787623235FCB00233434 /* GPUImageLuminanceThresholdFilter.m in Sources */,
 				14B172AE231D1A9F00463A7A /* MJRefreshComponent.m in Sources */,
 				14B172C0231D1AC800463A7A /* SVIndefiniteAnimatedView.m in Sources */,
-				1419666D23336AFD008035DD /* HomeTabViewController.m in Sources */,
+				1419666D23336AFD008035DD /* HPHomeTabViewController.m in Sources */,
 				148E78F223235FCB00233434 /* GPUImageLocalBinaryPatternFilter.m in Sources */,
 				148E787C23235FCB00233434 /* GPUImageTwoPassFilter.m in Sources */,
 				148E789D23235FCB00233434 /* GPUImageOverlayBlendFilter.m in Sources */,
@@ -2162,8 +2167,9 @@
 				148E787923235FCB00233434 /* GPUImageSobelEdgeDetectionFilter.m in Sources */,
 				14B172AC231D1A9F00463A7A /* MJRefreshBackFooter.m in Sources */,
 				148E78C923235FCB00233434 /* GPUImagePicture.m in Sources */,
+				1446013F23A9CDC300B9E44B /* HPVoidTabViewController.m in Sources */,
 				14B172E3231D1AD500463A7A /* UIView+Layout.m in Sources */,
-				1419667023336B26008035DD /* MineTabViewController.m in Sources */,
+				1419667023336B26008035DD /* HPMineTabViewController.m in Sources */,
 				148E78A523235FCB00233434 /* GPUImageOpeningFilter.m in Sources */,
 				148E78CC23235FCB00233434 /* GPUImageSaturationBlendFilter.m in Sources */,
 				148E78C423235FCB00233434 /* GPUImageRGBFilter.m in Sources */,
