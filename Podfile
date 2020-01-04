@@ -33,6 +33,11 @@ pod 'ReactiveObjC', '~>3.1.1'
 #UI
 pod 'Masonry', '~> 1.0.2'
 
+#AOP
+pod 'Aspects', '~> 1.4.1'
+
+pod 'pop', '~> 1.0.12'
+
 target 'huafener' do
  
 end

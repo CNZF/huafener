@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
   - CocoaLumberjack (3.5.3):
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
@@ -126,6 +127,7 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - pop (1.0.12)
   - Protobuf (3.8.0)
   - ReactiveObjC (3.1.1)
   - RTRootNavigationController (0.7.2):
@@ -140,6 +142,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
+  - Aspects (~> 1.4.1)
   - CocoaLumberjack
   - Crashlytics (~> 3.9.3)
   - Fabric (~> 1.7.2)
@@ -152,6 +155,7 @@ DEPENDENCIES:
   - Masonry (~> 1.0.2)
   - MBProgressHUD (~> 1.1.0)
   - MJExtension (~> 3.0.15)
+  - pop (~> 1.0.12)
   - ReactiveObjC (~> 3.1.1)
   - RTRootNavigationController (= 0.7.2)
   - SAMKeychain (~> 1.5.3)
@@ -161,6 +165,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Aspects
     - CocoaLumberjack
     - Crashlytics
     - Fabric
@@ -183,6 +188,7 @@ SPEC REPOS:
     - MBProgressHUD
     - MJExtension
     - nanopb
+    - pop
     - Protobuf
     - ReactiveObjC
     - RTRootNavigationController
@@ -193,6 +199,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
   Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
@@ -215,6 +222,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
@@ -223,6 +231,6 @@ SPEC CHECKSUMS:
   STAlertView: bfcbdfed87dc7bfb35c04acd5d96aecebb923d48
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: cd3cb150b9a4b14d1d1547a693e764c88ca42102
+PODFILE CHECKSUM: cbe092af96ee9229c2e282948f74d49abec0c805
 
 COCOAPODS: 1.6.1

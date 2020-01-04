@@ -88,7 +88,7 @@
     [self tabBarImageAnimation:item];
 }
 
-#pragma make -- 底Bar 控件获取，动画x执行
+#pragma make -- 底Bar 控件获取 动画执行
 - (void)tabBarImageAnimation:(UITabBarItem *)item {
     for (UIControl *tabBarButton in self.tabBar.subviews) {
         Class class = NSClassFromString(@"UITabBarButton");
@@ -122,7 +122,6 @@
     if (viewController.navigationController && viewController.navigationController.viewControllers && [viewController.childViewControllers.firstObject isKindOfClass:[HPVoidTabViewController class]]) {
         return NO;
     }
-    [self firstMethod];
     return YES;
 }
 

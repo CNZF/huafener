@@ -36,11 +36,11 @@
     self.translucent = NO;
     
     
-    [[UITabBarItem appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:GH_COLOR_FROM_RGB(0x333333),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:GH_COLOR_FROM_RGB(0x333333),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateNormal];
     
-    [[UITabBarItem appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:GH_COLOR_FROM_RGB(0xff6677),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:GH_COLOR_FROM_RGB(0xff6677),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateSelected];
     
-    UIView * hideLineView =[[UIView alloc]initWithFrame:CGRectMake(0, -1, kScreenWidth, 1)];
+    UIView * hideLineView = [[UIView alloc]initWithFrame:CGRectMake(0, -1, kScreenWidth, 1)];
     hideLineView.backgroundColor = [UIColor whiteColor];
     [self insertSubview:hideLineView atIndex:0];
     
@@ -58,11 +58,24 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
     
-    UIRectCorner  corner = UIRectCornerTopLeft | UIRectCornerTopRight;
-    [_plusButton setBorderWithCornerRadius:30 type:corner];
-    // 设置中间按钮的位置
-    self.plusButton.center = CGPointMake(CGRectGetWidth(self.frame) * 0.5, 10);
-//
+    switch (self.centerBtnPosition) {
+        case HPTabbarCenterButtonPositionCenter:{
+            
+        }
+            
+            break;
+        case HPTabbarCenterButtonPositionBulge:{
+            UIRectCorner  corner = UIRectCornerTopLeft | UIRectCornerTopRight;
+            [_plusButton setBorderWithCornerRadius:30 type:corner];
+            // 设置中间按钮的位置
+            self.plusButton.center = CGPointMake(CGRectGetWidth(self.frame) * 0.5, 10);
+        }
+            
+            break;
+        default:
+            break;
+    }
+    
 //    // 设置其他的按钮的位置
 //    CGFloat w = CGRectGetWidth(self.frame) / tabbarNumbers;
 //    CGFloat index = 0;
@@ -97,6 +110,7 @@ static inline NSInteger getCenterNumber(){
     }else {
         //转换坐标
         CGPoint tempPoint = [self.plusButton convertPoint:point fromView:self];
+        NSLog(@"tempPoint : %f -- %f",tempPoint.x,tempPoint.y);
         //判断点击的点是否在按钮区域内
         if (CGRectContainsPoint(self.plusButton.bounds, tempPoint)){
             //返回按钮

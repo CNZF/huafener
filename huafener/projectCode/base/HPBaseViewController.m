@@ -22,16 +22,16 @@
 {
     self = [super init];
     if (self) {
-#ifdef DEBUG
+//#ifdef DEBUG
         [self alloc_init];
-#endif
+//#endif
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"Controller-Memory-Infomation : %@", s_allocInfo);
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -57,11 +57,11 @@
         s_allocInfo = [NSMutableDictionary dictionary];
     }
     s_allocInfo[NSStringFromClass([self class])] = @([s_allocInfo[NSStringFromClass([self class])] intValue] + 1);
-    NSLog(@"Controller-Memory-Infomation : %@", s_allocInfo);
+    
 }
 
 - (void)dealloc{
-#ifdef DEBUG
+//#ifdef DEBUG
     
     [SVProgressHUD showErrorWithStatus:@"✅👌"];
     
@@ -71,7 +71,7 @@
         [s_allocInfo removeObjectForKey:NSStringFromClass([self class])];
     }
     NSLog(@"%@", s_allocInfo);
-#endif
+//#endif
 }
 
 

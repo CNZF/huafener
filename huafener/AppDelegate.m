@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "HPTabbarViewController.h"
 #import <RTRootNavigationController.h>
-
+#import "HPNetworkReachabilityDetailInfoTool.h"
 @interface AppDelegate ()
 
 @end
@@ -24,6 +24,8 @@
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     
     
+    [HPNetworkReachabilityDetailInfoTool getNetWorkReachability];
+
     return YES;
 }
 

@@ -42,5 +42,5 @@ static const DDLogLevel ddLogLevel = DDLogLevelAll;
 
 #define kDeviceScaleFactor   (kScreenWidth / 375.0f)
 #define kPaddingWithSize(size)   ceil((size / 2) * kDeviceScaleFactor)
-#define kFontWithSize(size)  [UIFont systemFontOfSize:size*kDeviceScaleFactor]
+#define kFontWithSize(size)  [UIFont systemFontOfSize:size*kDeviceScaleFactor/2]
 
