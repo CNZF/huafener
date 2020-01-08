@@ -110,7 +110,7 @@ static inline NSInteger getCenterNumber(){
     }else {
         //转换坐标
         CGPoint tempPoint = [self.plusButton convertPoint:point fromView:self];
-        NSLog(@"tempPoint : %f -- %f",tempPoint.x,tempPoint.y);
+//        NSLog(@"tempPoint : %f -- %f",tempPoint.x,tempPoint.y);
         //判断点击的点是否在按钮区域内
         if (CGRectContainsPoint(self.plusButton.bounds, tempPoint)){
             //返回按钮

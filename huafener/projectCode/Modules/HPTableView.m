@@ -7,15 +7,28 @@
 //
 
 #import "HPTableView.h"
+#import "HPScrollView.h"
+@interface HPTableView ()<UIGestureRecognizerDelegate>
+
+
+@end
 
 @implementation HPTableView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+    
+    UIView * gesView = gestureRecognizer.view;
+    UIView *oGesView = otherGestureRecognizer.view;
+
+    Class cls = NSClassFromString(@"UILayoutContainerView");
+    if ([gesView isKindOfClass:[HPTableView class]] && [oGesView isKindOfClass:[cls class]]) {
+        return NO;
+    }
+
+    if ([gesView isKindOfClass:[HPTableView class]] && [oGesView isKindOfClass:[HPScrollView class]]) {
+        return NO;
+    }
+    return YES;
 }
-*/
 
 @end

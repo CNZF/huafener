@@ -17,6 +17,8 @@
 #import "HPDefineEfficency.h"
 
 #import "HPAnimalManager.h"
+#import "HPHTTPSessionManager.h"
+#import "HPBaseRequestOperation.h"
 
 #import "SVProgressHUD.h"
 

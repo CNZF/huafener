@@ -10,23 +10,44 @@
 
 @interface HPRegisterViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *telphoneField;
+@property (weak, nonatomic) IBOutlet UITextField *optCodeField;
+
+@property (nonatomic, strong) NSDictionary *parmasDic;
+
 @end
 
 @implementation HPRegisterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.parmasDic = [NSMutableDictionary dictionary];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-*/
 
+- (IBAction)getOtpCode:(id)sender {
+    
+    HPBaseRequestOperation *op = [[HPBaseRequestOperation alloc] initWithParams:@{@"telePhone":[self.telphoneField text]}];
+    op.requestMapping = HPReqMap_getOtpCode;
+    [HPHTTPSessionManager loadDataWithOperation:op successBlock:^(id  _Nonnull responseObject) {
+        [self.parmasDic setValue:responseObject[@"code"] forKey:@"code"];
+    } failureBlock:^(NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+    
+}
+
+- (IBAction)login:(id)sender {
+    [self.parmasDic setValue:[self.telphoneField text] forKey:@"tel"];
+    HPBaseRequestOperation *op = [[HPBaseRequestOperation alloc] initWithParams:self.parmasDic];
+    op.requestMapping = HPReqMap_login;
+    [HPHTTPSessionManager loadDataWithOperation:op successBlock:^(id  _Nonnull responseObject) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } failureBlock:^(NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+}
 @end

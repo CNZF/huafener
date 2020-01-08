@@ -13,10 +13,13 @@
 #import "HPLoadingHUD.h"
 
 #import "HPHTTPSessionManager.h"
-#import <Aspects.h>
+//#import <Aspects.h>
 
 #import "HPHomeTabOperation.h"
 #import "HPPublishFirstFSwindleView.h"
+#import "TestViewController.h"
+#import "Test1ViewController.h"
+#import <RTRootNavigationController.h>
 
 FOUNDATION_EXPORT NSString * const AFName;
 
@@ -26,6 +29,8 @@ FOUNDATION_EXPORT NSString * const AFName;
 
 @property (nonatomic, strong) AFHTTPSessionManager *manager2;
 
+
+
 @end
 
 @implementation HPHomeTabViewController
@@ -34,17 +39,21 @@ FOUNDATION_EXPORT NSString * const AFName;
     [super viewDidLoad];
     [self.navigationItem setTitle:@"XX"];
     
-    self.manager = [AFHTTPSessionManager manager];
-    self.manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-//
-//    self.manager2 = [AFHTTPSessionManager manager];
-//    self.manager2.requestSerializer = [AFHTTPRequestSerializer serializer];
-//    self.manager2.responseSerializer = [AFHTTPResponseSerializer serializer];
+   
     
-    NSLog(@"%@",[self debugDescription]);
-    [NSObject mj_objectWithKeyValues:@{}];
-    NSLog(@"你大爷的子类调用了");
+    
+//
+//    self.manager = [AFHTTPSessionManager manager];
+//    self.manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+//    self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+////
+////    self.manager2 = [AFHTTPSessionManager manager];
+////    self.manager2.requestSerializer = [AFHTTPRequestSerializer serializer];
+////    self.manager2.responseSerializer = [AFHTTPResponseSerializer serializer];
+//
+//    NSLog(@"%@",[self debugDescription]);
+//    [NSObject mj_objectWithKeyValues:@{}];
+//    NSLog(@"你大爷的子类调用了");
 
     
     
@@ -85,6 +94,9 @@ FOUNDATION_EXPORT NSString * const AFName;
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
+    
+   
     
     
 }
@@ -165,8 +177,11 @@ FOUNDATION_EXPORT NSString * const AFName;
 //        view.alpha = 1.0;
 //    }];
 //    [self.view addSubview:view];
-    [self test];
-    [self test];
+//    [self test];
+//    [self test];
+    
+    Test1ViewController * test = [[Test1ViewController alloc] init];
+    [self.rt_navigationController pushViewController:test animated:YES];
 }
 
 - (void)test{

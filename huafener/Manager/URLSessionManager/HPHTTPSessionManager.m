@@ -8,10 +8,11 @@
 
 #import "HPHTTPSessionManager.h"
 #import "HPDeviceUtils.h"
+#import "HPBaseModel.h"
 #import <SAMKeychain.h>
 #import <AFNetworkActivityIndicatorManager.h>
 
-static NSString * const baseUrl = @"https://api-t.huafer.cc/api";
+static NSString * const baseUrl = @"http://localhost:8090";
 
 NSInteger const kAFNetWoringTimeiutInterval = 10;
 
@@ -56,6 +57,40 @@ static NSUInteger _curttenTaskIdentifier;
 //    config.timeoutIntervalForRequest = kAFNetWoringTimeiutInterval;
 //
 //}
+
+
++ (NSURLSessionDataTask *)requestWith_GET_UrlString:(NSString *)urlString
+                  parameters:(id)parameters
+                successBlock:(HPHTTPRequestSuccessBlock)successBlock
+           failureBlock:(HPHTTPRequestFailedBlock)failureBlock{
+    NSURLSessionDataTask *dataTask =  [[self shareManager] GET:urlString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+//        id jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        
+        HPBaseModel *baseModel = [HPBaseModel mj_objectWithKeyValues:responseObject];
+        NSLog(@"responseObject :%@",[baseModel yy_modelToJSONString]);
+        if (baseModel.code == 200) {
+            if (successBlock){
+                successBlock(baseModel.obj);
+            }
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (error.code !=-999) {
+            if (failureBlock)
+            {
+                failureBlock(error);
+            }
+        }
+        else{
+            NSLog(@"取消队列了");
+        }
+    }];
+    _curttenTaskIdentifier = dataTask.taskIdentifier;
+    return dataTask;
+}
 
 + (NSURLSessionDataTask *)loadDataWithOperation:(HPBaseRequestOperation<HPBaseRequestOperationProtocal>*)operation
            successBlock:(HPHTTPRequestSuccessBlock)successBlock
@@ -107,38 +142,6 @@ static NSUInteger _curttenTaskIdentifier;
 }
 
 
-+ (NSURLSessionDataTask *)requestWith_GET_UrlString:(NSString *)urlString
-                  parameters:(id)parameters
-                successBlock:(HPHTTPRequestSuccessBlock)successBlock
-           failureBlock:(HPHTTPRequestFailedBlock)failureBlock{
-    NSURLSessionDataTask *dataTask =  [[self shareManager] GET:urlString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        id jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-        NSLog(@"responseObject :%@",[jsonDict yy_modelToJSONString]);
-        
-        if (successBlock)
-        {
-            successBlock(jsonDict);
-        }
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        if (error.code !=-999) {
-            if (failureBlock)
-            {
-                failureBlock(error);
-            }
-        }
-        else{
-            NSLog(@"取消队列了");
-        }
-    }];
-    _curttenTaskIdentifier = dataTask.taskIdentifier;
-    return dataTask;
-}
-
 + (NSURLSessionDataTask *)requestWith_POST_UrlString:(NSString *)urlString
                   parameters:(id)parameters
                 successBlock:(HPHTTPRequestSuccessBlock)successBlock
@@ -150,11 +153,12 @@ static NSUInteger _curttenTaskIdentifier;
         id jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
         NSLog(@"\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n响应数据\n");
         NSLog(@"responseObject :%@",[jsonDict yy_modelToJSONString]);
-        if (successBlock)
-        {
-            successBlock(jsonDict);
+        HPBaseModel *baseModel = [HPBaseModel mj_objectWithKeyValues:jsonDict];
+        if (baseModel.code == 200) {
+            if (successBlock){
+                successBlock(baseModel.obj);
+            }
         }
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         if (error.code !=-999) {

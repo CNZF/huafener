@@ -8,6 +8,12 @@
 
 #import "HPBaseRequestOperation.h"
 
+@interface HPBaseRequestOperation()
+
+@property (nonatomic, strong) id cur_params;
+
+@end
+
 @implementation HPBaseRequestOperation
 
 - (instancetype)init
@@ -20,11 +26,23 @@
     return self;
 }
 
+- (instancetype)initWithParams:(id)params{
+    if (self) {
+        self.cur_params = params;
+        self.isAsync = YES;
+        self.requestType = HPHttpRequestTypePost;
+    }
+    return self;
+}
+
 - (nonnull NSString *)getUrl {
     return getMappingUrl(self.requestMapping);
 }
 
 - (nonnull id)params {
+    if (self.cur_params) {
+        return self.cur_params;
+    }
     return getMappingUrlParams(self.requestMapping);
 }
 
@@ -38,10 +56,7 @@ static inline id getMappingUrlParams(HPURLRequestMapping mapping){
         case HPReqMap_getBrandsGrouped:
             return @{};
             break;
-        case HPReqMap_XX:
-            return @{};
-        break;
-        case HPReqMap_XXX:
+        case HPReqMap_getOtpCode:
             return @{};
         break;
         default:
@@ -58,11 +73,11 @@ static inline NSString * getMappingUrl(HPURLRequestMapping mapping){
         case HPReqMap_getBrandsGrouped:
             return @"brand/v1/getBrandsGrouped";;
             break;
-        case HPReqMap_XX:
-            return @"";
+        case HPReqMap_getOtpCode:
+            return @"/user/getOtp";
         break;
-        case HPReqMap_XXX:
-            return @"";
+        case HPReqMap_login:
+            return @"/user/login";
         break;
         default:
             return @"";

@@ -23,6 +23,9 @@
 
 
 #import "ViewController.h"
+#import "HPAnimalManager.h"
+#import "HPRegisterViewController.h"
+
 
 @interface HPTabbarViewController ()<CustomTabBarDelegate,UITabBarControllerDelegate>
 
@@ -143,22 +146,24 @@
 }
 
 - (void)tabBarDidClickPlusButton:(UIButton *)sender{
-    HPCenterBtnView *btnView_ = [[HPCenterBtnView alloc] initWithFrame:[UIScreen mainScreen].bounds campaigns:@[]];
-    
-    _alertView = [ZZCustomAlertView alertViewWithParentView:[UIApplication sharedApplication].keyWindow andContentView:btnView_];
-    _alertView.shouldBlurBackground = YES;
-    _alertView.allowTapBackgroundToDismiss = NO;
-    _alertView.shadowColor = [UIColor whiteColor];
-    _alertView.shadowAlpha = 0.60f;
-    [_alertView show];
-    
-    WS(weakSelf);
-    btnView_.touchSelfViewBlock = ^{
-        [weakSelf.alertView dismissWithCompletionBlock:^(BOOL finished) {
-            weakSelf.alertView = nil;
-        }];
-    };
+//    HPCenterBtnView *btnView_ = [[HPCenterBtnView alloc] initWithFrame:[UIScreen mainScreen].bounds campaigns:@[]];
+//
+//    _alertView = [ZZCustomAlertView alertViewWithParentView:[UIApplication sharedApplication].keyWindow andContentView:btnView_];
+//    _alertView.shouldBlurBackground = YES;
+//    _alertView.allowTapBackgroundToDismiss = NO;
+//    _alertView.shadowColor = [UIColor whiteColor];
+//    _alertView.shadowAlpha = 0.60f;
+//    [_alertView show];
+//
+//    WS(weakSelf);
+//    btnView_.touchSelfViewBlock = ^{
+//        [weakSelf.alertView dismissWithCompletionBlock:^(BOOL finished) {
+//            weakSelf.alertView = nil;
+//        }];
+//    };
 
+    RTRootNavigationController * rt_register = [[UIStoryboard storyboardWithName:@"RLF" bundle:nil] instantiateViewControllerWithIdentifier:@"RT_Register"];
+    [self presentViewController:rt_register animated:YES completion:nil];
 }
 #pragma mark
 #pragma mark -- setter && getter

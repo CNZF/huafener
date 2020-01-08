@@ -10,6 +10,7 @@
 #import "HPTabbarViewController.h"
 #import <RTRootNavigationController.h>
 #import "HPNetworkReachabilityDetailInfoTool.h"
+#import "HPBaseNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -33,7 +34,7 @@
 - (void)setRootController{
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.tabbarController = [[HPTabbarViewController alloc] init];
-    RTRootNavigationController *rt = [[RTRootNavigationController alloc] initWithRootViewController:self.tabbarController];
+    HPBaseNavigationController *rt = [[HPBaseNavigationController alloc] initWithRootViewController:self.tabbarController];
     
     self.window.rootViewController = rt;
     [self.window makeKeyAndVisible];

@@ -19,8 +19,8 @@ typedef NS_ENUM(NSInteger, HPURLRequestMapping)
 {
     HPReqMap_Placeholder = 0, //占位，默认无返回
     HPReqMap_getBrandsGrouped = 1,
-    HPReqMap_XX = 2,
-    HPReqMap_XXX = 3
+    HPReqMap_getOtpCode = 2,
+    HPReqMap_login = 3
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -32,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) HPHttpRequestType requestType;
 
 @property (nonatomic, assign) HPURLRequestMapping requestMapping;
+
+- (instancetype)initWithParams:(id)params;
 
 @end
 

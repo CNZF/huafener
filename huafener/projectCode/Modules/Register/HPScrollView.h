@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HPScrollView : UIScrollView
+@interface HPScrollView : UIScrollView<UIGestureRecognizerDelegate>
 
 @end
 

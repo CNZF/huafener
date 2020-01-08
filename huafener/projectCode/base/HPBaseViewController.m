@@ -29,6 +29,17 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+//#ifdef DEBUG
+        [self alloc_init];
+//#endif
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Controller-Memory-Infomation : %@", s_allocInfo);
