@@ -275,6 +275,11 @@
 		254AB21423C2168D00E7600F /* HPRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254AB21323C2168D00E7600F /* HPRegisterViewController.m */; };
 		254AB21623C2170A00E7600F /* RLF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254AB21523C2170A00E7600F /* RLF.storyboard */; };
 		254AB21923C226CF00E7600F /* HPBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 254AB21823C226CF00E7600F /* HPBaseModel.m */; };
+		25CE1FA023C60F8200E11C4E /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE1F9F23C60F8200E11C4E /* Toast.m */; };
+		25CE1FAC23C61C1500E11C4E /* AppDelegate+Configs.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE1FAB23C61C1500E11C4E /* AppDelegate+Configs.m */; };
+		25CE1FAF23C6292300E11C4E /* HPRegisterUserNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE1FAE23C6292300E11C4E /* HPRegisterUserNameViewController.m */; };
+		25CE1FB223C62E0000E11C4E /* UIButton+HPExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE1FB123C62E0000E11C4E /* UIButton+HPExtend.m */; };
+		25CE1FB523C633F700E11C4E /* UITextField+HPWordLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE1FB423C633F700E11C4E /* UITextField+HPWordLimit.m */; };
 		2C5C91CD6558CDB0404808DC /* libPods-huafenerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8635BA6400471AE8320BAE83 /* libPods-huafenerTests.a */; };
 		3BA4E581479C6D1A12BDA020 /* libPods-huafener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320DE134131D95E6E6134089 /* libPods-huafener.a */; };
 /* End PBXBuildFile section */
@@ -830,6 +835,16 @@
 		254AB21523C2170A00E7600F /* RLF.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RLF.storyboard; sourceTree = "<group>"; };
 		254AB21723C226CF00E7600F /* HPBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPBaseModel.h; sourceTree = "<group>"; };
 		254AB21823C226CF00E7600F /* HPBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPBaseModel.m; sourceTree = "<group>"; };
+		25CE1F9E23C60F8100E11C4E /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		25CE1F9F23C60F8200E11C4E /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
+		25CE1FAA23C61C1500E11C4E /* AppDelegate+Configs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Configs.h"; sourceTree = "<group>"; };
+		25CE1FAB23C61C1500E11C4E /* AppDelegate+Configs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Configs.m"; sourceTree = "<group>"; };
+		25CE1FAD23C6292300E11C4E /* HPRegisterUserNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPRegisterUserNameViewController.h; sourceTree = "<group>"; };
+		25CE1FAE23C6292300E11C4E /* HPRegisterUserNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPRegisterUserNameViewController.m; sourceTree = "<group>"; };
+		25CE1FB023C62E0000E11C4E /* UIButton+HPExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HPExtend.h"; sourceTree = "<group>"; };
+		25CE1FB123C62E0000E11C4E /* UIButton+HPExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HPExtend.m"; sourceTree = "<group>"; };
+		25CE1FB323C633F700E11C4E /* UITextField+HPWordLimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+HPWordLimit.h"; sourceTree = "<group>"; };
+		25CE1FB423C633F700E11C4E /* UITextField+HPWordLimit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HPWordLimit.m"; sourceTree = "<group>"; };
 		320DE134131D95E6E6134089 /* libPods-huafener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.release.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.release.xcconfig"; sourceTree = "<group>"; };
 		8635BA6400471AE8320BAE83 /* libPods-huafenerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafenerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -868,6 +883,8 @@
 		141175ED23B21978004F41F1 /* HPTools */ = {
 			isa = PBXGroup;
 			children = (
+				25CE1F9E23C60F8100E11C4E /* Toast.h */,
+				25CE1F9F23C60F8200E11C4E /* Toast.m */,
 				142DB1E423B21D7700A30792 /* HPLoadingHUD.h */,
 				142DB1E523B21D7700A30792 /* HPLoadingHUD.m */,
 				141175F123B219BE004F41F1 /* HPHTMLTipTypeManager.h */,
@@ -970,6 +987,8 @@
 				141175ED23B21978004F41F1 /* HPTools */,
 				14409C1D231BD170006E9FFA /* AppDelegate.h */,
 				14409C1E231BD170006E9FFA /* AppDelegate.m */,
+				25CE1FAA23C61C1500E11C4E /* AppDelegate+Configs.h */,
+				25CE1FAB23C61C1500E11C4E /* AppDelegate+Configs.m */,
 				14409C20231BD170006E9FFA /* ViewController.h */,
 				14409C21231BD170006E9FFA /* ViewController.m */,
 				14B6B1BF23BF0CC60016FB94 /* HPPublishFirstFSwindleView.h */,
@@ -1039,6 +1058,10 @@
 				14409CAC231BF71E006E9FFA /* LYViewCategory */,
 				148E791E2327AFFB00233434 /* UIFont+qqq.h */,
 				148E791F2327AFFB00233434 /* UIFont+qqq.m */,
+				25CE1FB023C62E0000E11C4E /* UIButton+HPExtend.h */,
+				25CE1FB123C62E0000E11C4E /* UIButton+HPExtend.m */,
+				25CE1FB323C633F700E11C4E /* UITextField+HPWordLimit.h */,
+				25CE1FB423C633F700E11C4E /* UITextField+HPWordLimit.m */,
 			);
 			path = HPCategorys;
 			sourceTree = "<group>";
@@ -1822,6 +1845,8 @@
 			children = (
 				254AB21223C2168D00E7600F /* HPRegisterViewController.h */,
 				254AB21323C2168D00E7600F /* HPRegisterViewController.m */,
+				25CE1FAD23C6292300E11C4E /* HPRegisterUserNameViewController.h */,
+				25CE1FAE23C6292300E11C4E /* HPRegisterUserNameViewController.m */,
 				254AB21523C2170A00E7600F /* RLF.storyboard */,
 				2537693323C4B67000CD0B2A /* HPScrollView.h */,
 				2537693423C4B67000CD0B2A /* HPScrollView.m */,
@@ -2186,6 +2211,7 @@
 				14B172E1231D1AD500463A7A /* TZAssetModel.m in Sources */,
 				148E78E623235FCB00233434 /* GPUImageRGBOpeningFilter.m in Sources */,
 				148E787123235FCB00233434 /* GPUImageColorBurnBlendFilter.m in Sources */,
+				25CE1FA023C60F8200E11C4E /* Toast.m in Sources */,
 				148E78AA23235FCB00233434 /* GPUImageOpacityFilter.m in Sources */,
 				14409C22231BD170006E9FFA /* ViewController.m in Sources */,
 				148E790023235FCB00233434 /* GPUImageDilationFilter.m in Sources */,
@@ -2256,6 +2282,7 @@
 				14B172AE231D1A9F00463A7A /* MJRefreshComponent.m in Sources */,
 				14B172C0231D1AC800463A7A /* SVIndefiniteAnimatedView.m in Sources */,
 				1419666D23336AFD008035DD /* HPHomeTabViewController.m in Sources */,
+				25CE1FB223C62E0000E11C4E /* UIButton+HPExtend.m in Sources */,
 				148E78F223235FCB00233434 /* GPUImageLocalBinaryPatternFilter.m in Sources */,
 				148E787C23235FCB00233434 /* GPUImageTwoPassFilter.m in Sources */,
 				148E789D23235FCB00233434 /* GPUImageOverlayBlendFilter.m in Sources */,
@@ -2290,6 +2317,7 @@
 				148E78C623235FCB00233434 /* GPUImageTiltShiftFilter.m in Sources */,
 				14B172E0231D1AD500463A7A /* TZVideoPlayerController.m in Sources */,
 				141EC1C9231CB4FD00E613F0 /* RFRotate.m in Sources */,
+				25CE1FAC23C61C1500E11C4E /* AppDelegate+Configs.m in Sources */,
 				14409CC4231C67C9006E9FFA /* ZZCustomAlertView.m in Sources */,
 				14B1729F231D1A9F00463A7A /* MJRefreshBackStateFooter.m in Sources */,
 				148E78C823235FCB00233434 /* GPUImageMovieWriter.m in Sources */,
@@ -2368,6 +2396,7 @@
 				148E789C23235FCB00233434 /* GPUImageSolidColorGenerator.m in Sources */,
 				14B172A2231D1A9F00463A7A /* MJRefreshAutoGifFooter.m in Sources */,
 				148E789523235FCB00233434 /* GPUImageAmatorkaFilter.m in Sources */,
+				25CE1FB523C633F700E11C4E /* UITextField+HPWordLimit.m in Sources */,
 				14B172BE231D1AC800463A7A /* SVProgressAnimatedView.m in Sources */,
 				141EC1C5231CA63D00E613F0 /* UIViewExt.m in Sources */,
 				148E78D223235FCB00233434 /* GPUImageLuminosity.m in Sources */,
@@ -2379,6 +2408,7 @@
 				148E79202327AFFB00233434 /* UIFont+qqq.m in Sources */,
 				148E78E523235FCB00233434 /* GPUImageThresholdSketchFilter.m in Sources */,
 				148E78EF23235FCB00233434 /* GPUImageDirectionalNonMaximumSuppressionFilter.m in Sources */,
+				25CE1FAF23C6292300E11C4E /* HPRegisterUserNameViewController.m in Sources */,
 				148E791023235FCB00233434 /* GPUImageFilter.m in Sources */,
 				14B172A4231D1A9F00463A7A /* HPRefreshStateHeader.m in Sources */,
 				148E78BA23235FCB00233434 /* GPUImagePosterizeFilter.m in Sources */,

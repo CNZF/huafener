@@ -41,18 +41,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weN-6E-2Pz">
-                                <rect key="frame" x="12" y="806" width="390" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weN-6E-2Pz">
+                                <rect key="frame" x="12" y="428" width="390" height="44"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4ZG-M7-D7a"/>
                                 </constraints>
-                                <state key="normal" title="登录">
+                                <state key="normal" title="下一步">
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <action selector="login:" destination="XJ1-D9-k8N" eventType="touchUpInside" id="1m0-Wj-mKt"/>
+                                    <action selector="pushToRegisterController:" destination="XJ1-D9-k8N" eventType="touchUpInside" id="BKu-vz-PXS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5K-uQ-Guf">
@@ -71,6 +71,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_placeholderX" translatesAutoresizingMaskIntoConstraints="NO" id="0dJ-Qw-Pni">
+                                <rect key="frame" x="8.5" y="306" width="397" height="388"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="388" id="IRv-4t-Sm1"/>
+                                    <constraint firstAttribute="width" constant="397" id="ReP-uX-JkR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -79,9 +86,11 @@
                             <constraint firstItem="JCG-UI-7ag" firstAttribute="trailing" secondItem="R6F-kF-tft" secondAttribute="trailing" id="8Kg-xZ-q5F"/>
                             <constraint firstItem="weN-6E-2Pz" firstAttribute="leading" secondItem="qsY-3K-mMp" secondAttribute="leading" constant="12" id="PEV-CN-boZ"/>
                             <constraint firstItem="JCG-UI-7ag" firstAttribute="leading" secondItem="R6F-kF-tft" secondAttribute="leading" id="W6G-jF-Khb"/>
+                            <constraint firstItem="0dJ-Qw-Pni" firstAttribute="centerX" secondItem="tez-V1-3Db" secondAttribute="centerX" id="WFY-CB-40G"/>
                             <constraint firstItem="R6F-kF-tft" firstAttribute="leading" secondItem="qsY-3K-mMp" secondAttribute="leading" constant="43" id="aGK-DJ-lon"/>
-                            <constraint firstItem="qsY-3K-mMp" firstAttribute="bottom" secondItem="weN-6E-2Pz" secondAttribute="bottom" constant="12" id="b27-rs-qPz"/>
+                            <constraint firstItem="qsY-3K-mMp" firstAttribute="bottom" secondItem="weN-6E-2Pz" secondAttribute="bottom" constant="390" id="b27-rs-qPz"/>
                             <constraint firstItem="m5K-uQ-Guf" firstAttribute="centerY" secondItem="R6F-kF-tft" secondAttribute="centerY" id="b60-3r-p37"/>
+                            <constraint firstItem="0dJ-Qw-Pni" firstAttribute="top" secondItem="JCG-UI-7ag" secondAttribute="bottom" constant="52" id="fdA-hY-wos"/>
                             <constraint firstItem="JCG-UI-7ag" firstAttribute="top" secondItem="R6F-kF-tft" secondAttribute="bottom" constant="38" id="jZU-Dt-7qu"/>
                             <constraint firstItem="m5K-uQ-Guf" firstAttribute="leading" secondItem="R6F-kF-tft" secondAttribute="trailing" constant="27" id="o5h-OF-JgM"/>
                             <constraint firstItem="qsY-3K-mMp" firstAttribute="trailing" secondItem="m5K-uQ-Guf" secondAttribute="trailing" constant="32" id="xPe-5Q-VI8"/>
@@ -99,6 +108,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="rt_disableInteractivePop" value="NO"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="nextBtn" destination="weN-6E-2Pz" id="v0u-8O-fT2"/>
                         <outlet property="optCodeField" destination="JCG-UI-7ag" id="3ry-xo-B2g"/>
                         <outlet property="telphoneField" destination="R6F-kF-tft" id="KqY-fn-uJl"/>
                     </connections>
@@ -107,5 +117,68 @@
             </objects>
             <point key="canvasLocation" x="-510.14492753623193" y="-26.116071428571427"/>
         </scene>
+        <!--输入用户名-->
+        <scene sceneID="3wo-fl-dn4">
+            <objects>
+                <viewController storyboardIdentifier="HPRegisterUserNameViewController" title="输入用户名" id="PeH-id-muj" customClass="HPRegisterUserNameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Re4-Fu-ZMn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hcb-TH-qI6">
+                                <rect key="frame" x="38.5" y="104" width="337" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="o89-7a-w5R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名不可更改哦，请多想想" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gay-um-h32">
+                                <rect key="frame" x="38.5" y="174" width="337" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.40000000000000002" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvc-0b-BoX">
+                                <rect key="frame" x="30" y="806" width="354" height="44"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TM4-4Y-nRJ"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="PeH-id-muj" eventType="touchUpInside" id="8ly-4P-3IS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hcb-TH-qI6" firstAttribute="top" secondItem="1mY-ed-SIQ" secondAttribute="top" constant="60" id="4md-FV-SUI"/>
+                            <constraint firstItem="1mY-ed-SIQ" firstAttribute="trailing" secondItem="kvc-0b-BoX" secondAttribute="trailing" constant="30" id="4vk-EX-bUd"/>
+                            <constraint firstItem="1mY-ed-SIQ" firstAttribute="bottom" secondItem="kvc-0b-BoX" secondAttribute="bottom" constant="12" id="AlQ-Bi-pbI"/>
+                            <constraint firstItem="kvc-0b-BoX" firstAttribute="leading" secondItem="1mY-ed-SIQ" secondAttribute="leading" constant="30" id="EFU-XU-dfm"/>
+                            <constraint firstItem="Hcb-TH-qI6" firstAttribute="centerX" secondItem="Re4-Fu-ZMn" secondAttribute="centerX" id="RsU-6l-2Le"/>
+                            <constraint firstItem="Gay-um-h32" firstAttribute="top" secondItem="Hcb-TH-qI6" secondAttribute="bottom" constant="36" id="TXA-Nb-QzA"/>
+                            <constraint firstItem="Gay-um-h32" firstAttribute="trailing" secondItem="Hcb-TH-qI6" secondAttribute="trailing" id="g9h-90-z3D"/>
+                            <constraint firstItem="kvc-0b-BoX" firstAttribute="centerX" secondItem="Re4-Fu-ZMn" secondAttribute="centerX" id="m34-mn-ML2"/>
+                            <constraint firstItem="Gay-um-h32" firstAttribute="leading" secondItem="Hcb-TH-qI6" secondAttribute="leading" id="zzP-J3-ybo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1mY-ed-SIQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ev3-4F-qix"/>
+                    <connections>
+                        <outlet property="userNameField" destination="Hcb-TH-qI6" id="Ryy-3b-OyP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GS-xR-DTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210.1449275362319" y="-31.473214285714285"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ad_placeholderX" width="226.66667175292969" height="232.66667175292969"/>
+    </resources>
 </document>

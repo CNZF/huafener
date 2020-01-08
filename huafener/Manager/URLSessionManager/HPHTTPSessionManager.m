@@ -58,40 +58,6 @@ static NSUInteger _curttenTaskIdentifier;
 //
 //}
 
-
-+ (NSURLSessionDataTask *)requestWith_GET_UrlString:(NSString *)urlString
-                  parameters:(id)parameters
-                successBlock:(HPHTTPRequestSuccessBlock)successBlock
-           failureBlock:(HPHTTPRequestFailedBlock)failureBlock{
-    NSURLSessionDataTask *dataTask =  [[self shareManager] GET:urlString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-//        id jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-        
-        HPBaseModel *baseModel = [HPBaseModel mj_objectWithKeyValues:responseObject];
-        NSLog(@"responseObject :%@",[baseModel yy_modelToJSONString]);
-        if (baseModel.code == 200) {
-            if (successBlock){
-                successBlock(baseModel.obj);
-            }
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        if (error.code !=-999) {
-            if (failureBlock)
-            {
-                failureBlock(error);
-            }
-        }
-        else{
-            NSLog(@"取消队列了");
-        }
-    }];
-    _curttenTaskIdentifier = dataTask.taskIdentifier;
-    return dataTask;
-}
-
 + (NSURLSessionDataTask *)loadDataWithOperation:(HPBaseRequestOperation<HPBaseRequestOperationProtocal>*)operation
            successBlock:(HPHTTPRequestSuccessBlock)successBlock
            failureBlock:(HPHTTPRequestFailedBlock)failureBlock
@@ -141,7 +107,44 @@ static NSUInteger _curttenTaskIdentifier;
     return dataTask;
 }
 
+#pragma mark -- GET请求
++ (NSURLSessionDataTask *)requestWith_GET_UrlString:(NSString *)urlString
+                  parameters:(id)parameters
+                successBlock:(HPHTTPRequestSuccessBlock)successBlock
+           failureBlock:(HPHTTPRequestFailedBlock)failureBlock{
+    NSURLSessionDataTask *dataTask =  [[self shareManager] GET:urlString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+//        id jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        
+        HPBaseModel *baseModel = [HPBaseModel mj_objectWithKeyValues:responseObject];
+        NSLog(@"responseObject :%@",[baseModel yy_modelToJSONString]);
+        if (baseModel.code == 200) {
+            if (successBlock){
+                successBlock(baseModel.obj);
+            }
+        }else{
+            [[Toast shareToast] makeText:baseModel.msg aDuration:1];
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (error.code !=-999) {
+            if (failureBlock)
+            {
+                failureBlock(error);
+            }
+        }
+        else{
+            NSLog(@"取消队列了");
+        }
+    }];
+    _curttenTaskIdentifier = dataTask.taskIdentifier;
+    return dataTask;
+}
 
+
+#pragma mark -- POST请求
 + (NSURLSessionDataTask *)requestWith_POST_UrlString:(NSString *)urlString
                   parameters:(id)parameters
                 successBlock:(HPHTTPRequestSuccessBlock)successBlock
@@ -158,6 +161,8 @@ static NSUInteger _curttenTaskIdentifier;
             if (successBlock){
                 successBlock(baseModel.obj);
             }
+        }else{
+            [[Toast shareToast] makeText:baseModel.msg aDuration:1];
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -197,11 +202,7 @@ static NSString * configUrlPath(HPBaseRequestOperation<HPBaseRequestOperationPro
     
     NSLocalizedStringFromTable(@"Unknown", @"AFNetworking", nil);
     NSString *urlString = [op getUrl];
-    if (@available(iOS 9.0, *)) {
-        urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    }else {
-        urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    }
+    urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     return urlString;
 }
 

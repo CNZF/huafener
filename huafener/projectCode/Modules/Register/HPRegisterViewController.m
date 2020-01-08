@@ -7,13 +7,15 @@
 //
 
 #import "HPRegisterViewController.h"
+#import "HPRegisterUserNameViewController.h"
 
-@interface HPRegisterViewController ()
+@interface HPRegisterViewController ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *telphoneField;
 @property (weak, nonatomic) IBOutlet UITextField *optCodeField;
+@property (weak, nonatomic) IBOutlet UIButton *nextBtn;
 
-@property (nonatomic, strong) NSDictionary *parmasDic;
+@property (nonatomic, strong) NSMutableDictionary *parmasDic;
 
 @end
 
@@ -22,6 +24,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.parmasDic = [NSMutableDictionary dictionary];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldValueChanged:) name:UITextFieldTextDidChangeNotification object:nil];
+}
+
+- (void)textFieldValueChanged:(NSNotification *)notification {
+    [self.nextBtn enable:(self.telphoneField.text.length && self.optCodeField.text.length) enableColor:GH_COLOR_FROM_RGB(0xff6677) disEnableColor:GH_COLOR_FROM_RGB(0x333333) block:^(UIColor * _Nonnull color) {
+        self.nextBtn.backgroundColor = color;
+    }];
 }
 
 - (IBAction)back:(id)sender {
@@ -39,15 +52,15 @@
     }];
     
 }
-
-- (IBAction)login:(id)sender {
-    [self.parmasDic setValue:[self.telphoneField text] forKey:@"tel"];
-    HPBaseRequestOperation *op = [[HPBaseRequestOperation alloc] initWithParams:self.parmasDic];
-    op.requestMapping = HPReqMap_login;
-    [HPHTTPSessionManager loadDataWithOperation:op successBlock:^(id  _Nonnull responseObject) {
-        [self dismissViewControllerAnimated:YES completion:nil];
-    } failureBlock:^(NSError * _Nonnull error) {
-        NSLog(@"%@",error);
-    }];
+- (IBAction)pushToRegisterController:(id)sender {
+    HPRegisterUserNameViewController *userVc = [[UIStoryboard storyboardWithName:@"RLF" bundle:nil] instantiateViewControllerWithIdentifier:@"HPRegisterUserNameViewController"];
+    [self.parmasDic setValue:self.telphoneField.text forKey:@"tel"];
+    userVc.parmasDic = self.parmasDic;
+    [self.rt_navigationController pushViewController:userVc animated:YES complete:nil];
 }
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:nil];
+}
+
 @end

@@ -7,10 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import "HPTabbarViewController.h"
+#import "AppDelegate+Configs.h"
+
 #import <RTRootNavigationController.h>
-#import "HPNetworkReachabilityDetailInfoTool.h"
+
 #import "HPBaseNavigationController.h"
+#import "HPTabbarViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,11 +24,10 @@
     
     [self setRootController];
     
-    //控制台
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    //全局配置
+    [AppDelegate configLibPerformance];
     
     
-    [HPNetworkReachabilityDetailInfoTool getNetWorkReachability];
 
     return YES;
 }
