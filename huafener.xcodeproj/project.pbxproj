@@ -2595,7 +2595,7 @@
 				DEVELOPMENT_TEAM = BGH7S67FXX;
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
-				GCC_PREFIX_HEADER = "/Users/faxiaotu/Documents/Git文件/huafener/huafener/HP-PCH/HPDefineHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/huafener/HP-PCH/HPDefineHeader.pch";
 				INFOPLIST_FILE = huafener/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2619,7 +2619,7 @@
 				DEVELOPMENT_TEAM = BGH7S67FXX;
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
-				GCC_PREFIX_HEADER = "/Users/faxiaotu/Documents/Git文件/huafener/huafener/HP-PCH/HPDefineHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/huafener/HP-PCH/HPDefineHeader.pch";
 				INFOPLIST_FILE = huafener/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
