@@ -63,26 +63,29 @@
 }
 
 - (void)alloc_init{
+#ifdef DEGUG
     NSLog(@"----------------创建类----------------%@", NSStringFromClass([self class]));
     if (!s_allocInfo) {
         s_allocInfo = [NSMutableDictionary dictionary];
     }
     s_allocInfo[NSStringFromClass([self class])] = @([s_allocInfo[NSStringFromClass([self class])] intValue] + 1);
     
+#endif
 }
 
 - (void)dealloc{
 //#ifdef DEBUG
     
     [SVProgressHUD showErrorWithStatus:@"✅👌"];
-    
+#ifdef DEBUG
     NSLog(@"----------------释放类----------------%@",  NSStringFromClass([self class]));
     s_allocInfo[NSStringFromClass([self class])] = @([s_allocInfo[NSStringFromClass([self class])] intValue] - 1);
     if ([s_allocInfo[NSStringFromClass([self class])] intValue] == 0) {
         [s_allocInfo removeObjectForKey:NSStringFromClass([self class])];
     }
     NSLog(@"%@", s_allocInfo);
-//#endif
+#endif
+    
 }
 
 @end

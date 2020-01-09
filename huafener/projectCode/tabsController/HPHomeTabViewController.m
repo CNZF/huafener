@@ -136,6 +136,14 @@ FOUNDATION_EXPORT NSString * const AFName;
 - (void)loadData{
     
     
+    @try {
+        
+    } @catch (NSException *exception) {
+        
+    } @finally {
+        
+    }
+    
     // 也就是说  AFHTTPSessionManager 创建的只是任务，线程需要去自己开辟
 //    NSLog(@"方法一 %@",[NSThread currentThread]);
 //    [self request];
@@ -162,6 +170,10 @@ FOUNDATION_EXPORT NSString * const AFName;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    NSArray *arr = [NSArray array];
+    arr[1];
+    
 //    HPSignInWithAppleController *signWithApple = [[HPSignInWithAppleController alloc] init];
 //    [self presentViewController:signWithApple animated:YES completion:nil];
 //    [self.navigationController pushViewController:signWithApple animated:YES];

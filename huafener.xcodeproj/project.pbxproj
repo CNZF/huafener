@@ -21,6 +21,7 @@
 		141EC1CC231CB62D00E613F0 /* CenterBtnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1CB231CB62D00E613F0 /* CenterBtnModel.m */; };
 		141EC1CE231CB7E500E613F0 /* centerBtnList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 141EC1CD231CB7E500E613F0 /* centerBtnList.plist */; };
 		141EC1D6231CC4AE00E613F0 /* LYEnums.m in Sources */ = {isa = PBXBuildFile; fileRef = 141EC1D5231CC4AE00E613F0 /* LYEnums.m */; };
+		142544FE23C6FE93000C79AB /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 142544FD23C6FE93000C79AB /* UncaughtExceptionHandler.m */; };
 		142DB1E623B21D7700A30792 /* HPLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 142DB1E523B21D7700A30792 /* HPLoadingHUD.m */; };
 		142DB1E923B5E43800A30792 /* HPNetworkReachabilityDetailInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 142DB1E823B5E43800A30792 /* HPNetworkReachabilityDetailInfoTool.m */; };
 		14409C1F231BD170006E9FFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14409C1E231BD170006E9FFA /* AppDelegate.m */; };
@@ -328,6 +329,8 @@
 		141EC1CD231CB7E500E613F0 /* centerBtnList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = centerBtnList.plist; sourceTree = "<group>"; };
 		141EC1D4231CC4AE00E613F0 /* LYEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEnums.h; sourceTree = "<group>"; };
 		141EC1D5231CC4AE00E613F0 /* LYEnums.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEnums.m; sourceTree = "<group>"; };
+		142544FC23C6FE92000C79AB /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		142544FD23C6FE93000C79AB /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		142DB1E423B21D7700A30792 /* HPLoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPLoadingHUD.h; sourceTree = "<group>"; };
 		142DB1E523B21D7700A30792 /* HPLoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPLoadingHUD.m; sourceTree = "<group>"; };
 		142DB1E723B5E43800A30792 /* HPNetworkReachabilityDetailInfoTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPNetworkReachabilityDetailInfoTool.h; sourceTree = "<group>"; };
@@ -1149,6 +1152,8 @@
 				145A64C123BDBD1000F04FE3 /* URLSessionManager */,
 				1446014123AA00A500B9E44B /* HPAnimalManager.h */,
 				1446014223AA00A500B9E44B /* HPAnimalManager.m */,
+				142544FC23C6FE92000C79AB /* UncaughtExceptionHandler.h */,
+				142544FD23C6FE93000C79AB /* UncaughtExceptionHandler.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -2260,6 +2265,7 @@
 				14B172E7231D1AD500463A7A /* TZPhotoPickerController.m in Sources */,
 				148E78ED23235FCB00233434 /* GPUImageMotionDetector.m in Sources */,
 				148E78BD23235FCB00233434 /* GPUImageFilterPipeline.m in Sources */,
+				142544FE23C6FE93000C79AB /* UncaughtExceptionHandler.m in Sources */,
 				148E788823235FCB00233434 /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
 				14B172AD231D1A9F00463A7A /* MJRefreshAutoFooter.m in Sources */,
 				148E78EC23235FCB00233434 /* GPUImageHoughTransformLineDetector.m in Sources */,
