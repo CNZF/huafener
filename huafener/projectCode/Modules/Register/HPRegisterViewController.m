@@ -41,15 +41,19 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+static NSURLSessionDataTask * _Nonnull extracted(HPRegisterViewController *object, HPBaseRequestOperation *op) {
+    return [HPHTTPSessionManager loadDataWithOperation:op successBlock:^(id  _Nonnull responseObject) {
+        [object.parmasDic setValue:responseObject[@"code"] forKey:@"code"];
+    } failureBlock:^(NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+}
+
 - (IBAction)getOtpCode:(id)sender {
     
     HPBaseRequestOperation *op = [[HPBaseRequestOperation alloc] initWithParams:@{@"telePhone":[self.telphoneField text]}];
     op.requestMapping = HPReqMap_getOtpCode;
-    [HPHTTPSessionManager loadDataWithOperation:op successBlock:^(id  _Nonnull responseObject) {
-        [self.parmasDic setValue:responseObject[@"code"] forKey:@"code"];
-    } failureBlock:^(NSError * _Nonnull error) {
-        NSLog(@"%@",error);
-    }];
+    extracted(self, op);
     
 }
 - (IBAction)pushToRegisterController:(id)sender {

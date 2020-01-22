@@ -16,7 +16,7 @@
 + (void)configLibPerformance{
     
 #pragma mark -- 日志系统
-//    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
     
 #pragma mark -- IQKeyBoardManager
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;

@@ -162,8 +162,10 @@
 //        }];
 //    };
 
-    RTRootNavigationController * rt_register = [[UIStoryboard storyboardWithName:@"RLF" bundle:nil] instantiateViewControllerWithIdentifier:@"RT_Register"];
+    RTRootNavigationController * rt_register = [[UIStoryboard storyboardWithName:@"Goods" bundle:nil] instantiateViewControllerWithIdentifier:@"RTRootNavigationController_Good"];
     [self presentViewController:rt_register animated:YES completion:nil];
+    
+    
 }
 #pragma mark
 #pragma mark -- setter && getter

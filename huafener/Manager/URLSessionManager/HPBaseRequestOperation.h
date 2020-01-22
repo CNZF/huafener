@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) HPURLRequestMapping requestMapping;
 
-- (instancetype)initWithParams:(id)params;
+- (instancetype)initWithParams:(nullable id)params;
 
 @end
 

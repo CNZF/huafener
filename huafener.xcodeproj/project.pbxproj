@@ -273,6 +273,8 @@
 		2537693223C4B58B00CD0B2A /* HPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537693123C4B58B00CD0B2A /* HPTableView.m */; };
 		2537693523C4B67000CD0B2A /* HPScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537693423C4B67000CD0B2A /* HPScrollView.m */; };
 		2537693823C4D97300CD0B2A /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2537693723C4D97300CD0B2A /* Test1ViewController.m */; };
+		25408DCA23CB2E3800D25B39 /* HPOrderdetailOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25408DC923CB2E3800D25B39 /* HPOrderdetailOperation.m */; };
+		25408DCD23CB572000D25B39 /* HPGetGoodListOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 25408DCC23CB572000D25B39 /* HPGetGoodListOP.m */; };
 		254AB21423C2168D00E7600F /* HPRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254AB21323C2168D00E7600F /* HPRegisterViewController.m */; };
 		254AB21623C2170A00E7600F /* RLF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254AB21523C2170A00E7600F /* RLF.storyboard */; };
 		254AB21923C226CF00E7600F /* HPBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 254AB21823C226CF00E7600F /* HPBaseModel.m */; };
@@ -281,6 +283,9 @@
 		25CE1FAF23C6292300E11C4E /* HPRegisterUserNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE1FAE23C6292300E11C4E /* HPRegisterUserNameViewController.m */; };
 		25CE1FB223C62E0000E11C4E /* UIButton+HPExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE1FB123C62E0000E11C4E /* UIButton+HPExtend.m */; };
 		25CE1FB523C633F700E11C4E /* UITextField+HPWordLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE1FB423C633F700E11C4E /* UITextField+HPWordLimit.m */; };
+		25DB64C323CA1E3400D7F96D /* HPPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DB64C223CA1E3400D7F96D /* HPPublishViewController.m */; };
+		25DB64C523CA1E4A00D7F96D /* Goods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DB64C423CA1E4A00D7F96D /* Goods.storyboard */; };
+		25DB64C923CA204100D7F96D /* HPPublishOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DB64C823CA204100D7F96D /* HPPublishOperation.m */; };
 		2C5C91CD6558CDB0404808DC /* libPods-huafenerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8635BA6400471AE8320BAE83 /* libPods-huafenerTests.a */; };
 		3BA4E581479C6D1A12BDA020 /* libPods-huafener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320DE134131D95E6E6134089 /* libPods-huafener.a */; };
 /* End PBXBuildFile section */
@@ -833,6 +838,10 @@
 		2537693423C4B67000CD0B2A /* HPScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPScrollView.m; sourceTree = "<group>"; };
 		2537693623C4D97300CD0B2A /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
 		2537693723C4D97300CD0B2A /* Test1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
+		25408DC823CB2E3800D25B39 /* HPOrderdetailOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPOrderdetailOperation.h; sourceTree = "<group>"; };
+		25408DC923CB2E3800D25B39 /* HPOrderdetailOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPOrderdetailOperation.m; sourceTree = "<group>"; };
+		25408DCB23CB572000D25B39 /* HPGetGoodListOP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPGetGoodListOP.h; sourceTree = "<group>"; };
+		25408DCC23CB572000D25B39 /* HPGetGoodListOP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPGetGoodListOP.m; sourceTree = "<group>"; };
 		254AB21223C2168D00E7600F /* HPRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPRegisterViewController.h; sourceTree = "<group>"; };
 		254AB21323C2168D00E7600F /* HPRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPRegisterViewController.m; sourceTree = "<group>"; };
 		254AB21523C2170A00E7600F /* RLF.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RLF.storyboard; sourceTree = "<group>"; };
@@ -848,6 +857,11 @@
 		25CE1FB123C62E0000E11C4E /* UIButton+HPExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HPExtend.m"; sourceTree = "<group>"; };
 		25CE1FB323C633F700E11C4E /* UITextField+HPWordLimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+HPWordLimit.h"; sourceTree = "<group>"; };
 		25CE1FB423C633F700E11C4E /* UITextField+HPWordLimit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HPWordLimit.m"; sourceTree = "<group>"; };
+		25DB64C123CA1E3400D7F96D /* HPPublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPPublishViewController.h; sourceTree = "<group>"; };
+		25DB64C223CA1E3400D7F96D /* HPPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPPublishViewController.m; sourceTree = "<group>"; };
+		25DB64C423CA1E4A00D7F96D /* Goods.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Goods.storyboard; sourceTree = "<group>"; };
+		25DB64C723CA204100D7F96D /* HPPublishOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPPublishOperation.h; sourceTree = "<group>"; };
+		25DB64C823CA204100D7F96D /* HPPublishOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPPublishOperation.m; sourceTree = "<group>"; };
 		320DE134131D95E6E6134089 /* libPods-huafener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724C885980BC8F39666E8C2F /* Pods-huafener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huafener.release.xcconfig"; path = "Target Support Files/Pods-huafener/Pods-huafener.release.xcconfig"; sourceTree = "<group>"; };
 		8635BA6400471AE8320BAE83 /* libPods-huafenerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-huafenerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1206,6 +1220,7 @@
 		14805C612341AB31003EF272 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				25DB64C023CA1E1700D7F96D /* Goods */,
 				254AB21123C2166600E7600F /* Register */,
 				14805C622341AB74003EF272 /* HPSignInWithAppleController.h */,
 				14805C632341AB74003EF272 /* HPSignInWithAppleController.m */,
@@ -1861,6 +1876,30 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		25DB64C023CA1E1700D7F96D /* Goods */ = {
+			isa = PBXGroup;
+			children = (
+				25DB64C623CA1FF700D7F96D /* operation */,
+				25DB64C123CA1E3400D7F96D /* HPPublishViewController.h */,
+				25DB64C223CA1E3400D7F96D /* HPPublishViewController.m */,
+				25DB64C423CA1E4A00D7F96D /* Goods.storyboard */,
+			);
+			path = Goods;
+			sourceTree = "<group>";
+		};
+		25DB64C623CA1FF700D7F96D /* operation */ = {
+			isa = PBXGroup;
+			children = (
+				25DB64C723CA204100D7F96D /* HPPublishOperation.h */,
+				25DB64C823CA204100D7F96D /* HPPublishOperation.m */,
+				25408DC823CB2E3800D25B39 /* HPOrderdetailOperation.h */,
+				25408DC923CB2E3800D25B39 /* HPOrderdetailOperation.m */,
+				25408DCB23CB572000D25B39 /* HPGetGoodListOP.h */,
+				25408DCC23CB572000D25B39 /* HPGetGoodListOP.m */,
+			);
+			path = operation;
+			sourceTree = "<group>";
+		};
 		57A12B61F052AFA56C8A7150 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1999,6 +2038,7 @@
 				14B172C1231D1AC800463A7A /* SVProgressHUD.bundle in Resources */,
 				14409C25231BD170006E9FFA /* Main.storyboard in Resources */,
 				254AB21623C2170A00E7600F /* RLF.storyboard in Resources */,
+				25DB64C523CA1E4A00D7F96D /* Goods.storyboard in Resources */,
 				148E786D23235FCB00233434 /* lookup_soft_elegance_1.png in Resources */,
 				14B172AF231D1A9F00463A7A /* README.md in Resources */,
 				14B1729A231D1A9F00463A7A /* MJRefresh.bundle in Resources */,
@@ -2216,6 +2256,7 @@
 				14B172E1231D1AD500463A7A /* TZAssetModel.m in Sources */,
 				148E78E623235FCB00233434 /* GPUImageRGBOpeningFilter.m in Sources */,
 				148E787123235FCB00233434 /* GPUImageColorBurnBlendFilter.m in Sources */,
+				25408DCA23CB2E3800D25B39 /* HPOrderdetailOperation.m in Sources */,
 				25CE1FA023C60F8200E11C4E /* Toast.m in Sources */,
 				148E78AA23235FCB00233434 /* GPUImageOpacityFilter.m in Sources */,
 				14409C22231BD170006E9FFA /* ViewController.m in Sources */,
@@ -2359,6 +2400,7 @@
 				141EC1D6231CC4AE00E613F0 /* LYEnums.m in Sources */,
 				148E78EE23235FCB00233434 /* GPUImageClosingFilter.m in Sources */,
 				148E78C723235FCB00233434 /* GPUImageContext.m in Sources */,
+				25408DCD23CB572000D25B39 /* HPGetGoodListOP.m in Sources */,
 				148E78A223235FCB00233434 /* GPUImageHardLightBlendFilter.m in Sources */,
 				148E787F23235FCB00233434 /* GPUImageWeakPixelInclusionFilter.m in Sources */,
 				148E787723235FCB00233434 /* GPUImageFilterGroup.m in Sources */,
@@ -2383,6 +2425,7 @@
 				148E78C423235FCB00233434 /* GPUImageRGBFilter.m in Sources */,
 				148E788523235FCB00233434 /* GPUImageGrayscaleFilter.m in Sources */,
 				148E78AF23235FCB00233434 /* GPUImageSphereRefractionFilter.m in Sources */,
+				25DB64C323CA1E3400D7F96D /* HPPublishViewController.m in Sources */,
 				148E78E223235FCB00233434 /* GPUImageThreeInputFilter.m in Sources */,
 				148E790723235FCB00233434 /* GPUImageMosaicFilter.m in Sources */,
 				148E789223235FCB00233434 /* GPUImageTransformFilter.m in Sources */,
@@ -2406,6 +2449,7 @@
 				14B172BE231D1AC800463A7A /* SVProgressAnimatedView.m in Sources */,
 				141EC1C5231CA63D00E613F0 /* UIViewExt.m in Sources */,
 				148E78D223235FCB00233434 /* GPUImageLuminosity.m in Sources */,
+				25DB64C923CA204100D7F96D /* HPPublishOperation.m in Sources */,
 				148E78CA23235FCB00233434 /* GPUImagePicture+TextureSubimage.m in Sources */,
 				148E78F723235FCB00233434 /* GPUImageMotionBlurFilter.m in Sources */,
 				148E788423235FCB00233434 /* GPUImageColorInvertFilter.m in Sources */,

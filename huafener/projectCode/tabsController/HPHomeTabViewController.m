@@ -170,9 +170,8 @@ FOUNDATION_EXPORT NSString * const AFName;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+
     
-    NSArray *arr = [NSArray array];
-    arr[1];
     
 //    HPSignInWithAppleController *signWithApple = [[HPSignInWithAppleController alloc] init];
 //    [self presentViewController:signWithApple animated:YES completion:nil];
