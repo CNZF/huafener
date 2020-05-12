@@ -358,7 +358,7 @@
 		14409C97231BEA3C006E9FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14409C9A231BED4F006E9FFA /* HPTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPTabbarViewController.h; sourceTree = "<group>"; };
 		14409C9B231BED4F006E9FFA /* HPTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPTabbarViewController.m; sourceTree = "<group>"; };
-		14409CA2231BEFA3006E9FFA /* HPDefineColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineColors.h; sourceTree = "<group>"; };
+		14409CA2231BEFA3006E9FFA /* HPDefineColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HPDefineColors.h; path = HPDefineColors/HPDefineColors.h; sourceTree = "<group>"; };
 		14409CA3231BEFF4006E9FFA /* HPDefineHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineHeader.pch; sourceTree = "<group>"; };
 		14409CA5231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+LYTabbarSetting.h"; sourceTree = "<group>"; };
 		14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+LYTabbarSetting.m"; sourceTree = "<group>"; };
@@ -366,7 +366,7 @@
 		14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_UI.m"; sourceTree = "<group>"; };
 		14409CAD231C00BD006E9FFA /* UIView+LYViewBehavior_hit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LYViewBehavior_hit.h"; sourceTree = "<group>"; };
 		14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_hit.m"; sourceTree = "<group>"; };
-		14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineEfficency.h; sourceTree = "<group>"; };
+		14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HPDefineEfficency.h; path = HPDefineEfficency/HPDefineEfficency.h; sourceTree = "<group>"; };
 		14409CB7231C3D2E006E9FFA /* HPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPBaseViewController.h; sourceTree = "<group>"; };
 		14409CB8231C3D2E006E9FFA /* HPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPBaseViewController.m; sourceTree = "<group>"; };
 		14409CBB231C3D5A006E9FFA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -919,22 +919,6 @@
 				141EC1C8231CB4FD00E613F0 /* RFRotate.m */,
 			);
 			path = RFRotate;
-			sourceTree = "<group>";
-		};
-		141EC1CF231CC33100E613F0 /* HPDefineColors */ = {
-			isa = PBXGroup;
-			children = (
-				14409CA2231BEFA3006E9FFA /* HPDefineColors.h */,
-			);
-			path = HPDefineColors;
-			sourceTree = "<group>";
-		};
-		141EC1D0231CC34500E613F0 /* HPDefineEfficency */ = {
-			isa = PBXGroup;
-			children = (
-				14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */,
-			);
-			path = HPDefineEfficency;
 			sourceTree = "<group>";
 		};
 		141EC1D1231CC36200E613F0 /* LYLayouts */ = {
@@ -1645,8 +1629,8 @@
 			isa = PBXGroup;
 			children = (
 				148E791D232793D600233434 /* HPRootDefine.h */,
-				141EC1D0231CC34500E613F0 /* HPDefineEfficency */,
-				141EC1CF231CC33100E613F0 /* HPDefineColors */,
+				14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */,
+				14409CA2231BEFA3006E9FFA /* HPDefineColors.h */,
 			);
 			path = HPHeaderDefine;
 			sourceTree = "<group>";
