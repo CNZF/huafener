@@ -21,6 +21,18 @@ static const DDLogLevel ddLogLevel = DDLogLevelAll;
 #define NSLog(...) {}
 #endif
 
+#define GHAssertNoReturn(condition, msg) \
+if (condition) {\
+GHLog(@"%@",msg);\
+return;\
+}
+
+#define GHAssertReturn(condition, msg, returnValue) \
+if (condition) {\
+GHLog(@"%@",msg);\
+return returnValue;\
+}
+
 
 #define WS(weakSelf)         __weak __typeof(&*self)weakSelf = self;
 
@@ -44,3 +56,5 @@ static const DDLogLevel ddLogLevel = DDLogLevelAll;
 #define kPaddingWithSize(size)   ceil((size / 2) * kDeviceScaleFactor)
 #define kFontWithSize(size)  [UIFont systemFontOfSize:size*kDeviceScaleFactor/2]
 
+//获取系统时间戳
+#define GH_GET_CURENT_TIME [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]]

@@ -32,47 +32,59 @@
     
     
 //    InstallUncaughtExceptionHandler();
-    NSSetUncaughtExceptionHandler(&HpUncaughtExceptionHandler);
+//    NSSetUncaughtExceptionHandler(&HpUncaughtExceptionHandler);
 
+    int i = 102930000 , j=0;
+    
+    while (i>0) {
+        if (i%10==0) {
+            j++;
+        }
+        i = i/10;
+    }
+    
+    
+    NSLog(@"j=%d",j);
+    
     return YES;
 }
 
 
-void HpUncaughtExceptionHandler(NSException *exception) {
-    NSArray *arr = [exception callStackSymbols];
-    NSString *reason = [exception reason];
-    NSString *name = [exception name];
-    
-    
-    UIAlertView *alert =
-        [[UIAlertView alloc]
-            initWithTitle:NSLocalizedString(@"Unhandled exception", nil)
-            message:[NSString stringWithFormat:NSLocalizedString(
-                @"You can try to continue but the application may be unstable.\n\n"
-                @"Debug details follow:\n%@\n%@", nil),
-                [exception reason],
-                [[exception userInfo] objectForKey:@""]]
-            delegate:nil
-            cancelButtonTitle:NSLocalizedString(@"Quit", nil)
-            otherButtonTitles:NSLocalizedString(@"Continue", nil), nil];
-    [alert show];
-    
-    CFRunLoopRef runLoop = CFRunLoopGetCurrent();
-    CFArrayRef allModes = CFRunLoopCopyAllModes(runLoop);
-    
-    while (1)
-    {
-        for (NSString *mode in (__bridge NSArray *)allModes)
-        {
-            CFRunLoopRunInMode((CFStringRef)mode, 0.001, false);
-        }
-//        CFRelease(allModes);
-//        NSSetUncaughtExceptionHandler(&HandleException);
-    }
+//void HpUncaughtExceptionHandler(NSException *exception) {
+//    NSArray *arr = [exception callStackSymbols];
+//    NSString *reason = [exception reason];
+//    NSString *name = [exception name];
+//
+//
+//    UIAlertView *alert =
+//        [[UIAlertView alloc]
+//            initWithTitle:NSLocalizedString(@"Unhandled exception", nil)
+//            message:[NSString stringWithFormat:NSLocalizedString(
+//                @"You can try to continue but the application may be unstable.\n\n"
+//                @"Debug details follow:\n%@\n%@", nil),
+//                [exception reason],
+//                [[exception userInfo] objectForKey:@""]]
+//            delegate:nil
+//            cancelButtonTitle:NSLocalizedString(@"Quit", nil)
+//            otherButtonTitles:NSLocalizedString(@"Continue", nil), nil];
+//    [alert show];
+//
+//    CFRunLoopRef runLoop = CFRunLoopGetCurrent();
+//    CFArrayRef allModes = CFRunLoopCopyAllModes(runLoop);
+//
+//    while (1)
+//    {
+//        for (NSString *mode in (__bridge NSArray *)allModes)
+//        {
+//            CFRunLoopRunInMode((CFStringRef)mode, 0.001, false);
+//        }
+////        CFRelease(allModes);
+////        NSSetUncaughtExceptionHandler(&HandleException);
+//    }
     
     
 //    NSLog(@"<<<<<<<<<<<%@\n《《《《《《《《《《《%@\n============%@",arr, reason, name);
-}
+//}
 
 
 //设置初始页面
