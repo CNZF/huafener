@@ -49,6 +49,7 @@
 		14538EE023B9DA54007B237D /* HPDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 14538EDE23B9DA53007B237D /* HPDeviceUtils.m */; };
 		14538EE723B9DC4F007B237D /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14538EE423B9DC4E007B237D /* NSObject+YYModel.m */; };
 		14538EE823B9DC4F007B237D /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 14538EE523B9DC4E007B237D /* YYClassInfo.m */; };
+		1457E36C246BC94600F2C029 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1457E36B246BC94600F2C029 /* LSViewController.m */; };
 		145A64C423BDBD7A00F04FE3 /* HPBaseRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A64C323BDBD7A00F04FE3 /* HPBaseRequestOperation.m */; };
 		145A64C823BDBEC800F04FE3 /* HPHomeTabOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A64C723BDBEC800F04FE3 /* HPHomeTabOperation.m */; };
 		14805C5F23419D83003EF272 /* UIViewController+PresentModalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 14805C5E23419D83003EF272 /* UIViewController+PresentModalStyle.m */; };
@@ -358,7 +359,7 @@
 		14409C97231BEA3C006E9FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14409C9A231BED4F006E9FFA /* HPTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPTabbarViewController.h; sourceTree = "<group>"; };
 		14409C9B231BED4F006E9FFA /* HPTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPTabbarViewController.m; sourceTree = "<group>"; };
-		14409CA2231BEFA3006E9FFA /* HPDefineColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineColors.h; sourceTree = "<group>"; };
+		14409CA2231BEFA3006E9FFA /* HPDefineColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HPDefineColors.h; path = HPDefineColors/HPDefineColors.h; sourceTree = "<group>"; };
 		14409CA3231BEFF4006E9FFA /* HPDefineHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineHeader.pch; sourceTree = "<group>"; };
 		14409CA5231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+LYTabbarSetting.h"; sourceTree = "<group>"; };
 		14409CA6231BF59D006E9FFA /* UITabBarController+LYTabbarSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+LYTabbarSetting.m"; sourceTree = "<group>"; };
@@ -366,7 +367,7 @@
 		14409CA9231BF6E4006E9FFA /* UIView+LYViewBehavior_UI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_UI.m"; sourceTree = "<group>"; };
 		14409CAD231C00BD006E9FFA /* UIView+LYViewBehavior_hit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LYViewBehavior_hit.h"; sourceTree = "<group>"; };
 		14409CAE231C00BD006E9FFA /* UIView+LYViewBehavior_hit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYViewBehavior_hit.m"; sourceTree = "<group>"; };
-		14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineEfficency.h; sourceTree = "<group>"; };
+		14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HPDefineEfficency.h; path = HPDefineEfficency/HPDefineEfficency.h; sourceTree = "<group>"; };
 		14409CB7231C3D2E006E9FFA /* HPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPBaseViewController.h; sourceTree = "<group>"; };
 		14409CB8231C3D2E006E9FFA /* HPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPBaseViewController.m; sourceTree = "<group>"; };
 		14409CBB231C3D5A006E9FFA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -394,6 +395,9 @@
 		14538EE423B9DC4E007B237D /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
 		14538EE523B9DC4E007B237D /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		14538EE623B9DC4E007B237D /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		1457E369246A6FB900F2C029 /* HPDefineDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDefineDevice.h; sourceTree = "<group>"; };
+		1457E36A246BC94600F2C029 /* LSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
+		1457E36B246BC94600F2C029 /* LSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
 		145A64C223BDBD7A00F04FE3 /* HPBaseRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPBaseRequestOperation.h; sourceTree = "<group>"; };
 		145A64C323BDBD7A00F04FE3 /* HPBaseRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPBaseRequestOperation.m; sourceTree = "<group>"; };
 		145A64C623BDBEC800F04FE3 /* HPHomeTabOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPHomeTabOperation.h; sourceTree = "<group>"; };
@@ -921,22 +925,6 @@
 			path = RFRotate;
 			sourceTree = "<group>";
 		};
-		141EC1CF231CC33100E613F0 /* HPDefineColors */ = {
-			isa = PBXGroup;
-			children = (
-				14409CA2231BEFA3006E9FFA /* HPDefineColors.h */,
-			);
-			path = HPDefineColors;
-			sourceTree = "<group>";
-		};
-		141EC1D0231CC34500E613F0 /* HPDefineEfficency */ = {
-			isa = PBXGroup;
-			children = (
-				14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */,
-			);
-			path = HPDefineEfficency;
-			sourceTree = "<group>";
-		};
 		141EC1D1231CC36200E613F0 /* LYLayouts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1105,6 +1093,8 @@
 				14409C99231BED26006E9FFA /* TabbarVC */,
 				14409CBA231C3D4A006E9FFA /* tabsController */,
 				14409CC1231C67AC006E9FFA /* centerBtnView */,
+				1457E36A246BC94600F2C029 /* LSViewController.h */,
+				1457E36B246BC94600F2C029 /* LSViewController.m */,
 			);
 			path = projectCode;
 			sourceTree = "<group>";
@@ -1645,8 +1635,9 @@
 			isa = PBXGroup;
 			children = (
 				148E791D232793D600233434 /* HPRootDefine.h */,
-				141EC1D0231CC34500E613F0 /* HPDefineEfficency */,
-				141EC1CF231CC33100E613F0 /* HPDefineColors */,
+				14409CB4231C1E66006E9FFA /* HPDefineEfficency.h */,
+				14409CA2231BEFA3006E9FFA /* HPDefineColors.h */,
+				1457E369246A6FB900F2C029 /* HPDefineDevice.h */,
 			);
 			path = HPHeaderDefine;
 			sourceTree = "<group>";
@@ -2441,6 +2432,7 @@
 				148E789823235FCB00233434 /* GPUImageHistogramGenerator.m in Sources */,
 				148E78FD23235FCB00233434 /* GPUImageHSBFilter.m in Sources */,
 				14B172A6231D1A9F00463A7A /* MJRefreshNormalHeader.m in Sources */,
+				1457E36C246BC94600F2C029 /* LSViewController.m in Sources */,
 				254AB21923C226CF00E7600F /* HPBaseModel.m in Sources */,
 				148E789C23235FCB00233434 /* GPUImageSolidColorGenerator.m in Sources */,
 				14B172A2231D1A9F00463A7A /* MJRefreshAutoGifFooter.m in Sources */,
