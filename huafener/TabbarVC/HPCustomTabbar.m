@@ -29,6 +29,10 @@
     //单纯的去掉之后视图会穿透
     [self setBackgroundImage:[UIImage new]];
     [self setShadowImage:[UIImage new]];
+    
+    self.layer.cornerRadius = 10.0f;
+    self.layer.masksToBounds = YES;
+    
     //给其设置颜色之后，视图穿透消失
     self.barTintColor = GH_COLOR_FROM_RGB(0xffffff);
     [self setBackgroundColor:GH_COLOR_FROM_RGB(0xffffff)];
